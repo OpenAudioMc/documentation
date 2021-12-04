@@ -1,11 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"github.com/OpenAudioMc/documentation/md_loader"
+	"github.com/OpenAudioMc/documentation/renderer"
 )
 
 func main() {
-	var pageMeta = md_loader.LoadPages()
-	fmt.Println(pageMeta)
+	// load source pages
+	var pages = md_loader.LoadPages()
+	renderer.RenderPages(pages)
 }

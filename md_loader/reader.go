@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/gomarkdown/markdown"
 	"github.com/microcosm-cc/bluemonday"
+	"github.com/yosssi/gohtml"
 	"io/ioutil"
 	"log"
 	"os"
@@ -32,6 +33,8 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 		scanner := bufio.NewScanner(file)
 
 		var page = DocumentationPage{}
+
+		page.Html = gohtml.Format(string(html))
 
 		for scanner.Scan() {
 			var line = scanner.Text()

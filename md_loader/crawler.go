@@ -11,7 +11,7 @@ func FindDocPages() []string {
 
 	fileList := make([]string, 0)
 	e := filepath.Walk(searchDir, func(path string, f os.FileInfo, err error) error {
-		if strings.Contains(strings.ToLower(path), ".md") {
+		if strings.HasSuffix(strings.ToLower(path), ".md") {
 			fileList = append(fileList, path)
 		}
 		return err
