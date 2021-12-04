@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAudioMc</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.png">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous"/>
+
+</head>
+<body class="bg-gray-900">
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a class="mr-5 hover:text-white">Documentation</a>
+            <a class="mr-5 hover:text-white">Join our Discord</a>
+            <a class="mr-5 hover:text-white">Github</a>
+            <a class="hover:text-white">Spigot</a>
+        </nav>
+        <a href="index.html" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
+            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full" />
+            <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a href="https://twitter.com/Mindgamesnl" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Mindgamesnl
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="https://patreon.com/Mindgamesnl" class="ml-2 inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Patreon
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+{{ include(page_content) }}
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo" />
+            <span class="ml-3 text-xl">OpenAudioMc</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 OpenAudioMc —
+            <a href="https://twitter.com/Mindgamesnl" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Mindgamesnl</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

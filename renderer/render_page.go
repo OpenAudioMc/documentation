@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func renderPage(page md_loader.DocumentationPage, tp *toothpaste.Renderer, docHtml string) {
+func renderDocs(page md_loader.DocumentationPage, tp *toothpaste.Renderer, docHtml string) {
 	var context = toothpaste.NewRenderContext()
 	context.SetVariable("content", page.Html)
 	fmt.Println(docHtml)
@@ -18,4 +18,8 @@ func renderPage(page md_loader.DocumentationPage, tp *toothpaste.Renderer, docHt
 	var fn = "out/" + strings.ReplaceAll(page.Filename, ".md", ".html")
 	os.Remove(fn)
 	os.WriteFile(fn, []byte(out), 0644)
+}
+
+func renderPages()  {
+
 }

@@ -1,0 +1,30 @@
+.logo {
+    background: linear-gradient(217deg, #c54a2e, #da14e4, #2b4ac8);
+    background-size: 600% 600%;
+
+    -webkit-animation: LogoBlinking 2s ease infinite;
+    -moz-animation: LogoBlinking 2s ease infinite;
+    -o-animation: LogoBlinking 2s ease infinite;
+    animation: LogoBlinking 2s ease infinite;
+}
+
+@-webkit-keyframes LogoBlinking {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes LogoBlinking {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@-o-keyframes LogoBlinking {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes LogoBlinking {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}

@@ -17,10 +17,10 @@ func RenderPages(pages []md_loader.DocumentationPage) {
 	docPage := readHtmlTest("html_templates/doc.html")
 	tpRenderer.RegisterComponent("doc_page", docPage)
 
-	// render pages
-	for i := range pages {
-		renderPage(pages[i], tpRenderer, docPage)
-	}
+	// render documentation
+	//for i := range pages {
+	//	renderDocs(pages[i], tpRenderer, docPage)
+	//}
 }
 
 func readHtmlTest(f string) string {
