@@ -1,5 +1,5 @@
 [//]: # (TITLE:Installation)
-[//]: # (DESCRIPTION:Installing OpenAudioMc)
+[//]: # (DESCRIPTION:Getting started with your fresh OpenAudioMc installation)
 [//]: # (TAGS:installation,install,bungeecord,setup,download)
 
 # Installation

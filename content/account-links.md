@@ -1,4 +1,4 @@
-[//]: # (TITLE:Account Links)
+[//]: # (TITLE:Discord & Patreon)
 [//]: # (DESCRIPTION:Linking your Craftmend Account with external services (like Patron and Discord))
 [//]: # (TAGS:accounts,linking,craftmend,patreon,discord,links)
 
@@ -24,4 +24,4 @@ Leaving the discord automatically unlinks your discord profile from your craftme
  2. Click on the Patreon logo
  3. Login with your Patreon account, then click `Allow`
 
-And that's it, nothing more to it, easy huh?
+Patreons aren't required to link their discord, but it's higly recommended since they'll get access to patreon only channels and will receive automatic DM notifications about their server.

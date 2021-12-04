@@ -1,6 +1,6 @@
 [//]: # (TITLE:Permissions)
-[//]: # (DESCRIPTION:Plugin permissions)
-[//]: # (TAGS:permissions,permission)
+[//]: # (DESCRIPTION:Full permission guide of all commands and features)
+[//]: # (TAGS:permissions,permission,installation)
 
 # Permissions
 OpenAudioMc has permissions for everything and is fully configurable.

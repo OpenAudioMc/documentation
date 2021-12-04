@@ -1,6 +1,6 @@
 [//]: # (TITLE:Craftmend Accounts)
 [//]: # (DESCRIPTION:What are Craftmend Accounts)
-[//]: # (TAGS:accounts,craftmend,email,addons,installation,install)
+[//]: # (TAGS:accounts,craftmend,email,addons,install)
 
 # **Accounts**
 ### Do I need an account?

@@ -1,5 +1,5 @@
 [//]: # (TITLE:Shows)
-[//]: # (DESCRIPTION:Using show commands to schedule and make shows)
+[//]: # (DESCRIPTION:Using show commands to schedule and make shows,commands)
 [//]: # (TAGS:shows,timers,timer,show)
 
 # Shows

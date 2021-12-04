@@ -1,6 +1,6 @@
 [//]: # (TITLE:Selectors)
-[//]: # (DESCRIPTION:Using selectors)
-[//]: # (TAGS:@a,@p,playername,selector,selectors,target,targets)
+[//]: # (DESCRIPTION:Using selectors to specify which player groups should be affected by a command)
+[//]: # (TAGS:@a,@p,playername,selector,selectors,target,targets,commands)
 
 # Player Selectors
 Selectors are used to specify to which clients an action should be executed. The selector format is inspired and partially compatible with the Mincecraft selection format. Usernames are also acceptable, but the main format goes as follows. Selectors start with a group of players, supported groups are:

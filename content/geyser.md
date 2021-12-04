@@ -1,6 +1,6 @@
 [//]: # (TITLE:Gyser)
 [//]: # (DESCRIPTION:Using OpenAudioMc with gyser/bedrock)
-[//]: # (TAGS:gyser,bedrock,pe)
+[//]: # (TAGS:installation,gyser,bedrock,pe)
 # GeyserMC support
 OpenAudioMc has technical support for Geyser, and handles it like a normal BungeeCord proxy (check the [installation](installation.md) instructions).
 

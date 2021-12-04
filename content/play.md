@@ -1,6 +1,6 @@
 [//]: # (TITLE:Play)
-[//]: # (DESCRIPTION:Using the play command)
-[//]: # (TAGS:play,command,subcommand,sound,start)
+[//]: # (DESCRIPTION:Using the play command to start media through command blocks)
+[//]: # (TAGS:play,command,subcommand,sound,start,commands,media)
 
 # Play Media
 The play command is used to start [Media](media.md) for a client or to schedule it to play. It follows the syntax of:
