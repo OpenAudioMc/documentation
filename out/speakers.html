@@ -1,0 +1,68 @@
+<h1 id="speakers">
+  Speakers
+</h1>
+<p>
+  Speakers are little blocks you can place in your Minecraft world. Just like real speakers in a themapark, all of them play synchronized and can be hidden. The thing that makes them special is that they share some properties just like real audio sources, You can’t hear them from too far away, and the volume depends on your location relative to a speaker.
+</p>
+<p>
+  There’s only one command that gives you the speaker, after executing you will receive a Speaker in your inventory. To remove them, you just go up to one and destroy the block like normal.
+</p>
+<p>
+  The command follows the following format:
+</p><pre><code>/openaudio speaker &lt;source&gt; [radius]
+</code></pre>
+<p>
+  Example, to receive a speaker playing the park entrance sound, you should do
+</p><pre><code>/openaudio speaker https://soundcloud.com/mrfijiwiji/imalright 10
+</code></pre>
+<p>
+  <br/>
+</p>
+<h1 id="settings-and-modes">
+  Settings and modes
+</h1>
+<p>
+  You can click on a speaker (with your right mouse button) to open the Speaker GUI.
+  <br>
+  You can use this GUI to check the source of the speaker, change the range/volume and modes.
+  <br>
+  Speakers have two modes, these are,
+  <br>
+  -
+  <strong>
+    2D
+  </strong>
+  Two dimensional audio is the default, this means that only the volume will change based on your distance with the speaker.
+  <br>
+  -
+  <strong>
+    3D
+  </strong>
+  Three dimensional audio is like surround sound. OpenAudioMc will work out where you are relative to the closest speaker and properly mix the sound based on your relative location.
+</p>
+<p>
+  You can change these settings at any time, but you may have to walk for a bit before they take effect (or, reload your client).
+</p>
+<p>
+  Notes:
+  <br>
+  - You can’t use the same source URL in
+  <strong>
+    2D
+  </strong>
+  and
+  <strong>
+    3D
+  </strong>
+  when they are nearby, they have to be out of range from each other.
+  <br>
+  - Speakers will default to
+  <strong>
+    2D
+  </strong>
+  when places, unless there’s a
+  <strong>
+    3D
+  </strong>
+  speaker with the similar source nearby.
+</p>

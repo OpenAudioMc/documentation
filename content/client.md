@@ -20,10 +20,10 @@ Requirements:
  - Linux or MacOS
  - NodeJS & NPM
  - Some prior experience maintaining web applications
- 
- To compile
- 1. Clone the OpenAudioMc [repository](https://github.com/Mindgamesnl/OpenAudioMc) (or download it as a zip file)
- 2. Navigate to `client/`
- 3. Install dependencies running `npm install`
- 4. Run the build-script running `npm run-script build`
- 5. Your new custom build will appear in the `target` directory, follow the setup instructions to set it up. 
+
+To compile:
+  1. Clone the OpenAudioMc [repository](https://github.com/Mindgamesnl/OpenAudioMc) (or download it as a zip file)
+  2. Navigate to `client/`
+  3. Install dependencies running `npm install`
+  4. Run the build-script running `npm run-script build`
+  5. Your new custom build will appear in the `target` directory, follow the setup instructions to set it up. 

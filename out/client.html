@@ -1,0 +1,119 @@
+<h1 id="hosted-client">
+  Hosted Client
+</h1>
+<p>
+  OpenAudioMc gives you the option to host your own client, however, there are some caveats
+  <br>
+  - You will become responsible for frequent updates, meaning that you have to update your webclient regularly.
+  <br>
+  - You will have to follow the rules as described
+  <a href="https://github.com/Mindgamesnl/OpenAudioMc/blob/master/LICENCE_and_PRIVACY.html" rel="nofollow">
+    here
+  </a>
+  .
+  <br>
+  - We do not recommend that you host the client yourself and will not help you setting it up aside from this document.
+  <br>
+  <br/>
+</p>
+<h1 id="setup">
+  Setup
+</h1>
+<ol>
+  <li>
+    <p>
+      Clone the OpenAudioMc
+      <a href="https://github.com/Mindgamesnl/OpenAudioMc" rel="nofollow">
+        repository
+      </a>
+      (or download it as a zip file)
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Upload the pre-compiled client (in
+      <code>
+        docs/production-client/target/
+      </code>
+      ) to your webserver.
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Login to your
+      <a href="account.html" rel="nofollow">
+        Account
+      </a>
+      , go to your servers settings page and change the client url to where you uploaded yours, then save.
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Execute
+      <code>
+        /oa reload
+      </code>
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Generate a new URL by re-joining the server.
+      <br>
+      <br/>
+    </p>
+    <h1 id="compiling-your-own-js-bundle">
+      Compiling your own JS bundle
+    </h1>
+    <p>
+      Requirements:
+    </p>
+    <ul>
+      <li>
+        Linux or MacOS
+        <br>
+      </li>
+      <li>
+        NodeJS &amp; NPM
+        <br>
+      </li>
+      <li>
+        Some prior experience maintaining web applications
+        <br>
+      </li>
+    </ul>
+  </li>
+</ol>
+<p>
+  To compile:
+  <br>
+  1. Clone the OpenAudioMc
+  <a href="https://github.com/Mindgamesnl/OpenAudioMc" rel="nofollow">
+    repository
+  </a>
+  (or download it as a zip file)
+  <br>
+  2. Navigate to
+  <code>
+    client/
+  </code>
+  <br>
+  3. Install dependencies running
+  <code>
+    npm install
+  </code>
+  <br>
+  4. Run the build-script running
+  <code>
+    npm run-script build
+  </code>
+  <br>
+  5. Your new custom build will appear in the
+  <code>
+    target
+  </code>
+  directory, follow the setup instructions to set it up.
+</p>

@@ -13,16 +13,19 @@ The wiki is devided into 5 core parts, these are
 If you are still having problems after reading, feel free to join our [Discord](https://discord.gg/6TagKB9/) and ask for help.
 
 ### Installation
+How to get started
 - [How to install OpenAudioMc (bungeecord and spigot)](installation.md)
 - [Configuring your account](account.md)
 - [What are supported browsers](browsers.md)
-- [Setting up GyserMC](gyser.md)
+- [Setting up GeyserMC](geyser.md)
 
 ### Terms
+General and good to know
 - [Media](media.md)
 - [Selectors](selectors.md)
 
 ### Features
+
 How to use OpenAudioMc's features (with examples)
 - [The Web Client](web-client.md)
 - [The Play Command](play.md)
@@ -50,6 +53,3 @@ If you want to go the extra mile
 - [Client hosting](client.md)
 - [Redis](redis.md)
 - [Network/Server requirements](technical_requirements.md)
- 
-### Other articles
-- [Meet the bots](meet_the_bots.md)

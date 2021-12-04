@@ -9,11 +9,18 @@ import (
 var tpRenderer = toothpaste.NewRenderer()
 
 func prepareToothpaste()  {
-
+	tpRenderer.RegisterComponent("doc_page", readHtmlTest("../html_templates/doc.html"))
 }
 
 func RenderPages(pages []md_loader.DocumentationPage) {
-	tpRenderer.RegisterComponent("")
+	prepareToothpaste()
+	docPage := readHtmlTest("html_templates/doc.html")
+	tpRenderer.RegisterComponent("doc_page", docPage)
+
+	// render pages
+	for i := range pages {
+		renderPage(pages[i], tpRenderer, docPage)
+	}
 }
 
 func readHtmlTest(f string) string {

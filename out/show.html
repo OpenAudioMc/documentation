@@ -1,0 +1,144 @@
+<h1 id="shows">
+  Shows
+</h1>
+<p>
+  With shows, you can make time coded shows. Our definition of a show is a list of cues, or scheduled events.
+</p>
+<p>
+  The major benefit about shows is that they are multithreaded. Meaning that in-game lag (TPS drops) will NOT affect or hinder the timing of your show to always keep it in sync with the audio.
+</p>
+<p>
+  So get started, make a show called
+  <code>
+    demo
+  </code>
+</p><pre><code>/openaudio show create demo
+</code></pre>
+<p>
+  We now have a show called
+  <code>
+    demo
+  </code>
+  . We can start/stop it but this won’t really do anything, we need to add cues first. To do so, you fist need to understand what a time code is.
+  <br>
+  A time code is the amount of time from when the start command is executed. OpenAudioMc supports the following formats:
+  <br>
+  -
+  <strong>
+    <code>
+      m
+    </code>
+    resembles minutes
+  </strong>
+  : 1m = 1 minute, 1.5m = 1 minute and 30 seconds.
+  <br>
+  -
+  <strong>
+    <code>
+      s
+    </code>
+    resembles seconds
+  </strong>
+  : 1s = 1 second, 1.5s = 1 second and 50 milliseconds
+  <br>
+  -
+  <strong>
+    <code>
+      ms
+    </code>
+    resembles milliseconds
+  </strong>
+  : 1ms = 1 millisecond
+  <br>
+  -
+  <strong>
+    <code>
+      t
+    </code>
+    resembles ticks
+  </strong>
+  : 1t = 1 minecraft tick, or 50 mlliseconds
+  <br>
+  -
+  <strong>
+    <code>
+      HH:mm:ss
+    </code>
+    resembles HourHour:MinuteMinute:SecondSecond
+  </strong>
+  : 00:05:00 = 5 minutes
+</p>
+<p>
+  Supported trigger types and their format:
+  <br>
+  -
+  <strong>
+    command
+  </strong>
+  : Executes a command though the console, all arguments will be joined to form the command,
+  <code>
+    /openaudio show add demo 0s command say Hi there!
+  </code>
+  <br>
+  -
+  <strong>
+    chat
+  </strong>
+  : Sends a chat message to everyone who fits a specific player selector (read
+  <a href="selectors.html" rel="nofollow">
+    selectors
+  </a>
+  ), the first argument is always the select, followed by the message. Example:
+  <code>
+    /openaudio show add demo 0s chat @a[region=spawn] &amp;7Welcome to spawn!
+  </code>
+  <br>
+  -
+  <strong>
+    actionbar
+  </strong>
+  : Follows the same general format as the
+  <em>
+    chat
+  </em>
+  trigger, but displays the message in the actionbar instead of chat
+  <br>
+  -
+  <em>
+    your own feature
+  </em>
+  : You can also add custom java show triggers with the API
+</p>
+<p>
+  For this demo, we are gonna add two cues. One cue after 0 seconds, a cue after 1 second, and a cue after 1 minute. To add these cues, use the following commands:
+</p><pre><code>/openaudio show add demo 0s command say I fire at the start
+/openaudio show add demo 1s command say I fire after one second
+/openaudio show add demo 1m command say I fire after one minute
+</code></pre>
+<p>
+  The basic format here is
+</p><pre><code>/openaudio show add &lt;show name&gt; &lt;timecode&gt; &lt;type&gt; &lt;data&gt;
+</code></pre>
+<p>
+  To get the status of a show, you can use
+</p><pre><code>/openaudio show info demo
+</code></pre>
+<p>
+  To start or cancel
+</p><pre><code>/openaudio show &lt;start/cancel&gt; &lt;showname&gt;
+</code></pre>
+<p>
+  You can also edit a show via a gui using
+</p><pre><code>/openaudio show gui &lt;show name&gt;
+</code></pre>
+<p>
+  you can change the show state, scroll through cues and delete them from this GUI.
+  <br>
+  <br/>
+</p>
+<h2 id="want-more-read-the-redis-documentation-redis-html">
+  Want more? read
+  <a href="redis.html" rel="nofollow">
+    The redis documentation
+  </a>
+</h2>

@@ -1,8 +1,8 @@
 [//]: # (TITLE:Gyser)
 [//]: # (DESCRIPTION:Using OpenAudioMc with gyser/bedrock)
 [//]: # (TAGS:gyser,bedrock,pe)
-# GyserMC support
-OpenAudioMc has technical support for Gyser, and handles it like a normal BungeeCord proxy (check the [installation](installation.md) instructions).
+# GeyserMC support
+OpenAudioMc has technical support for Geyser, and handles it like a normal BungeeCord proxy (check the [installation](installation.md) instructions).
 
 ## Tokens
 Minecraft Bedrock Edition *doesn't* support clickable links in chat, for, whatever reason, this means that bedrock players need to manually enter their client token when they want to open the web client.

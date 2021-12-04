@@ -1,0 +1,23 @@
+<h1 id="technical-requirements">
+  Technical Requirements
+</h1>
+<p>
+  OpenAudioMc isn’t magic, well, not completely, most of it is networking. This means that there are a few simple requirements for your host to make it all work and come together like some finely crafted dish. (but instead of spaghetti, its audio)
+</p>
+<p>
+  The Minecraftserver (or Bungee-based proxy) never actually hosts a socket server, meaning that no additional port forwarding is required. However, it does need outgoing connections to be allowed on port
+  <code>
+    443
+  </code>
+  . Several domains are used by our services, these include (but may not be limited to)
+  <code>
+    *.cloud.openaudiomc.net
+  </code>
+  , and
+  <code>
+    *.githubusercontent.com
+  </code>
+  .
+  <br>
+  The plugin will use services used on those servers to handle networking, failure to connect to any of them will shut the plugin down since it won’t be able to function properly.
+</p>

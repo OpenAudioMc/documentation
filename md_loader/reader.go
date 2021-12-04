@@ -4,9 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/parser"
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/yosssi/gohtml"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -22,22 +22,14 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 			log.Fatal(err)
 		}
 
-		b, err := ioutil.ReadFile(files[i]) // just pass the file name
-		if err != nil {
-			panic(err)
-		}
-
-		maybeUnsafeHTML := markdown.ToHTML(b, nil, nil)
-		html := bluemonday.UGCPolicy().SanitizeBytes(maybeUnsafeHTML)
-
 		scanner := bufio.NewScanner(file)
-
 		var page = DocumentationPage{}
-
-		page.Html = gohtml.Format(string(html))
-
+		var contentFixed strings.Builder
+		var first = true
 		for scanner.Scan() {
 			var line = scanner.Text()
+			line = strings.ReplaceAll(line, ".md", ".html")
+
 
 			if strings.Contains(line, "[//]: # (") {
 				// it is a comment!
@@ -61,11 +53,28 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 				case "TAGS":
 					page.Tags = strings.Split(value, ",")
 				}
+			} else {
+				if strings.HasPrefix(line, "#") && !first {
+					contentFixed.Write([]byte("<br />"))
+				}
+
+				if len(line) > 5 {
+					first = false
+				}
+
+				contentFixed.Write([]byte("\n"))
+				contentFixed.Write([]byte(line))
 			}
 		}
 
+		extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.OrderedListStart | parser.DefinitionLists | parser.Tables | parser.HardLineBreak
+		parser := parser.NewWithExtensions(extensions)
+		maybeUnsafeHTML := markdown.ToHTML([]byte(contentFixed.String()), parser, nil)
+		html := bluemonday.UGCPolicy().SanitizeBytes(maybeUnsafeHTML)
+		page.Html = gohtml.Format(string(html))
+
 		filename := filepath.Base(files[i])
-		page.Path = filename
+		page.Filename = filename
 
 		pageList = append(pageList, page)
 

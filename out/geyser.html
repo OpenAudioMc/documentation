@@ -1,0 +1,54 @@
+<h1 id="geysermc-support">
+  GeyserMC support
+</h1>
+<p>
+  OpenAudioMc has technical support for Geyser, and handles it like a normal BungeeCord proxy (check the
+  <a href="installation.html" rel="nofollow">
+    installation
+  </a>
+  instructions).
+  <br>
+  <br/>
+</p>
+<h2 id="tokens">
+  Tokens
+</h2>
+<p>
+  Minecraft Bedrock Edition
+  <em>
+    doesn’t
+  </em>
+  support clickable links in chat, for, whatever reason, this means that bedrock players need to manually enter their client token when they want to open the web client.
+  <br>
+  You can add
+  <code>
+    {token}
+  </code>
+  as a placeholder in the
+  <code>
+    click-to-connect
+  </code>
+  message in your gyser config (
+  <code>
+    plugins/OpenAudioMc/config.yml
+  </code>
+  ), this will show the token in their chat so they can manually enter it on
+  <a href="https://client.openaudiomc.net/" rel="nofollow">
+    https://client.openaudiomc.net/
+  </a>
+  .
+  <br>
+  Using clear messaging, like
+  <code>
+    Navigate to client.openaudiomc.net, your login token is {token}
+  </code>
+  is recommended.
+  <br>
+  <br/>
+</p>
+<h2 id="note-on-browsers">
+  Note on browsers
+</h2>
+<p>
+  Keep in mind that mobile browsers (chrome mobile, ios safari, etc) aren’t compltely supported due to their resource saving measures, preventing OpenAudioMc from loading audio files normally and causing WebRTC stability issues. It’s still recommended to use a desktop (class) browser, even when playing on a mobile device.
+</p>

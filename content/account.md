@@ -3,11 +3,6 @@
 [//]: # (TAGS:accounts,craftmend,email,addons,installation,install)
 
 # **Accounts**
-## IMPORTANT! accounts are only available for versions 6.5 and up, older versions still use the old panel on `/oa plus`
-OpenAudioMc can be used fresh out of the box, but some additional features can be unlocked by linking your installation to an account.
-
-Getting things setup isn't too difficult if you follow the [account setup guide](account-setup.md).
-
 ### Do I need an account?
 No, perhaps not. OpenAudioMc will work just fine without an account, but some features are uniquely available through the online admin panel.
 Unverified servers might be connection limited in the future to prevent abuse, but we'll let you know when this goes into action.

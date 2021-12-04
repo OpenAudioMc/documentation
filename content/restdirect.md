@@ -2,7 +2,7 @@
 [//]: # (DESCRIPTION:Rest Direct)
 [//]: # (TAGS:configuration,config,data,yml)
 
-### Rest Direct
+# Rest Direct
 Rest Direct is an internal system used to transfer large blobs of data from your server to the OpenAudioMc network. It's used by features like Local File Playback to upload files to our cdn and for our system to trigger events in your server without requiring an active session.
 
 ## Technical Requirements
