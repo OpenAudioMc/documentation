@@ -4,6 +4,8 @@
 
 # Voice Chat
 Proximity Voice Chat is one of the core OpenAudioMc features. It allows players to others within a configurable radius. They can hear the whereabouts of others through spatial audio, which is incredibly fun for SMP's, Minigames, Roleplay, and so much more.
+<br />
+There might be cases where VoiceChat can't finish the automated setup due to [license](voicechat_licenses.md) issues. You can force a new license check using `/oa voice claim`, by claiming a license through your [account](account.md) or by keeping an eye out for news in our Discord
 
 ### Commands
 Voice chat exposes a few commands to the end user (other than the regular `/audio` command), these can be used while their voice chat session is active to easily control their experience without leaving the game.
