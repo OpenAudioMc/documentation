@@ -13,6 +13,7 @@ My amazing patreons are the ones who keep the project going, enable me to spend 
  - Prioritized API access, ensuring that their service will skip the queue when our servers are busy
  - Extra voicechat slots, enabling their bigger community to grow while also enabling the free users to enjoy OpenAudioMc
  - Access to local file streaming and increased CDN access
+ - Streamer mode, protecting URL's and sessions when shown on stream
  - A cool green tag in our Discord
  - Support for video (mp4) backgrounds in their web client
  - My love, honestly, NONE of this would be possible without my supporters and that's something that means more to me than I can express <3
