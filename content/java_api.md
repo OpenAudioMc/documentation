@@ -1,6 +1,6 @@
 [//]: # (TITLE:Java API)
 [//]: # (DESCRIPTION:Using the java API to build awesome shit)
-[//]: # (TAGS:java,api,documentation,events,packets,maven,gradle,nerds)
+[//]: # (TAGS:java,api,technical,documentation,events,packets,maven,gradle,nerds)
 
 # Java API
 The OpenAudioMc Java API is split into three parts, these are
@@ -167,7 +167,3 @@ public class TestService extends Service {
 ```
 
 **NOTE THAT DEPENDENCY INJECTION ONLY WORKS WHEN YOUR OWN CLASS IS BEING LOADED AS A SERVICE**ApiResponse.java:24
-
-
-## K/V Cache
-Keeping track of all spatial ID's can be a pain, so we can keep track of it with a simple map. You can just `put` and `get` player metadata via the map we provide with the `getKeyValue` method in Client
