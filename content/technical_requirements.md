@@ -1,3 +1,7 @@
+[//]: # (TITLE:Network Requirements)
+[//]: # (DESCRIPTION:DNS/Firewall requirements)
+[//]: # (TAGS:technical)
+
 # Technical Requirements
 OpenAudioMc isn't magic, well, not completely, most of it is networking. This means that there are a few simple requirements for your host to make it all work and come together like some finely crafted dish. (but instead of spaghetti, its audio) 
 

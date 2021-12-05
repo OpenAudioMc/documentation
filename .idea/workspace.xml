@@ -5,30 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/content/voicechat_licenses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/voicechat_moderation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpages/documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/addon-activated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/addon-home-screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/addon-installer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/fingerprint-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/fingerprint-in-minecraft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/assets/screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/account-links.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/account-links.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/account.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/account.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/configuration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/geyser.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/geyser.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/hue.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/hue.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/notifications.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/notifications.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/permissions.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/permissions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/play.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/play.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/regions.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/regions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/selectors.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/selectors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/show.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/show.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/speakers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/speakers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/stop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/stop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/traincarts.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/traincarts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/voicechat.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/voicechat_activation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/browsers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/browsers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/redis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/restdirect.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/restdirect.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/technical_requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/technical_requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/documentation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/how-it-works.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/how-it-works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/render_bootstrap.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/render_bootstrap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/render_page.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/render_page.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/webpage_renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/webpage_renderer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpages/how-it-works.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/how-it-works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -80,8 +78,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/out/assets" />
+      <recent name="$PROJECT_DIR$/html_templates" />
+      <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/webpages" />
       <recent name="$PROJECT_DIR$/out" />
     </key>

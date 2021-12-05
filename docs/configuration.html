@@ -39,7 +39,68 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Configuration</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using the various configuration files</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="configuration">
+  Configuration
+</h1>
+<p>
+  OpenAudioMc makes a subdirectory named after the plugin (
+  <code>
+    plugins/openaudiomc
+  </code>
+  ) and makes two files, a
+  <code>
+    config.yml
+  </code>
+  and
+  <code>
+    data.yml
+  </code>
+  .
+</p>
+<ul>
+  <li>
+    <code>
+      config.yml
+    </code>
+    Contains all your in-game configuration options. Every option is described in the file itself. Please only make changes to this file since it may be overwritten otherwise.
+    <br>
+  </li>
+  <li>
+    <code>
+      data.yml
+    </code>
+    Contains data unique to your server, stored by the plugin to keep track of settings and accounts. Please never change this file manually and never share its contents with anyone else since it contains credentials unique to your server.
+    <br>
+  </li>
+</ul>
+<p>
+  Additional configuration options (web-client customization, addons, and more) can be done through a
+  <a href="account.html" rel="nofollow">
+    craftmend account
+  </a>
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

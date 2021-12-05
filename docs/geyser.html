@@ -39,7 +39,82 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Gyser</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using OpenAudioMc with gyser/bedrock</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="geysermc-support">
+  GeyserMC support
+</h1>
+<p>
+  OpenAudioMc has technical support for Geyser, and handles it like a normal BungeeCord proxy (check the
+  <a href="installation.html" rel="nofollow">
+    installation
+  </a>
+  instructions).
+  <br>
+  <br/>
+</p>
+<h2 id="tokens">
+  Tokens
+</h2>
+<p>
+  Minecraft Bedrock Edition
+  <em>
+    doesn’t
+  </em>
+  support clickable links in chat, for, whatever reason, this means that bedrock players need to manually enter their client token when they want to open the web client.
+  <br>
+  You can add
+  <code>
+    {token}
+  </code>
+  as a placeholder in the
+  <code>
+    click-to-connect
+  </code>
+  message in your gyser config (
+  <code>
+    plugins/OpenAudioMc/config.yml
+  </code>
+  ), this will show the token in their chat so they can manually enter it on
+  <a href="https://client.openaudiomc.net/" rel="nofollow">
+    https://client.openaudiomc.net/
+  </a>
+  .
+  <br>
+  Using clear messaging, like
+  <code>
+    Navigate to client.openaudiomc.net, your login token is {token}
+  </code>
+  is recommended.
+  <br>
+  <br/>
+</p>
+<h2 id="note-on-browsers">
+  Note on browsers
+</h2>
+<p>
+  Keep in mind that mobile browsers (chrome mobile, ios safari, etc) aren’t compltely supported due to their resource saving measures, preventing OpenAudioMc from loading audio files normally and causing WebRTC stability issues. It’s still recommended to use a desktop (class) browser, even when playing on a mobile device.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

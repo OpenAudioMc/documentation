@@ -39,7 +39,61 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0"></h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="web-client">
+  Web Client
+</h1>
+<p>
+  The web client (also known as the website) is the page that makes the magic work. Minecraft doesn’t support audio streaming itself, so the web client is a web page which users must leave open in the background during their visit on your server to hear all sounds.
+</p>
+<p>
+  Users get prompted with a clickable link when joining to open the client, but can also manually re-generate a link using
+  <code>
+    /audio
+  </code>
+  ,
+  <code>
+    /connect
+  </code>
+  or
+  <code>
+    /media
+  </code>
+  (they all do exactly the same, just whatever fits your server style the best)
+  <br>
+  <br/>
+</p>
+<h2 id="pro-tip">
+  Pro tip!
+</h2>
+<p>
+  It may be a bit annoying to go back and forth between Minecraft and the webclient to get the volume just right, so you everyone can do
+  <code>
+    /volume
+  </code>
+  to adjust the volume from in game!
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

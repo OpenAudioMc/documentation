@@ -28,3 +28,20 @@
     50%{background-position:11% 100%}
     100%{background-position:90% 0%}
 }
+
+pre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(128, 128, 128, 0.2);
+}
+
+code {
+    padding: 3px;
+    color: aqua;
+}
+
+p a {
+    color: #da14e4;
+    text-decoration: underline;
+}

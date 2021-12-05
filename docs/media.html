@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAudioMc</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="bg-gray-900">
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a href="documentation.html" class="mr-5 hover:text-white">Documentation</a>
+            <a href="https://discord.openaudiomc.net/" class="mr-5 hover:text-white">Join our Discord</a>
+            <a href="https://github.com/Mindgamesnl/OpenAudioMc" class="mr-5 hover:text-white">Github</a>
+            <a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-online-music-and-effects-bungeecord-velocity.30691" class="hover:text-white">Spigot</a>
+        </nav>
+        <a href="index.html" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
+            <img src="assets/logo.png" class="w-10 h-10 text-white rounded-full" />
+            <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a href="https://twitter.com/Mindgamesnl" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Mindgamesnl
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="https://patreon.com/Mindgamesnl" class="ml-2 inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Patreon
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Media</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using and understanding media sources and playback options</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="media">
+  Media
+</h1>
+<p>
+  OpenAudioMc supports multiple file formats for your sounds, these are:
+  <br>
+  - Local audio (from
+  <code>
+    plugins/OpenAudioMc/audio/
+  </code>
+  )
+  <br>
+  - Direct file links (mp3, ogg, wav, etc)
+  <br>
+  - SoundCloud
+  <br>
+  - YouTube
+</p>
+<p>
+  <br/>
+</p>
+<h1 id="local-audio">
+  Local Audio
+</h1>
+<p>
+  Patreon’s are able to play audio files through stored in their plugins folder. File names can’t include spaces, but you use subdirectories. Simply prefix your source in a command with
+  <code>
+    local:
+  </code>
+  and we’ll automatically convert, optimize and upload the sources for you. Make sure that your server is compatible with
+  <a href="restdirect.html" rel="nofollow">
+    RestDirect
+  </a>
+  !
+</p>
+<p>
+  Example:
+  <code>
+    /oa play @a local:themidnight-monsters.mp3
+  </code>
+  , which will be read from
+  <code>
+    plugins/OpenAudioMc/audio/themidnight-monsters.mp3
+  </code>
+  <br>
+  <br/>
+</p>
+<h1 id="random-media-and-playlists">
+  Random media and Playlists.
+</h1>
+<p>
+  You might want to shake things up a little every once in a while by assigning random sounds to a region, command or whatever. You can simply do this by stringing multiple sources in a JSON array, so you’d enter something like
+  <code>
+    [&#34;https://www.youtube.com/watch?v=Oddp32TODKs&#34;,&#34;https://www.youtube.com/watch?v=QBCLsnxNd4Y&#34;]
+  </code>
+  instead of your singular source. The client will choose a random sound from the list when the media is requested to start.
+  <br>
+  Randomized media with looping tags will reselect their source every time they loop, functioning like a playlist.
+  <br>
+  <br/>
+</p>
+<h1 id="playback-options">
+  Playback Options
+</h1>
+<p>
+  The OpenAudioMc audio format is what’s being used throughout the network. It contains the source, and a UNIX timestamp for when the command was executed. This is defined by the plugin and does NOT get changed anywhere further on in the process.
+</p>
+<p>
+  Other optional metadata included:
+  <br>
+  -
+  <strong>
+    <code>
+      fadeTime
+    </code>
+    (number)
+  </strong>
+  : Time for the sound to fade in (in MS)
+  <br>
+  -
+  <strong>
+    <code>
+      id
+    </code>
+    (text)
+  </strong>
+  : The ID that will be assigned to the sound. This can be used to stop one specific sound later.
+  <br>
+  -
+  <strong>
+    <code>
+      loop
+    </code>
+    (true/false)
+  </strong>
+  : Decide whether the sound should restart after finishing or not. This will mean that the sound will keep playing until manually stopped.
+  <br>
+  -
+  <strong>
+    <code>
+      pickUp
+    </code>
+    (true/false)
+  </strong>
+  : Decides if the sound should continue (AKA Sync) between sessions and players
+  <br>
+  -
+  <strong>
+    <code>
+      expirationTimeout
+    </code>
+    (number)
+  </strong>
+  : The amount of time (in seconds) a sound should be kept for. Setting it to 120 will mean that the client will hear the sound, even if it connected after it started.
+  <br>
+  -
+  <strong>
+    <code>
+      volume
+    </code>
+    (number)
+  </strong>
+  : A scaled volume level that will be used for the sound (so you can make sound effects quiet, etc)
+</p>
+<p>
+  All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argment would look like
+</p><pre><code>{fadeTime:1500,id:&#34;station&#34;,loop:true,pickup:true,expirationTimeout:3600000,volume:50}
+</code></pre>
+<p>
+  <br/>
+</p>
+<h1 id="what-to-use-when">
+  What to use when
+</h1>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Source
+      </th>
+      <th>
+        Pros
+      </th>
+      <th>
+        Cons
+      </th>
+      <th>
+        Example usecase
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Local Files
+      </td>
+      <td>
+        - Fast
+        <br>
+        - Reliable
+        <br>
+        - Scalable
+        <br>
+        -Incredibly to use
+      </td>
+      <td>
+        - Currently exclusive to patreons
+      </td>
+      <td>
+        Users who just want to use the plugin, and not worry about infrastructure at all!
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Direct MP3
+      </td>
+      <td>
+        - Reliable
+        <br>
+        - Scalable
+        <br>
+      </td>
+      <td>
+        - Requires webserver
+        <br>
+        - Requires maintenance
+      </td>
+      <td>
+        Best for usecases where timing and reliability is important.
+        <br>
+        (like Ride, Areas, etc etc)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Google Drive
+      </td>
+      <td>
+        - Easy to use
+        <br>
+        - Easy to share
+        <br>
+        - Free
+      </td>
+      <td>
+        - Not particularly fast
+        <br>
+        - Links can expire
+      </td>
+      <td>
+        For quick and easy file hosting.
+        <br>
+        (Event music, sound effects, etc etc)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        DropBox
+      </td>
+      <td>
+        - Fast
+        <br>
+        - Easy to use
+        <br>
+        - Free
+      </td>
+      <td>
+        - Url may need manual edits
+        <br>
+        - Links may be blocked when used often
+      </td>
+      <td>
+        For general purpose audio hosting.
+        <br>
+        (Same as Direct MP3 but on a smaller scale)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        SoundCloud
+      </td>
+      <td>
+        - Stupidly Simple
+      </td>
+      <td>
+        - Not particularly fast
+        <br>
+        - Some artists prohibit the use of their songs
+      </td>
+      <td>
+        Easy music sharing and playback.
+        <br>
+        (Same as Direct MP3, but on a small scale)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        YouTube
+      </td>
+      <td>
+        - Stupidly Simple
+        <br>
+        - Reliable
+      </td>
+      <td>
+        - Playback isn’t instant
+        <br>
+        - Delay may cause timing issues
+      </td>
+      <td>
+        Simple area music, sound effects, dialogue, etc etc
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <em>
+    Notes:
+  </em>
+  <br>
+  - Youtube videos need to be public and big videos might not work. It’s best to upload your own.
+  <br>
+  - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, its most likely this. You are best off uploading it to your own account (but be sure to set it to public)
+  <br>
+  - GoogleDrive and DropBox share url’s have to be public and permanent. Please note the permanent part, since it’d be a shame if your music suddenly stops playing.
+</p>
+<p>
+  It is possible to add support for other sources as well. OpenAudioMc has a java api to add support for url manipulations. This means that there are add-on plugins like
+  <a href="https://www.spigotmc.org/resources/openaudiomc-youtube-support.64584/" rel="nofollow">
+    OpenAudioMc-Youtube
+  </a>
+  to expand the feature set with an alternative youtube engine.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo" />
+            <span class="ml-3 text-xl">OpenAudioMc</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 OpenAudioMc —
+            <a href="https://twitter.com/Mindgamesnl" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Mindgamesnl</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

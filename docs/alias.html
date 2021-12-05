@@ -39,7 +39,46 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Alias Command</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using the Alias command to make shortcuts for media</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="media-aliases">
+  Media Aliases
+</h1>
+<p>
+  Source URL’S can get pretty long and may need replacement. Luckily, you can shorten them into aliases. This is like a shortcut for any given source.
+</p>
+<p>
+  To start, you need to define an alias, for this example, we’ll make a sound called test
+</p><pre><code>/openaudio alias test https://craftmend.com/mysound.mp3`
+</code></pre>
+<p>
+  This means that every time we write a:test, we actually mean
+  <a href="https://craftmend.com/mysound.mp3" rel="nofollow">
+    https://craftmend.com/mysound.mp3
+  </a>
+  . You can use this alias as a source everywhere, regions, speakers, traincarts signs, play commands, you name it. Such an example play command is
+</p><pre><code>/openaudio play @a a:test
+</code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

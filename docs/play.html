@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <title>OpenAudioMc</title>
     <link rel="icon" type="image/svg+xml" href="/assets/logo.png">
-    <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
           integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
           crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body class="bg-gray-900">
 <header class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a class="mr-5 hover:text-white">Documentation</a>
-            <a class="mr-5 hover:text-white">Join our Discord</a>
-            <a class="mr-5 hover:text-white">Github</a>
-            <a class="hover:text-white">Spigot</a>
+            <a href="documentation.html" class="mr-5 hover:text-white">Documentation</a>
+            <a href="https://discord.openaudiomc.net/" class="mr-5 hover:text-white">Join our Discord</a>
+            <a href="https://github.com/Mindgamesnl/OpenAudioMc" class="mr-5 hover:text-white">Github</a>
+            <a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-online-music-and-effects-bungeecord-velocity.30691" class="hover:text-white">Spigot</a>
         </nav>
         <a href="index.html" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
-            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full" />
+            <img src="assets/logo.png" class="w-10 h-10 text-white rounded-full" />
             <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
         </a>
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
@@ -40,40 +39,50 @@
     </div>
 </header>
 
-<div class="relative flex flex-col items-center justify-center h-screen bg-cover min-w-screen"
-     style="background-image:url('assets/matterhorn_winter.png')">
-    <div class="absolute inset-0 w-full h-full bg-black bg-opacity-75"></div>
-
-    <div class="flex max-w-6xl mx-auto">
-        <div class="container relative flex flex-col w-1/2 px-10 pb-1 pr-12 text-2xl font-hairline text-white">
-            <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-white">Social multiplayer.. Reinvented
-            </h2>
-            <p class="relative z-20 block mt-4 text-xl">
-                OpenAudioMc is <i>the</i> simple to use Music VoiceChat solution for minecraft. It's super simple to use, players imply open their web page without downloading anything, and they're set!
-            </p>
-            <div class="flex mt-4">
-                <a href="#_"
-                   class="flex items-center self-start justify-center px-5 py-3 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-8">Get
-                    Started</a>
-                <a href="how-it-works.html"
-                   class="flex items-center self-start justify-center px-5 py-3 mt-5 ml-5 text-base font-medium leading-tight text-indigo-500 transition duration-150 ease-in-out bg-gray-200 border-transparent rounded-lg shadow hover:bg-white focus:outline-none focus:border-gray-100 focus:shadow-outline-gray md:py-4 md:text-lg md:px-8">How
-                    It Works</a>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
             </div>
-        </div>
-        <div class="relative w-1/2 overflow-hidden rounded-lg shadow-2xl cursor-pointer group">
-            <div class="absolute flex items-center justify-center w-full h-full bg-black bg-opacity-25">
-                <span class="flex items-center justify-center w-20 h-20 bg-white bg-opacity-75 rounded-full">
-                    <svg class="w-auto h-8 ml-1 text-indigo-600 fill-current" viewBox="0 0 52 66"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50 30.7L4.1.6C2.6-.4.8.9.8 2.9v60.3c0 2 1.8 3.3 3.3 2.3L50 35.3c1.5-1 1.5-3.6 0-4.6z"
-                              fill-rule="nonzero" /></svg>
-                </span>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Play</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using the play command to start media through command blocks</p>
             </div>
-            <img src="assets/bg.jpg"
-                 class="object-cover w-full h-full">
         </div>
     </div>
-</div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="play-media">
+  Play Media
+</h1>
+<p>
+  The play command is used to start
+  <a href="media.html" rel="nofollow">
+    Media
+  </a>
+  for a client or to schedule it to play. It follows the syntax of:
+</p><pre><code>/openaudio play &lt;selector&gt; &lt;source&gt; [media options]
+</code></pre>
+<p>
+  selector and source are the two required arguments and media options is optional and can be left out. The usage of the media options and sources can be in the
+  <a href="media.html" rel="nofollow">
+    media documentation section
+  </a>
+  .
+</p>
+<p>
+  An example command for starting a simple sound for the player Mindgamesnl with the ID baron_onride
+</p><pre><code>/openaudio play Mindgamesnl https://soundcloud.com/mrfijiwiji/imalright {id:&#34;chill_station&#34;}
+</code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

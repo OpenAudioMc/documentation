@@ -39,7 +39,49 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Proximity Voice Chat Moderation</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">How to moderate your player experience with Mutes and bans</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="moderation">
+  Moderation
+</h1>
+<p>
+  OpenAudioMc has native support for:
+  <br>
+  - Essentials player mutes
+  <br>
+  - Litebans player mutes
+</p>
+<p>
+  and comes with built in moderation utilities. Moderators can inspect a player by running
+  <code>
+    /oa voice mod &lt;name&gt;
+  </code>
+  ,(like
+  <code>
+    /oa voice mod Mindgamesnl
+  </code>
+  ) and the plugin will load a GUI showing names of the 15 most recent players that they talked to, when they were last seen as well as allowing you to ban them from using Proximity Voice Chat at all.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

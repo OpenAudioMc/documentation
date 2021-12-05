@@ -39,7 +39,89 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Selectors</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using selectors to specify which player groups should be affected by a command</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="player-selectors">
+  Player Selectors
+</h1>
+<p>
+  Selectors are used to specify to which clients an action should be executed. The selector format is inspired and partially compatible with the Mincecraft selection format. Usernames are also acceptable, but the main format goes as follows. Selectors start with a group of players, supported groups are:
+  <br>
+  -
+  <strong>
+    @a
+  </strong>
+  Targets all players in your server
+  <br>
+  -
+  <strong>
+    @p
+  </strong>
+  Targets the nearest player in your server
+</p>
+<p>
+  You can just leave it there but you can also filter for some attributes like
+  <em>
+    location
+  </em>
+  ,
+  <em>
+    radius
+  </em>
+  and
+  <em>
+    worldguard
+  </em>
+  region.
+</p>
+<p>
+  For example, to start a sound for all players in a radius of 10 blocks, you could use
+</p><pre><code>@a[r=10]
+</code></pre>
+<p>
+  You can also filter players by the worldguard region they are in, for example to select everyone in the region
+  <code>
+    spawn
+  </code>
+</p><pre><code>@a[region=spawn]
+</code></pre>
+<p>
+  When executed by a player, you can use server to select all players in a server called
+  <code>
+    lobby
+  </code>
+</p><pre><code>@a[server=lobby]
+</code></pre>
+<p>
+  And last but not least, you can also select player (near) a specific location, for example, lets select everyone near the block at
+  <em>
+    X:10, Y:12, Z:15
+  </em>
+  <br>
+  <code>
+    @a[x=10,y=12,z=15,r=5]
+  </code>
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

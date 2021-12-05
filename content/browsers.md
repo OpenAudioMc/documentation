@@ -1,6 +1,6 @@
 [//]: # (TITLE:Supported web browsers)
 [//]: # (DESCRIPTION:Full browser support list for the web client)
-[//]: # (TAGS:client,safari,webclient,web,client)
+[//]: # (TAGS:client,safari,webclient,web,client,technical)
 
 # Supported browsers
 These browsers are fully supported in the latest OpenAudioMc release.

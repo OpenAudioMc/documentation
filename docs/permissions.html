@@ -39,7 +39,104 @@
     </div>
 </header>
 
-{{ include(page_content) }}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 pt-20 mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Permissions</h1>
+                <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Full permission guide of all commands and features</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="permissions">
+  Permissions
+</h1>
+<p>
+  OpenAudioMc has permissions for everything and is fully configurable.
+  <br>
+  If you don’t want to bother with permissions, you can give yourself OP (or
+  <code>
+    openaudiomc.*
+  </code>
+  on bungeecord) and be done with it, or dive into the specifics.
+  <br>
+  <br/>
+</p>
+<h1 id="commands">
+  Commands
+</h1>
+<p>
+  OpenAudioMc command permissions have their own wildcard for all the permissions (
+  <code>
+    openaudiomc.commands.*
+  </code>
+  ), this will give you access to all the admin commands.
+</p>
+<p>
+  You can also (dis)allow specific commands, the format for this is
+  <code>
+    openaudiomc.commands.&lt;sub command&gt;
+  </code>
+  , where the sub command is the second argument in your OpenAudioMc command.
+  <br>
+  Example: you need
+  <code>
+    openaudiomc.commands.region
+  </code>
+  to use
+  <code>
+    /oa region create
+  </code>
+  .
+  <br>
+  <br/>
+</p>
+<h1 id="speakers">
+  Speakers
+</h1>
+<p>
+  Speakers have their own two commands for breaking and placing the blocks.
+  <br>
+  To allow all speaker interactions, you need,
+  <code>
+    openaudiomc.speakers.*
+  </code>
+  .
+</p>
+<p>
+  The specific permissions are:
+  <br>
+  -
+  <code>
+    openaudiomc.speakers.create
+  </code>
+  to place a speaker
+  <br>
+  -
+  <code>
+    openaudiomc.speakers.destroy
+  </code>
+  to break a speaker
+  <br>
+  -
+  <code>
+    openaudiomc.speakers.manage
+  </code>
+  to open the speaker GUI when clicking on one
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

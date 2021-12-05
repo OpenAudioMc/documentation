@@ -40,7 +40,7 @@ func RenderHtmlPages() {
 		renderer.RegisterComponent("page_content", readHtmlTest(file))
 		renderer.RegisterComponent("documentation_article_cards", getDocumentationArticles())
 		var output, _ = renderer.Render(context, readHtmlTest("html_templates/base.html"))
-		var fn = "out/" + filename
+		var fn = "docs/" + filename
 		os.Remove(fn)
 		os.WriteFile(fn, []byte(output), 0644)
 	}
@@ -54,6 +54,7 @@ func getDocumentationArticles() string {
 	out += getDocCard("media", "Media", "Controlling media playback and effects")
 	out += getDocCard("accounts", "Administration Accounts", "How to setup, use, and link Craftmend accounts to get all the best that OpenAudioMc has to offer")
 	out += getDocCard("commands", "Utility Commands", "How to use some of the coolest Utility commands to take full advantage of the plugin")
+	out += getDocCard("technical", "Technical Notes", "Technical notes and requirements for server owners")
 
 	return out
 }
@@ -86,10 +87,12 @@ func getDocCard(topic string, title string, about string) string {
 		}
 		cards += `
 <div class="xl:w-1/3 md:w-1/2 p-4">
+<a href="` + strings.ReplaceAll(pages[i].Filename, ".md", ".html") + `">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<h2 class="text-lg text-white font-medium title-font mb-2">` + pages[i].Title + `</h2>
 		<p class="leading-relaxed text-base">` + pages[i].Description + `</p>
 	</div>
+</a>
 </div>
 `
 	}
