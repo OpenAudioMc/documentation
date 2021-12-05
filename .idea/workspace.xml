@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/html_templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/patreon.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/media.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/media.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/media.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +55,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -57,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/out/assets" />
       <recent name="$PROJECT_DIR$/html_templates" />
-      <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/webpages" />
-      <recent name="$PROJECT_DIR$/out" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/documentation_content" />
