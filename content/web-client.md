@@ -1,3 +1,7 @@
+[//]: # (TITLE:Web Client)
+[//]: # (DESCRIPTION:Using the OpenAudioMc webclient)
+[//]: # (TAGS:installation)
+
 # Web Client
 The web client (also known as the website) is the page that makes the magic work. Minecraft doesn't support audio streaming itself, so the web client is a web page which users must leave open in the background during their visit on your server to hear all sounds.
 

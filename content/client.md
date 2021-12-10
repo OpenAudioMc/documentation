@@ -1,4 +1,4 @@
-[//]: # (TITLE:Web Client)
+[//]: # (TITLE:Web Client Source)
 [//]: # (DESCRIPTION:Customizing, hosting and compiling the web client)
 [//]: # (TAGS:html,js,technical,webclient,client,hosting,host)
 
