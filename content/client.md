@@ -1,11 +1,11 @@
 [//]: # (TITLE:Web Client)
 [//]: # (DESCRIPTION:Customizing, hosting and compiling the web client)
-[//]: # (TAGS:html,js,javascript,webclient,client,hosting,host)
+[//]: # (TAGS:html,js,technical,webclient,client,hosting,host)
 
 # Hosted Client
 OpenAudioMc gives you the option to host your own client, however, there are some caveats
 - You will become responsible for frequent updates, meaning that you have to update your webclient regularly.
-- You will have to follow the rules as described [here](https://github.com/Mindgamesnl/OpenAudioMc/blob/master/LICENCE_and_PRIVACY.md).
+- You will have to follow the rules as described [here](https://account.craftmend.com/terms).
 - We do not recommend that you host the client yourself and will not help you setting it up aside from this document.
 
 # Setup
