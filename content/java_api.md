@@ -9,7 +9,7 @@ The OpenAudioMc Java API is split into three parts, these are
  - **MediaApi** Hooks and controls towards controls
  - **RegistryApi** Access to the OARegistry, for adding sub-commands and source middleware (also known as mutations), and voicechat player filters
  
-To get started, clone the github repository and build the latest release locally through maven, then add it in your project by adding the following to your pom
+To get started, clone the GitHub repository and build the latest release locally through maven, then add it in your project by adding the following to your pom
 ```xml
 <dependency>
     <groupId>com.craftmend.openaudiomc</groupId>
@@ -44,20 +44,20 @@ AudioApi.getInstance().getEventDriver()
 ```
 
 OpenAudioMc has a few events build in, these are;
- - `ClientConnectEvent`: Fires when a clients opens the web client, this is supported on all platforms.
- - `ClientDisconnectEvent`: Fires when a clients closes the web client, this is supported on all platforms.
- - `ClientRequestVoiceEvent`: A cancellable event that gets fired when a voicechat session is initializing. This only fires on the top-level server.
- - `ClientErrorEvent`: Event that fires when the client encouters a media error (http failure when trying to load a media sound). This only fires on the top-level server.
+ - `ClientConnectEvent`: Fires when a client opens the web client, this is supported on all platforms.
+ - `ClientDisconnectEvent`: Fires when a client closes the web client, this is supported on all platforms.
+ - `ClientRequestVoiceEvent`: A cancellable event that gets fired when a voice chat session is initializing. This only fires on the top-level server.
+ - `ClientErrorEvent`: Event that fires when the client encounters a media error (http failure when trying to load a media sound). This only fires on the top-level server.
  - `StateChangeEvent`: Fires whenever the plugin changes state (idle, online, fatal error, etc). This only fires on the top-level server.
- - `AccountAddTagEvent`: Fires whenever the server receives a new module/addon or update from the owning [Craftmend Account](account.md) (example, VOICE_CHAT)
+ - `AccountAddTagEvent`: Fires whenever the server receives a new module/add-on or update from the owning [Craftmend Account](account.md) (example, VOICE_CHAT)
  - `AccountRemoveTagEvent`: Mirror opposite of the `AccountAddTagEvent`
  - `MicrophoneMuteEvent`: Fires when a player mutes their microphone
  - `MicrophoneUnmuteEvent`: Fires when a player unmute their microphone (and when it activates for the first time)
  - `PlayerEnterVoiceProximityEvent`: Fires when player A joins the voice range of player B
  - `PlayerLeaveVoiceProximityEvent`: Fires when player A leaves the voice range of player B
- - `PlayerLoudnessEvent`: Fires when a the speaking loudness of a player changes (between normal, whispering and shouting)
+ - `PlayerLoudnessEvent`: Fires when the speaking loudness of a player changes (between normal, whispering and shouting)
  - `ClientPreAuthEvent`: A cancellable event that fires whenever a web client attempts to login. Canceling the event will block the login.
- - `VoiceChatPeerTickEvent`: This event fires before **AND** after voicechat peer updates (it has a variable letting you know if it was pre-or post)
+ - `VoiceChatPeerTickEvent`: This event fires before **AND** after voice chat peer updates (it has a variable letting you know if it was pre-or post)
  - `SystemReloadEvent`: Called whenever the plugin reloads completely or updates state
  - `ConfigurationPushEvent`: Fires whenever a new version of the config.yml is loaded through networking, migrations or perhaps redis. It contains the (supposedly) yaml file content as a string.
 
@@ -75,11 +75,11 @@ mindgamesnl.onConnect(() -> {
 ```
 
 ## Playing a sound
-Starting a simple sound is as easy as
+Starting a simple sound is as easy as:
 ```java
 api.getMediaApi().playMedia(client, "https://example.com/a.mp3");
 ```
-but we can get a lot more creative then that with media options (like setting a Sound ID, playback volume etc), which still is pretty simple, starting a looping sound at half volume with the id "example" would be like
+but we can get a lot more creative than that with media options (like setting a Sound ID, playback volume etc), which still is pretty simple, starting a looping sound at half volume with the id "example" would be like:
 ```java
 MediaOptions options = new MediaOptions();
 options.setLoop(true);
@@ -89,38 +89,38 @@ api.getMediaApi().playMedia(client, "https://example.com/a.mp3", options);
 ```
 
 ## Stopping sounds
-Stopping sounds is even simpler, we can stop all normal sounds through
+Stopping sounds is even simpler, we can stop all normal sounds through:
 ```java
 api.getMediaApi().stopMedia(client);
 ```
-or stop a single sound with the ID "example" with
+or stop a single sound with the ID "example" with:
 ```java
 api.getMediaApi().stopMedia(client, "example");
 ```
 
 ## Spatial Audio
-Explosions are cool, but explosions that spook the living ghost out of someone are even cooler. OpenAudioMc supports spatial audio, and we can simply create it like this
+Explosions are cool, but explosions that spook the living ghost out of someone is even cooler. OpenAudioMc supports spatial audio, and we can simply create it like this:
 ```java
 String spatialSoundId = api.getMediaApi().playSpatialSound(client, "https://example.com/a.mp3", x, y, z, 10, true);
 ```
 This will start a 3D spatial sound at a given location for the player with a radius of 10 blocks. You can also just make a simple sound (so one that just does volume instead of 3D orientation by setting the mode to false, which is the last argument).
-the `playSpatialSound` method returns a string, which is the spatial-id for that player (and unique to that player). You can remove it again with
+the `playSpatialSound` method returns a string, which is the spatial-id for that player (and unique to that player). You can remove it again with:
 ```java
 api.getMediaApi().stopSpatialSound(client, spatialSoundId);
 ```
 
 ## Hooking into internal services and using dependency injection
 Most of the internal codebase was re-written and refactored during the 6.5.5 update, where we migrated to a custom service manager with support for annotation based dependency injection, service abstraction and to provide pointer safety during reloads.
-The service manager is registered in the main `OpenAudioMc` class and is accessible through all platforms. The entire ecosystem consists of two main registration types types
+The service manager is registered in the main `OpenAudioMc` class and is accessible through all platforms. The entire ecosystem consists of two main registration types.
 
-- **Services** are static code implementations that can be injected, requested and manipulated after loading (or being requested, in which case they'll be loaded if they weren't already. So calling `OpenAudioMc.getService(NotLoadedByDefault.class).something()` will delay the execution of the `something()` call, while it's preparing the `NotLoadedByDefault` service and it's dependencies). Services like this can be registered through
+- **Services** are static code implementations that can be injected, requested and manipulated after loading (or being requested, in which case they'll be loaded if they weren't already. So calling `OpenAudioMc.getService(NotLoadedByDefault.class).something()` will delay the execution of the `something()` call, while it's preparing the `NotLoadedByDefault` service and it's dependencies). Services like this can be registered through:
   ```java
        serviceManager.loadServices(
             FirstService.class,
             SecondService.class
        );
     ```
-- **Mapped Values** Some services might have different implementations based on the platform, but are accessed by a shared source (example, having a `INetworkingService` interface, being implemented as `FirstnetworkingImpl` and `SecondNetworkingImpl`) in which case you can register the interface with a value, so you can use dependency injection through the interface, and receive the appropriate implementation class. Example registration
+- **Mapped Values** Some services might have different implementations based on the platform, but are accessed by a shared source (example, having a `INetworkingService` interface, being implemented as `FirstnetworkingImpl` and `SecondNetworkingImpl`) in which case you can register the interface with a value, so you can use dependency injection through the interface, and receive the appropriate implementation class. Example registration:
     ```java
         OpenAudioMc.getInstance().getServiceManager().registerDependency(TaskService.class, invoker.getTaskProvider());
     ```
@@ -154,7 +154,7 @@ public class TestService extends Service {
 }
 ```
 
-or through the constructor, like so
+or through the constructor, like so:
 ```java
 public class TestService extends Service {
 

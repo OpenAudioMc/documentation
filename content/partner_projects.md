@@ -2,7 +2,7 @@
 A list of previous and still going partner projects to check out or take as an example for what OpenAudioMc might be able to do for you.
 
 # [JoostSpeeltSpellen](https://www.twitch.tv/joost) / [NetherlandSMP](https://www.twitch.tv/team/netherlandsmp)
-NetherlandSMP is a dutch survival server started by Joost, bringing most Dutch content creators (youtubers and twitch streamers) together in one big survival multiplayer server. NetherlandSMP is the first real-world test of our Proximity Voice-Chat feature, working closely together with their feedback to improve reliability, features, latency and audio quality. 
+NetherlandSMP is a Dutch survival server started by Joost, bringing most Dutch content creators (youtubers and twitch streamers) together in one big survival multiplayer server. NetherlandSMP is the first real-world test of our Proximity Voice-Chat feature, working closely together with their feedback to improve reliability, features, latency and audio quality. 
 
 # [ImagineFun](https://imaginefun.net/)
 ImagineFun is one of the leading Minecraft themepark servers, working closely together with OpenAudioMc to keep up with demand and adding features to public releases that improve stability and usability for everyone on a large scale.
@@ -16,4 +16,4 @@ BlockParty was the biggest Minecraft music festival, OpenAudioMc was used to ser
 [You can read more about this event and the role of OpenAudioMc in this article](https://mindgamesnl.medium.com/minecraft-at-scale-what-not-to-do-cda8cf803eca)
 
 # FallenMC / [A6D](https://twitter.com/a6doff)
-FallenMC was a Minecraft project between Timon and A6D, it wss a (still in development) large scale minecraft project that never really saw the light of day due to financial issues on the management side. OpenAudioMc was brought on board to develop the first Voice Chat solution that hooked into their minigames to bring a unique user experience. This feature eventually grew to be the proximity voice chat that you know today.
+FallenMC was a Minecraft project between Timon and A6D, it was a (still in development) large scale minecraft project that never really saw the light of day due to financial issues on the management side. OpenAudioMc was brought on board to develop the first Voice Chat solution that hooked into their mini-games to bring a unique user experience. This feature eventually grew to be the proximity voice chat that you know today.

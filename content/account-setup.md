@@ -8,7 +8,7 @@
 This couldn't be simpler, just navigate to [the registration page](https://account.craftmend.com/register), create your account and verify your email.
 
 ## Step #2 - Linking your server
-Your account is empty by default since you don't have any servers yet. Head over to the [fingerprint page](https://account.craftmend.com/account/fingerprint) to create your first fingerprint. Fingerprints are one-time codes which can be used to verify your identity.
+Your account is empty by default, since you don't have any servers yet. Head over to the [fingerprint page](https://account.craftmend.com/account/fingerprint) to create your first fingerprint. Fingerprints are one-time codes which can be used to verify your identity.
 
 #### Click the big blue button to create your first fingerprint
 ![FingerprintButton](assets/fingerprint-button.png)
@@ -20,8 +20,8 @@ Your account is empty by default since you don't have any servers yet. Head over
 (you can alternatively follow the guide on the servers page)
 
 ## Step #3 - Verify your server
-Your server should now appear on the [servers page](https://account.craftmend.com/account/openaudiomc/servers), and that's it! good job :)
+Your server should now appear on the [servers page](https://account.craftmend.com/account/openaudiomc/servers), and that's it! Good job :)
 
 # Important notes
- - You can only have one active fingerprint at a time, generating them in bulk is no use.
- - Only your top-level server (so that's bungeecord, if you have a proxy) needs to be linked.
+- You can only have one active fingerprint at a time, generating them in bulk is no use.
+- Only your top-level server (so that's bungeecord, if you have a proxy) needs to be linked.

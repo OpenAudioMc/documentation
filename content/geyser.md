@@ -10,4 +10,4 @@ You can add `{token}` as a placeholder in the `click-to-connect` message in your
 Using clear messaging, like `Navigate to client.openaudiomc.net, your login token is {token}` is recommended.
 
 ## Note on browsers
-Keep in mind that mobile browsers (chrome mobile, ios safari, etc) aren't compltely supported due to their resource saving measures, preventing OpenAudioMc from loading audio files normally and causing WebRTC stability issues. It's still recommended to use a desktop (class) browser, even when playing on a mobile device.
+Keep in mind that mobile browsers (chrome mobile, ios safari, etc) aren't completely supported due to their resource saving measures, preventing OpenAudioMc from loading audio files normally and causing WebRTC stability issues. It's still recommended using a desktop (class) browser, even when playing on a mobile device.

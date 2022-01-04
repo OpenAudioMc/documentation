@@ -136,7 +136,7 @@
   Access to the OARegistry, for adding sub-commands and source middleware (also known as mutations), and voicechat player filters
 </p>
 <p>
-  To get started, clone the github repository and build the latest release locally through maven, then add it in your project by adding the following to your pom
+  To get started, clone the GitHub repository and build the latest release locally through maven, then add it in your project by adding the following to your pom
 </p><pre><code>&lt;dependency&gt;
     &lt;groupId&gt;com.craftmend.openaudiomc&lt;/groupId&gt;
     &lt;artifactId&gt;OpenAudioMc&lt;/artifactId&gt;
@@ -179,25 +179,25 @@
   <code>
     ClientConnectEvent
   </code>
-  : Fires when a clients opens the web client, this is supported on all platforms.
+  : Fires when a client opens the web client, this is supported on all platforms.
   <br>
   -
   <code>
     ClientDisconnectEvent
   </code>
-  : Fires when a clients closes the web client, this is supported on all platforms.
+  : Fires when a client closes the web client, this is supported on all platforms.
   <br>
   -
   <code>
     ClientRequestVoiceEvent
   </code>
-  : A cancellable event that gets fired when a voicechat session is initializing. This only fires on the top-level server.
+  : A cancellable event that gets fired when a voice chat session is initializing. This only fires on the top-level server.
   <br>
   -
   <code>
     ClientErrorEvent
   </code>
-  : Event that fires when the client encouters a media error (http failure when trying to load a media sound). This only fires on the top-level server.
+  : Event that fires when the client encounters a media error (http failure when trying to load a media sound). This only fires on the top-level server.
   <br>
   -
   <code>
@@ -209,7 +209,7 @@
   <code>
     AccountAddTagEvent
   </code>
-  : Fires whenever the server receives a new module/addon or update from the owning
+  : Fires whenever the server receives a new module/add-on or update from the owning
   <a href="account.html" rel="nofollow">
     Craftmend Account
   </a>
@@ -252,7 +252,7 @@
   <code>
     PlayerLoudnessEvent
   </code>
-  : Fires when a the speaking loudness of a player changes (between normal, whispering and shouting)
+  : Fires when the speaking loudness of a player changes (between normal, whispering and shouting)
   <br>
   -
   <code>
@@ -268,7 +268,7 @@
   <strong>
     AND
   </strong>
-  after voicechat peer updates (it has a variable letting you know if it was pre-or post)
+  after voice chat peer updates (it has a variable letting you know if it was pre-or post)
   <br>
   -
   <code>
@@ -314,11 +314,11 @@
   Playing a sound
 </h2>
 <p>
-  Starting a simple sound is as easy as
+  Starting a simple sound is as easy as:
 </p><pre><code>api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;);
 </code></pre>
 <p>
-  but we can get a lot more creative then that with media options (like setting a Sound ID, playback volume etc), which still is pretty simple, starting a looping sound at half volume with the id “example” would be like
+  but we can get a lot more creative than that with media options (like setting a Sound ID, playback volume etc), which still is pretty simple, starting a looping sound at half volume with the id “example” would be like:
 </p><pre><code>MediaOptions options = new MediaOptions();
 options.setLoop(true);
 options.setId(&#34;example&#34;);
@@ -332,11 +332,11 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
   Stopping sounds
 </h2>
 <p>
-  Stopping sounds is even simpler, we can stop all normal sounds through
+  Stopping sounds is even simpler, we can stop all normal sounds through:
 </p><pre><code>api.getMediaApi().stopMedia(client);
 </code></pre>
 <p>
-  or stop a single sound with the ID “example” with
+  or stop a single sound with the ID “example” with:
 </p><pre><code>api.getMediaApi().stopMedia(client, &#34;example&#34;);
 </code></pre>
 <p>
@@ -346,7 +346,7 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
   Spatial Audio
 </h2>
 <p>
-  Explosions are cool, but explosions that spook the living ghost out of someone are even cooler. OpenAudioMc supports spatial audio, and we can simply create it like this
+  Explosions are cool, but explosions that spook the living ghost out of someone is even cooler. OpenAudioMc supports spatial audio, and we can simply create it like this:
 </p><pre><code>String spatialSoundId = api.getMediaApi().playSpatialSound(client, &#34;https://example.com/a.mp3&#34;, x, y, z, 10, true);
 </code></pre>
 <p>
@@ -356,7 +356,7 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
   <code>
     playSpatialSound
   </code>
-  method returns a string, which is the spatial-id for that player (and unique to that player). You can remove it again with
+  method returns a string, which is the spatial-id for that player (and unique to that player). You can remove it again with:
 </p><pre><code>api.getMediaApi().stopSpatialSound(client, spatialSoundId);
 </code></pre>
 <p>
@@ -372,7 +372,7 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
   <code>
     OpenAudioMc
   </code>
-  class and is accessible through all platforms. The entire ecosystem consists of two main registration types types
+  class and is accessible through all platforms. The entire ecosystem consists of two main registration types.
 </p>
 <ul>
   <li>
@@ -391,7 +391,7 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
     <code>
       NotLoadedByDefault
     </code>
-    service and it’s dependencies). Services like this can be registered through
+    service and it’s dependencies). Services like this can be registered through:
     <br>
     <code>
       java
@@ -418,7 +418,7 @@ api.getMediaApi().playMedia(client, &#34;https://example.com/a.mp3&#34;, options
     <code>
       SecondNetworkingImpl
     </code>
-    ) in which case you can register the interface with a value, so you can use dependency injection through the interface, and receive the appropriate implementation class. Example registration
+    ) in which case you can register the interface with a value, so you can use dependency injection through the interface, and receive the appropriate implementation class. Example registration:
     <br>
     <code>
       java
@@ -461,7 +461,7 @@ MyService myService = OpenAudioMc.getService(MyService.class);
 }
 </code></pre>
 <p>
-  or through the constructor, like so
+  or through the constructor, like so:
 </p><pre><code>public class TestService extends Service {
 
     @Inject
@@ -481,7 +481,7 @@ MyService myService = OpenAudioMc.getService(MyService.class);
         </div>
     </div>
 </section>
-
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -498,4 +498,4 @@ MyService myService = OpenAudioMc.getService(MyService.class);
     </div>
 </footer>
 </body>
-</html>
+</html>

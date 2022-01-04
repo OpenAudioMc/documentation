@@ -123,7 +123,7 @@
   <code>
     demo
   </code>
-  . We can start/stop it but this won’t really do anything, we need to add cues first. To do so, you fist need to understand what a time code is.
+  . We can start/stop it, but this won’t really do anything, we need to add cues first. To do so, you first need to understand what a time code is.
   <br>
   A time code is the amount of time from when the start command is executed. OpenAudioMc supports the following formats:
   <br>
@@ -214,25 +214,25 @@
   : You can also add custom java show triggers with the API
 </p>
 <p>
-  For this demo, we are gonna add two cues. One cue after 0 seconds, a cue after 1 second, and a cue after 1 minute. To add these cues, use the following commands:
+  For this demo, we are going to add two cues. One cue after 0 seconds, a cue after 1 second, and a cue after 1 minute. To add these cues, use the following commands:
 </p><pre><code>/openaudio show add demo 0s command say I fire at the start
 /openaudio show add demo 1s command say I fire after one second
 /openaudio show add demo 1m command say I fire after one minute
 </code></pre>
 <p>
-  The basic format here is
+  The basic format here is:
 </p><pre><code>/openaudio show add &lt;show name&gt; &lt;timecode&gt; &lt;type&gt; &lt;data&gt;
 </code></pre>
 <p>
-  To get the status of a show, you can use
+  To get the status of a show, you can use:
 </p><pre><code>/openaudio show info demo
 </code></pre>
 <p>
-  To start or cancel
+  To start or cancel:
 </p><pre><code>/openaudio show &lt;start/cancel&gt; &lt;showname&gt;
 </code></pre>
 <p>
-  You can also edit a show via a gui using
+  You can also edit a show via a gui using:
 </p><pre><code>/openaudio show gui &lt;show name&gt;
 </code></pre>
 <p>
@@ -250,7 +250,7 @@
         </div>
     </div>
 </section>
-
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -267,4 +267,4 @@
     </div>
 </footer>
 </body>
-</html>
+</html>

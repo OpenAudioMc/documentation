@@ -11,7 +11,7 @@ OpenAudioMc supports multiple file formats for your sounds, these are:
 
 
 # Local Audio
-Patreon's are able to play audio files through stored in their plugins folder. File names can't include spaces, but you use subdirectories. Simply prefix your source in a command with `local:` and we'll automatically convert, optimize and upload the sources for you. Make sure that your server is compatible with [RestDirect](restdirect.md)!
+Patreon's are able to play audio files through storing it in their plugins folder. File names can't include spaces, but you use subdirectories. Simply prefix your source in a command with `local:` and we'll automatically convert, optimize and upload the sources for you. Make sure that your server is compatible with [RestDirect](restdirect.md)!
 
 Example: `/oa play @a local:themidnight-monsters.mp3`, which will be read from `plugins/OpenAudioMc/audio/themidnight-monsters.mp3`
 
@@ -31,7 +31,7 @@ Other optional metadata included:
 - **`expirationTimeout` (number)**: The amount of time (in seconds) a sound should be kept for. Setting it to 120 will mean that the client will hear the sound, even if it connected after it started.
 - **`volume` (number)**: A scaled volume level that will be used for the sound (so you can make sound effects quiet, etc)
 
-All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argment would look like
+All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argument would look like
 ```json
 {fadeTime:1500,id:"station",loop:true,pickup:true,expirationTimeout:3600000,volume:50}
 ```
@@ -50,8 +50,8 @@ All the optional tags should be included in the Play command as a JSON object wi
 
 
 *Notes:*
- - Youtube videos need to be public and big videos might not work. It's best to upload your own.
- - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, its most likely this. You are best off uploading it to your own account (but be sure to set it to public)
+ - YouTube videos need to be public and big videos might not work. It's best to upload your own.
+ - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, it's most likely this. You are best off uploading it to your own account (but be sure to set it to public)
  - GoogleDrive and DropBox share url's have to be public and permanent. Please note the permanent part, since it'd be a shame if your music suddenly stops playing.
  
  It is possible to add support for other sources as well. OpenAudioMc has a java api to add support for url manipulations. This means that there are add-on plugins like [OpenAudioMc-Youtube](https://www.spigotmc.org/resources/openaudiomc-youtube-support.64584/) to expand the feature set with an alternative youtube engine.
