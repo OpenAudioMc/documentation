@@ -3,14 +3,14 @@
 [//]: # (DESCRIPTION:Getting started with your fresh OpenAudioMc installation)
 [//]: # (TAGS:installation,install,bungeecord,setup,download)
 
-# Installation
-Installation couldn't be simpler
+Installation couldn't be simpler:
+<br>
 1. Download the most recent jar from https://openaudiomc.net/
 2. Place the jar inside the `plugins` directory of your server
 3. Restart your server
-4. Enjoy
-5. (optionally) [setup your account to access extra settings](account.md)
-
+4. (optionally) [setup your account to access extra settings](account.md)
+5. Enjoy
+<br>
 Important notes:
  - Velocity is supported but currently in beta and not completely tested
  - [By installing, you agree to our privacy policy and rules](https://github.com/Mindgamesnl/OpenAudioMc/blob/master/LICENCE_and_PRIVACY.md)

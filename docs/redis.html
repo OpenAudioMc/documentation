@@ -114,8 +114,9 @@
   OpenAudioMc has support for Redis to synchronize shows across multiple servers.
   <br>
   It was originally made to run the BarelyAlive shows, but I merged it into the release version of OpenAudioMc because it has proven itself as a useful feature.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   You can configure redis in the normal OpenAudioMc config.
   <br>
   To set it up,
@@ -151,8 +152,9 @@
     redis.section
   </code>
   . Your section is basically a channel. All shows will be synchronized across all other OpenAudioMc instances listening to the same section. Usually, you’d have one “Master” server running your show and all listening servers will execute the same cue’s as the master server, regardless of their show state.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   Redis isn’t used for anything other than shows at the moment, nor does it utilize its storage/cache, but we will likely expand the redis integration later on to synchronize settings, tokens and configuration.
 </p>
             </div>

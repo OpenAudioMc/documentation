@@ -9,7 +9,8 @@ I love to spend time on the project, expanding it, improving it and growing it t
 The ugly truth is though, that hosting a project like this requires a lot of attention during times when I might not have all the spare time in the world (during exams, etc), and with the projects insane growth over the last two years, the hosting costs have skyrocketed.
 
 <br />
-My amazing patreons are the ones who keep the project going, enable me to spend a lot of extra time on it and keep the show financially stable. They get a few pretty neat perks in return, like
+My amazing patreons are the ones who keep the project going, enable me to spend a lot of extra time on it and keep the show financially stable. They get a few pretty neat perks in return, like:
+<br />
  - Access to the patreon channels in discord with early previews, prioritized support and awful dad-jokes
  - Prioritized API access, ensuring that their service will skip the queue when our servers are busy
  - Extra voicechat slots, enabling their bigger community to grow while also enabling the free users to enjoy OpenAudioMc

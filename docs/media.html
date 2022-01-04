@@ -146,7 +146,7 @@
   <br/>
 </p>
 <h1 id="random-media-and-playlists">
-  Random media and Playlists.
+  Random media and Playlists
 </h1>
 <p>
   You might want to shake things up a little every once in a while by assigning random sounds to a region, command or whatever. You can simply do this by stringing multiple sources in a JSON array, so you’d enter something like
@@ -164,8 +164,9 @@
 </h1>
 <p>
   The OpenAudioMc audio format is what’s being used throughout the network. It contains the source, and a UNIX timestamp for when the command was executed. This is defined by the plugin and does NOT get changed anywhere further on in the process.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   Other optional metadata included:
   <br>
   -
@@ -221,8 +222,9 @@
     (number)
   </strong>
   : A scaled volume level that will be used for the sound (so you can make sound effects quiet, etc)
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argument would look like
 </p><pre><code>{fadeTime:1500,id:&#34;station&#34;,loop:true,pickup:true,expirationTimeout:3600000,volume:50}
 </code></pre>
@@ -230,8 +232,9 @@
   <br/>
 </p>
 <h1 id="what-to-use-when">
-  What to use when
+  What to use when:
 </h1>
+<hr>
 <table>
   <thead>
     <tr>
@@ -375,7 +378,10 @@
     </tr>
   </tbody>
 </table>
+<hr>
 <p>
+  <br>
+  <br>
   <em>
     Notes:
   </em>
@@ -385,8 +391,9 @@
   - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, it’s most likely this. You are best off uploading it to your own account (but be sure to set it to public)
   <br>
   - GoogleDrive and DropBox share url’s have to be public and permanent. Please note the permanent part, since it’d be a shame if your music suddenly stops playing.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   It is possible to add support for other sources as well. OpenAudioMc has a java api to add support for url manipulations. This means that there are add-on plugins like
   <a href="https://www.spigotmc.org/resources/openaudiomc-youtube-support.64584/" rel="nofollow">
     OpenAudioMc-Youtube

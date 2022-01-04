@@ -10,7 +10,7 @@ You can also add an id to the end, and only the sound with that ID will be stopp
 ```
 /openaudio stop <selector> [id]
 ```
-*&lt;selector> is the only required argument, [id] can be left out*
+***\<selector>*** is the only required argument, [id] can be left out*
 
 And to stop the sound with the id `chill_station` for the player `Mindgamesnl`:
 ```

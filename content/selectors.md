@@ -27,4 +27,5 @@ When executed by a player, you can use server to select all players in a server 
 
 And last but not least, you can also select player (near) a specific location, for example, let's select everyone near the block at *X:10, Y:12, Z:15*:
 ```
-@a[x=10,y=12,z=15,r=5]```
+@a[x=10,y=12,z=15,r=5]
+```
