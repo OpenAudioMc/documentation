@@ -1,4 +1,5 @@
 [//]: # (TITLE:Linking your account)
+[//]: # (ICON:fas fa-link)
 [//]: # (DESCRIPTION:Link your Minecraft server to your Craftmend account)
 [//]: # (TAGS:accounts,linking,craftmend,setup,minecraft,plugin,link)
 

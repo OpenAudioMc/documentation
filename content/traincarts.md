@@ -1,4 +1,5 @@
 [//]: # (TITLE:Traincarts)
+[//]: # (ICON:fas fa-subway)
 [//]: # (DESCRIPTION:Using traincarts signs to play music in rides)
 [//]: # (TAGS:traincarts,train,music,sign,signs,commands)
 

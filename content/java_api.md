@@ -1,4 +1,5 @@
 [//]: # (TITLE:Java API)
+[//]: # (ICON:fab fa-java)
 [//]: # (DESCRIPTION:Using the java API to build awesome shit)
 [//]: # (TAGS:java,api,technical,documentation,events,packets,maven,gradle,nerds)
 

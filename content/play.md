@@ -1,4 +1,5 @@
 [//]: # (TITLE:Play)
+[//]: # (ICON:far fa-play-circle)
 [//]: # (DESCRIPTION:Using the play command to start media through command blocks)
 [//]: # (TAGS:play,command,subcommand,sound,start,commands,media)
 

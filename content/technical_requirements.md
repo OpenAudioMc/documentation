@@ -1,4 +1,5 @@
 [//]: # (TITLE:Network Requirements)
+[//]: # (ICON:fas fa-fire)
 [//]: # (DESCRIPTION:DNS/Firewall requirements)
 [//]: # (TAGS:technical)
 

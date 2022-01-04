@@ -1,4 +1,5 @@
 [//]: # (TITLE:Permissions)
+[//]: # (ICON:fas fa-user-cog)
 [//]: # (DESCRIPTION:Full permission guide of all commands and features)
 [//]: # (TAGS:permissions,permission,installation)
 

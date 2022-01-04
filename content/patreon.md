@@ -1,4 +1,5 @@
 [//]: # (TITLE:Patreon)
+[//]: # (ICON:fab fa-patreon)
 [//]: # (DESCRIPTION:Extra perks of becoming a sponsor)
 [//]: # (TAGS:regions,areas,worldguard,world,region,media,accounts)
 

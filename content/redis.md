@@ -1,4 +1,5 @@
 [//]: # (TITLE:Redis)
+[//]: # (ICON:fas fa-server)
 [//]: # (DESCRIPTION:Using a Redis server for shows and networking)
 [//]: # (TAGS:redis,shows,technical)
 

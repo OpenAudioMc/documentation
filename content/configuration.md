@@ -1,4 +1,5 @@
 [//]: # (TITLE:Configuration)
+[//]: # (ICON:fas fa-cogs)
 [//]: # (DESCRIPTION:Using the various configuration files)
 [//]: # (TAGS:installation,config,data,yml)
 

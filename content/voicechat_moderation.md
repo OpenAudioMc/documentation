@@ -1,4 +1,5 @@
 [//]: # (TITLE:Proximity Voice Chat Moderation)
+[//]: # (ICON:fas fa-user-shield)
 [//]: # (DESCRIPTION:How to moderate your player experience with Mutes and bans)
 [//]: # (TAGS:voice,voicechat,proximity,talking,calling,calls)
 

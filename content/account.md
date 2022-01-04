@@ -1,4 +1,5 @@
 [//]: # (TITLE:Craftmend Accounts)
+[//]: # (ICON:far fa-question-circle)
 [//]: # (DESCRIPTION:What are Craftmend Accounts)
 [//]: # (TAGS:accounts,craftmend,email,addons,install)
 

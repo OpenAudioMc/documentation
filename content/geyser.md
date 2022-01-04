@@ -1,4 +1,5 @@
 [//]: # (TITLE:geyser)
+[//]: # (ICON:fab fa-microsoft)
 [//]: # (DESCRIPTION:Using OpenAudioMc with geyser/bedrock)
 [//]: # (TAGS:installation,geyser,bedrock,pe)
 # GeyserMC support

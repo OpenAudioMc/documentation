@@ -1,6 +1,8 @@
 [//]: # (TITLE:Media)
+[//]: # (ICON:fas fa-compact-disc)
 [//]: # (DESCRIPTION:Using and understanding media sources and playback options)
 [//]: # (TAGS:youtube,media,options,looping,ids,id's,soundcloud,mp3,mp4)
+
 # Media
 
 OpenAudioMc supports multiple file formats for your sounds, these are:

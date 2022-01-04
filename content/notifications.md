@@ -1,4 +1,5 @@
 [//]: # (TITLE:Notifications)
+[//]: # (ICON:far fa-comment-dots)
 [//]: # (DESCRIPTION:Using the notification sub command)
 [//]: # (TAGS:notifications,notification,commands)
 

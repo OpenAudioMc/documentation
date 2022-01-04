@@ -1,4 +1,5 @@
 [//]: # (TITLE:Selectors)
+[//]: # (ICON:fas fa-users-cog)
 [//]: # (DESCRIPTION:Using selectors to specify which player groups should be affected by a command)
 [//]: # (TAGS:@a,@p,playername,selector,selectors,target,targets,commands)
 

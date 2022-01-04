@@ -1,4 +1,5 @@
 [//]: # (TITLE:Philips Hue)
+[//]: # (ICON:far fa-lightbulb)
 [//]: # (DESCRIPTION:Using the Philips Hue integration)
 [//]: # (TAGS:hue,lights,iot,philips,lamps,commands)
 # Philips Hue

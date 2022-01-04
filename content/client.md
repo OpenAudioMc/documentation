@@ -1,4 +1,5 @@
 [//]: # (TITLE:Web Client Source)
+[//]: # (ICON:fas fa-sliders-h)
 [//]: # (DESCRIPTION:Customizing, hosting and compiling the web client)
 [//]: # (TAGS:html,js,technical,webclient,client,hosting,host)
 

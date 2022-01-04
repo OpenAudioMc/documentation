@@ -1,4 +1,5 @@
 [//]: # (TITLE:Web Client)
+[//]: # (ICON:fas fa-globe)
 [//]: # (DESCRIPTION:Using the OpenAudioMc webclient)
 [//]: # (TAGS:installation)
 

@@ -1,4 +1,5 @@
 [//]: # (TITLE:Installation)
+[//]: # (ICON:fas fa-tools)
 [//]: # (DESCRIPTION:Getting started with your fresh OpenAudioMc installation)
 [//]: # (TAGS:installation,install,bungeecord,setup,download)
 

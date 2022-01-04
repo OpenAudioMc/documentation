@@ -1,4 +1,5 @@
 [//]: # (TITLE:Speakers)
+[//]: # (ICON:fas fa-volume-up)
 [//]: # (DESCRIPTION:Placing speaker blocks to have spatial in game audio)
 [//]: # (TAGS:spatial,speaker,speakers,music,media,region,audio,media)
 

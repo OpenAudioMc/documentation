@@ -1,4 +1,5 @@
 [//]: # (TITLE:Stop)
+[//]: # (ICON:far fa-stop-circle)
 [//]: # (DESCRIPTION:Using command blocks to stop audio playback)
 [//]: # (TAGS:stop,subcommand,command,stop,music,audio,media)
 

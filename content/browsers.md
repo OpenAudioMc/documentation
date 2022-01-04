@@ -1,4 +1,5 @@
 [//]: # (TITLE:Supported web browsers)
+[//]: # (ICON:fab fa-chrome)
 [//]: # (DESCRIPTION:Full browser support list for the web client)
 [//]: # (TAGS:client,safari,webclient,web,client,technical)
 

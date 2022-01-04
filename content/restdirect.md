@@ -1,4 +1,5 @@
 [//]: # (TITLE:Rest Direct)
+[//]: # (ICON:fas fa-route)
 [//]: # (DESCRIPTION:Rest Direct for CDN and external Api routing)
 [//]: # (TAGS:configuration,config,data,yml,technical)
 

@@ -1,4 +1,5 @@
 [//]: # (TITLE:Discord & Patreon)
+[//]: # (ICON:fab fa-discord)
 [//]: # (DESCRIPTION:Linking your Craftmend Account with external services (like Patron and Discord))
 [//]: # (TAGS:accounts,linking,craftmend,patreon,discord,links)
 

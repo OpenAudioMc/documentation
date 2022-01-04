@@ -1,4 +1,5 @@
 [//]: # (TITLE:Proximity Voice Chat Licenses)
+[//]: # (ICON:fas fa-id-badge)
 [//]: # (DESCRIPTION:Using and managing Licenses)
 [//]: # (TAGS:voice,voicechat,proximity,talking,calling,calls)
 

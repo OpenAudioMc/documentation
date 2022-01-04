@@ -1,4 +1,5 @@
 [//]: # (TITLE:Regions)
+[//]: # (ICON:fas fa-map-marked-alt)
 [//]: # (DESCRIPTION:Using worldguard regions to play music in specific areas)
 [//]: # (TAGS:regions,areas,worldguard,world,region,media)
 
