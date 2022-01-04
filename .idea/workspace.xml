@@ -6,29 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/account-links.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/account-links.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/configuration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/media.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/media.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/patreon.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/patreon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/play.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/play.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/redis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/restdirect.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/restdirect.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/selectors.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/selectors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/stop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/stop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/voicechat_licenses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat_licenses.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/account-links.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/account-links.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/configuration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/configuration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/media.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/patreon.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/patreon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/play.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/redis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/restdirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/restdirect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/selectors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/stop.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/stop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/voicechat_licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat_licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/webpage_renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/webpage_renderer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
