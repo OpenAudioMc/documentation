@@ -1,4 +1,5 @@
 [//]: # (TITLE:Permissions)
+[//]: # (ICON:fas fa-user-cog)
 [//]: # (DESCRIPTION:Full permission guide of all commands and features)
 [//]: # (TAGS:permissions,permission,installation)
 
@@ -14,7 +15,7 @@ Example: you need `openaudiomc.commands.region` to use `/oa region create`.
 
 # Speakers
 Speakers have their own two commands for breaking and placing the blocks.
-To allow all speaker interactions, you need, `openaudiomc.speakers.*`.
+To allow all speaker interactions, you require, `openaudiomc.speakers.*`.
 
 The specific permissions are:
  - `openaudiomc.speakers.create` to place a speaker

@@ -1,16 +1,17 @@
 [//]: # (TITLE:Web Client Source)
+[//]: # (ICON:fas fa-sliders-h)
 [//]: # (DESCRIPTION:Customizing, hosting and compiling the web client)
 [//]: # (TAGS:html,js,technical,webclient,client,hosting,host)
 
 # Hosted Client
-OpenAudioMc gives you the option to host your own client, however, there are some caveats
+OpenAudioMc gives you the option to host your own client. However, there are some caveats
 - You will become responsible for frequent updates, meaning that you have to update your webclient regularly.
 - You will have to follow the rules as described [here](https://account.craftmend.com/terms).
-- We do not recommend that you host the client yourself and will not help you setting it up aside from this document.
+- We do not recommend that you host the client yourself and will not help you to set it up aside from this document.
 
 # Setup
 1. Clone the OpenAudioMc [repository](https://github.com/Mindgamesnl/OpenAudioMc) (or download it as a zip file) 
-2. Upload the pre-compiled client (in `docs/production-client/target/`) to your webserver.
+2. Upload the pre-compiled client (in `docs/production-client/target/`) to your web server.
 3. Login to your [Account](account.md), go to your servers settings page and change the client url to where you uploaded yours, then save.
 4. Execute `/oa reload`
 5. Generate a new URL by re-joining the server.

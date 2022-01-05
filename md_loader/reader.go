@@ -30,7 +30,6 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 			var line = scanner.Text()
 			line = strings.ReplaceAll(line, ".md", ".html")
 
-
 			if strings.Contains(line, "[//]: # (") {
 				// it is a comment!
 				if last := len(line) - 1; last >= 0 && line[last] == ')' {
@@ -45,11 +44,12 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 				case "TITLE":
 					page.Title = value
 					break
-
 				case "DESCRIPTION":
 					page.Description = value
 					break
-
+				case "ICON":
+					page.Icon = value
+					break
 				case "TAGS":
 					page.Tags = strings.Split(value, ",")
 				}

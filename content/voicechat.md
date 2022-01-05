@@ -1,4 +1,5 @@
 [//]: # (TITLE:Proximity Voice Chat)
+[//]: # (ICON:fas fa-ruler)
 [//]: # (DESCRIPTION:Talking to other players using Proximity Voice Chat)
 [//]: # (TAGS:voice,voicechat,proximity,talking,calling,calls)
 

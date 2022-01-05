@@ -1,4 +1,5 @@
 [//]: # (TITLE:Alias Command)
+[//]: # (ICON:fas fa-external-link-alt)
 [//]: # (DESCRIPTION:Using the Alias command to make shortcuts for media)
 [//]: # (TAGS:commands,command,alias,aliases,aliasses,a)
 

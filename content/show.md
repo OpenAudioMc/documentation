@@ -11,7 +11,7 @@ So get started, make a show called `demo`
 ```
 /openaudio show create demo
 ```
-We now have a show called `demo`. We can start/stop it but this won't really do anything, we need to add cues first. To do so, you fist need to understand what a time code is.
+We now have a show called `demo`. We can start/stop it, but this won't really do anything, we need to add cues first. To do so, you first need to understand what a time code is.
 A time code is the amount of time from when the start command is executed. OpenAudioMc supports the following formats:
  - **`m` resembles minutes**: 1m = 1 minute, 1.5m = 1 minute and 30 seconds.
  - **`s` resembles seconds**: 1s = 1 second, 1.5s = 1 second and 50 milliseconds
@@ -25,29 +25,29 @@ Supported trigger types and their format:
  - **actionbar**: Follows the same general format as the *chat* trigger, but displays the message in the actionbar instead of chat
  - *your own feature*: You can also add custom java show triggers with the API
 
-For this demo, we are gonna add two cues. One cue after 0 seconds, a cue after 1 second, and a cue after 1 minute. To add these cues, use the following commands:
+For this demo, we are going to add two cues. One cue after 0 seconds, a cue after 1 second, and a cue after 1 minute. To add these cues, use the following commands:
 ```
 /openaudio show add demo 0s command say I fire at the start
 /openaudio show add demo 1s command say I fire after one second
 /openaudio show add demo 1m command say I fire after one minute
 ```
 
-The basic format here is
+The basic format here is:
 ```
 /openaudio show add <show name> <timecode> <type> <data>
 ``` 
  
-To get the status of a show, you can use
+To get the status of a show, you can use:
 ```
 /openaudio show info demo
 ``` 
 
-To start or cancel
+To start or cancel:
 ```
 /openaudio show <start/cancel> <showname>
 ``` 
 
-You can also edit a show via a gui using
+You can also edit a show via a gui using:
 ```
 /openaudio show gui <show name>
 ```

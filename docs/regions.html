@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OpenAudioMc</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
           integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
@@ -21,12 +20,7 @@
           content="assets/logo.png">
     <meta name="twitter:url" content="https://twitter.com/Mindgamesnl">
     <meta name="twitter:card" content="summary">
-    <title>OpenAudioMc - Audio for Minecraft</title>
-
-
-    <title>OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much
-        more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build
-        scripts.</title>
+    <script src="https://kit.fontawesome.com/356f5e0146.js" crossorigin="anonymous"></script>
     <meta name="description"
           content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts. - OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts.">
     <link rel="fluid-icon" href="assets/logo.png" title="OpenAudioMc">
@@ -47,9 +41,10 @@
     <meta property="og:url" content="https://openaudiomc.net/"/>
     <meta property="og:description"
           content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
-
-
+    <title>OpenAudioMc - Audio for Minecraft</title>
+</head>
 <body class="bg-gray-900">
+
 <header class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
@@ -61,7 +56,7 @@
         </nav>
         <a href="index.html"
            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
-            <img src="assets/logo.png" class="w-10 h-10 text-white rounded-full"/>
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white rounded-full"/>
             <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
         </a>
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
@@ -94,6 +89,7 @@
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Regions</h1>
                 <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using worldguard regions to play music in specific areas</p>
+
             </div>
         </div>
     </div>
@@ -120,7 +116,7 @@
   </sub>
   .14 update).
   <br>
-  This enables you to add music to your regions. The media will be synced between everyone in the region, and those who enter it later. When two bordered regions have the same sound selected OpenAudioMc will handle them as extensions and not re-start the sound when the player moves from one to the other. When both regions have different sounds then the old one will slowly fade out while the new sound starts. Overlapping regions are also supported.
+  This enables you to add music to your regions. The media will be synced between everyone in the region, and those who enter it later. When two bordered regions have the same sound selected, OpenAudioMc will handle them as extensions and not re-start the sound when the player moves from one to the other. When both regions have different sounds, then the old one will slowly fade out while the new sound starts. Overlapping regions are also supported.
   <br>
   <br/>
 </p>
@@ -152,9 +148,9 @@
   Mixing a region
 </h1>
 <p>
-  The volume of a region can be pretty hit-or-miss. You usually don’t want it to be too loud since regions often serve as a form as ambiance/background music, or you may want to blast at all times. You can mix the volume of multiple regions with the region editor.
+  The volume of a region can be pretty hit-or-miss. You usually don’t want it to be too loud since regions often serve as a form of ambiance/background music, or you may want to blast at all times. You can mix the volume of multiple regions with the region editor.
   <br>
-  Go stand in one (or more) regions with sound, and execute
+  Go stand in one (or more) regions with sound, and execute:
 </p><pre><code>/openaudio region edit
 </code></pre>
 <p>
@@ -166,7 +162,7 @@
   Region fading
 </h1>
 <p>
-  Regions have a default cross fade time of 1 second (1000MS), you can change the fade time per region in the same menu where you can change its volume.
+  Regions have a default cross-fade time of 1 second (1000MS), you can change the fade time per region in the same menu where you can change its volume.
   <br>
   <br/>
 </p>
@@ -176,7 +172,7 @@
 <p>
   You can also make temporary regions, which are useful for shows etc.
   <br>
-  Temporary regions function just like regions, except that they disappear after a some time and synchronize based on when they were created. This is very use full for systems like shows, where you want users to join later on.
+  Temporary regions function just like regions, except that they disappear after a some time and synchronize based on when they were created. This is very useful for systems like shows, where you want users to join later on.
 </p>
 <p>
   The base command is
@@ -193,13 +189,13 @@
         </div>
     </div>
 </section>
-
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a href="index.html"
            class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
             <span class="ml-3 text-xl">OpenAudioMc</span>
         </a>
         <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021
@@ -210,4 +206,4 @@
     </div>
 </footer>
 </body>
-</html>
+</html>

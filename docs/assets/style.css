@@ -45,3 +45,15 @@ p a {
     color: #da14e4;
     text-decoration: underline;
 }
+h1{
+    font-size: 140% !important;
+    font-weight: bold;
+}
+h2{
+    font-size: 130% !important;
+    font-weight: bold;
+}
+h3{
+    font-size: 115% !important;
+    font-weight: bold;
+}

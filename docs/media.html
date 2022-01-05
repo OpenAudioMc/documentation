@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OpenAudioMc</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
           integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
@@ -21,12 +20,7 @@
           content="assets/logo.png">
     <meta name="twitter:url" content="https://twitter.com/Mindgamesnl">
     <meta name="twitter:card" content="summary">
-    <title>OpenAudioMc - Audio for Minecraft</title>
-
-
-    <title>OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much
-        more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build
-        scripts.</title>
+    <script src="https://kit.fontawesome.com/356f5e0146.js" crossorigin="anonymous"></script>
     <meta name="description"
           content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts. - OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts.">
     <link rel="fluid-icon" href="assets/logo.png" title="OpenAudioMc">
@@ -47,9 +41,10 @@
     <meta property="og:url" content="https://openaudiomc.net/"/>
     <meta property="og:description"
           content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
-
-
+    <title>OpenAudioMc - Audio for Minecraft</title>
+</head>
 <body class="bg-gray-900">
+
 <header class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
@@ -61,7 +56,7 @@
         </nav>
         <a href="index.html"
            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
-            <img src="assets/logo.png" class="w-10 h-10 text-white rounded-full"/>
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white rounded-full"/>
             <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
         </a>
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
@@ -94,6 +89,7 @@
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Media</h1>
                 <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Using and understanding media sources and playback options</p>
+
             </div>
         </div>
     </div>
@@ -127,7 +123,7 @@
   Local Audio
 </h1>
 <p>
-  Patreon’s are able to play audio files through stored in their plugins folder. File names can’t include spaces, but you use subdirectories. Simply prefix your source in a command with
+  Patreon’s are able to play audio files through storing it in their plugins folder. File names can’t include spaces, but you use subdirectories. Simply prefix your source in a command with
   <code>
     local:
   </code>
@@ -150,7 +146,7 @@
   <br/>
 </p>
 <h1 id="random-media-and-playlists">
-  Random media and Playlists.
+  Random media and Playlists
 </h1>
 <p>
   You might want to shake things up a little every once in a while by assigning random sounds to a region, command or whatever. You can simply do this by stringing multiple sources in a JSON array, so you’d enter something like
@@ -168,8 +164,9 @@
 </h1>
 <p>
   The OpenAudioMc audio format is what’s being used throughout the network. It contains the source, and a UNIX timestamp for when the command was executed. This is defined by the plugin and does NOT get changed anywhere further on in the process.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   Other optional metadata included:
   <br>
   -
@@ -225,17 +222,19 @@
     (number)
   </strong>
   : A scaled volume level that will be used for the sound (so you can make sound effects quiet, etc)
-</p>
-<p>
-  All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argment would look like
+  <br>
+  <br>
+  <br>
+  All the optional tags should be included in the Play command as a JSON object with the spaces left out, so a fully decked out argument would look like
 </p><pre><code>{fadeTime:1500,id:&#34;station&#34;,loop:true,pickup:true,expirationTimeout:3600000,volume:50}
 </code></pre>
 <p>
   <br/>
 </p>
 <h1 id="what-to-use-when">
-  What to use when
+  What to use when:
 </h1>
+<hr>
 <table>
   <thead>
     <tr>
@@ -379,18 +378,22 @@
     </tr>
   </tbody>
 </table>
+<hr>
 <p>
+  <br>
+  <br>
   <em>
     Notes:
   </em>
   <br>
-  - Youtube videos need to be public and big videos might not work. It’s best to upload your own.
+  - YouTube videos need to be public and big videos might not work. It’s best to upload your own.
   <br>
-  - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, its most likely this. You are best off uploading it to your own account (but be sure to set it to public)
+  - Some soundcloud artists block their music from being played on third party sites like OpenAudioMc, if a soundcloud song fails to play, it’s most likely this. You are best off uploading it to your own account (but be sure to set it to public)
   <br>
   - GoogleDrive and DropBox share url’s have to be public and permanent. Please note the permanent part, since it’d be a shame if your music suddenly stops playing.
-</p>
-<p>
+  <br>
+  <br>
+  <br>
   It is possible to add support for other sources as well. OpenAudioMc has a java api to add support for url manipulations. This means that there are add-on plugins like
   <a href="https://www.spigotmc.org/resources/openaudiomc-youtube-support.64584/" rel="nofollow">
     OpenAudioMc-Youtube
@@ -401,13 +404,13 @@
         </div>
     </div>
 </section>
-
+
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a href="index.html"
            class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <img src="assets/logo.png" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
             <span class="ml-3 text-xl">OpenAudioMc</span>
         </a>
         <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021
@@ -418,4 +421,4 @@
     </div>
 </footer>
 </body>
-</html>
+</html>
