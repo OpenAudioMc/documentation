@@ -29,7 +29,8 @@
  else {
         document.getElementById("search_result_count").innerHTML = "";
         for (i = 0; i < hide_title.length; i++) {
-            hide_title[i].style.display="initial";
+            hide_title[i].style.display="flex";
+            hide_title[i].parentElement.classList.add("py-1");
             hide_title[i].parentElement.classList.add("border-b-2","py-10");
         }
     }
