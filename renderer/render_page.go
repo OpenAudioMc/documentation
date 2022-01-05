@@ -17,6 +17,7 @@ func renderDocs(page md_loader.DocumentationPage, docHtml string) {
 	context.SetVariable("doc_title", page.Title)
 	context.SetVariable("doc_about", page.Description)
 	context.SetVariable("doc_icon", page.Icon)
+	context.SetVariable("doc_tags", page.Tags)
 	var output, _ = renderer.Render(context, readHtmlTest("html_templates/base.html"))
 	var fn = "docs/" + strings.ReplaceAll(page.Filename, ".md", ".html")
 	os.Remove(fn)
