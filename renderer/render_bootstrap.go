@@ -8,6 +8,7 @@ import (
 func RenderPages(pages []md_loader.DocumentationPage) {
 	for i := range pages {
 		renderDocs(pages[i], pages[i].Html)
+		renderCommandList(pages[i], pages[i].Html)
 	}
 }
 

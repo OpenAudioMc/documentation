@@ -3,6 +3,8 @@
 [//]: # (DESCRIPTION:Using a Redis server for shows and networking)
 [//]: # (TAGS:redis,shows,technical)
 
+
+
 # Redis
 ## Note: *[This feature requires a running Redis server. Click here to learn more.](https://redis.io/)*
 OpenAudioMc has support for Redis to synchronize shows across multiple servers.

@@ -2,6 +2,8 @@
 [//]: # (ICON:far fa-lightbulb)
 [//]: # (DESCRIPTION:Using the Philips Hue integration)
 [//]: # (TAGS:hue,lights,iot,philips,lamps,commands)
+[//]: # (COMMANDS:/oa hue set {selector} {lights} {r} {g} {b} {brightness},Set hue lights in wanted color, visit more info page)
+
 # Philips Hue
 # Linking your Philips Hue Bridge
 ### *Note: Due to limitations in the Philips API, you'll need to load your page through `http://`instead of `https://`*

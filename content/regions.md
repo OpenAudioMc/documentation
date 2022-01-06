@@ -2,6 +2,10 @@
 [//]: # (ICON:fas fa-map-marked-alt)
 [//]: # (DESCRIPTION:Using worldguard regions to play music in specific areas)
 [//]: # (TAGS:regions,areas,worldguard,world,region,media)
+[//]: # (COMMANDS:/oa region create {WG-region} {source},In order to use this command you need to have installed the plugin WorldGuard. This will create a region for an undefined amount of time.)
+[//]: # (COMMANDS:/oa region delete {WG-region},In order to use this command you need to have installed the plugin WorldGuard. This will delete the selected region.)
+[//]: # (COMMANDS:/oa region edit,In order to use this command you need to have installed the plugin WorldGuard. This will edit the selected region.)
+[//]: # (COMMANDS:/oa region temp {WG-region} {source} {duration},In order to use this command you need to have installed the plugin WorldGuard. This will create a region for a defined amount of time.)
 
 # WorldGuard Regions
 ### Note: You need the WorldGuard plugin to use regions
