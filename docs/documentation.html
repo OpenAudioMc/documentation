@@ -49,6 +49,7 @@
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
             <a href="documentation.html" class="mr-5 hover:text-white">Documentation</a>
+            <a href="../docs/command-list.html" class="mr-5 hover:text-white">Commands</a>
             <a href="https://discord.openaudiomc.net/" class="mr-5 hover:text-white">Join our Discord</a>
             <a href="https://github.com/Mindgamesnl/OpenAudioMc" class="mr-5 hover:text-white">Github</a>
             <a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-online-music-and-effects-bungeecord-velocity.30691"
@@ -81,15 +82,21 @@
 </header>
 
 <section class="text-gray-400 body-font bg-gray-900 pt-10">
+    <div class=" flex h-30 justify-center items-center">
+        <div class="text-center h-20 w-80 logo rounded-full mb-3">
+            <script src="../docs/assets/searchbar.js"></script>
+            <h2 class="text-center ">Search: </h2><input class="bg-gray-900 text-gray-400 w-70" id="searchbar" onkeyup="search_tags()" type="text" name="search" placeholder="Search..." size="30px">
+        </div>
+    </div>
+    <p class="text-center" id="search_result_count"></p>
     
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Installation</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">All the articles guiding you through the OpenAudioMc plugin installation and configuration</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="configuration.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -100,14 +107,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Configuration</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the various configuration files</p>
+				<p class="leading-relaxed text-base pl-5">Using the various configuration files</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: installation, config, data, yml</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="geyser.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -118,14 +128,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">geyser</h2>
-				<p class="leading-relaxed text-base  pl-5">Using OpenAudioMc with geyser/bedrock</p>
+				<p class="leading-relaxed text-base pl-5">Using OpenAudioMc with geyser/bedrock</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: installation, geyser, bedrock, pe</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="installation.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -136,14 +149,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Installation</h2>
-				<p class="leading-relaxed text-base  pl-5">Getting started with your fresh OpenAudioMc installation</p>
+				<p class="leading-relaxed text-base pl-5">Getting started with your fresh OpenAudioMc installation</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: installation, install, bungeecord, setup, download</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="permissions.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -154,14 +170,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Permissions</h2>
-				<p class="leading-relaxed text-base  pl-5">Full permission guide of all commands and features</p>
+				<p class="leading-relaxed text-base pl-5">Full permission guide of all commands and features</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: permissions, permission, installation</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="web-client.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -172,7 +191,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Web Client</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the OpenAudioMc webclient</p>
+				<p class="leading-relaxed text-base pl-5">Using the OpenAudioMc webclient</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: installation</p>
+
 			</div>
 		</div>
 	</div>
@@ -181,13 +203,12 @@
  </div>
     </div>
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Proximity Voice Chat</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">How to talk and interact with other players, and how to moderate it as a server owner</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="voicechat.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -198,14 +219,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Proximity Voice Chat</h2>
-				<p class="leading-relaxed text-base  pl-5">Talking to other players using Proximity Voice Chat</p>
+				<p class="leading-relaxed text-base pl-5">Talking to other players using Proximity Voice Chat</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: voice, voicechat, proximity, talking, calling, calls</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="voicechat_licenses.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -216,14 +240,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Proximity Voice Chat Licenses</h2>
-				<p class="leading-relaxed text-base  pl-5">Using and managing Licenses</p>
+				<p class="leading-relaxed text-base pl-5">Using and managing Licenses</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: voice, voicechat, proximity, talking, calling, calls</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="voicechat_moderation.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -234,7 +261,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Proximity Voice Chat Moderation</h2>
-				<p class="leading-relaxed text-base  pl-5">How to moderate your player experience with Mutes and bans</p>
+				<p class="leading-relaxed text-base pl-5">How to moderate your player experience with Mutes and bans</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: voice, voicechat, proximity, talking, calling, calls</p>
+
 			</div>
 		</div>
 	</div>
@@ -243,13 +273,12 @@
  </div>
     </div>
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Media</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">Controlling media playback and effects</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="media.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -260,14 +289,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Media</h2>
-				<p class="leading-relaxed text-base  pl-5">Using and understanding media sources and playback options</p>
+				<p class="leading-relaxed text-base pl-5">Using and understanding media sources and playback options</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: youtube, media, options, looping, ids, id's, soundcloud, mp3, mp4</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="patreon.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -278,14 +310,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Patreon</h2>
-				<p class="leading-relaxed text-base  pl-5">Extra perks of becoming a sponsor</p>
+				<p class="leading-relaxed text-base pl-5">Extra perks of becoming a sponsor</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: regions, areas, worldguard, world, region, media, accounts</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="play.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -296,14 +331,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Play</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the play command to start media through command blocks</p>
+				<p class="leading-relaxed text-base pl-5">Using the play command to start media through command blocks</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: play, command, subcommand, sound, start, commands, media</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="regions.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -314,14 +352,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Regions</h2>
-				<p class="leading-relaxed text-base  pl-5">Using worldguard regions to play music in specific areas</p>
+				<p class="leading-relaxed text-base pl-5">Using worldguard regions to play music in specific areas</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: regions, areas, worldguard, world, region, media</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="speakers.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -332,14 +373,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Speakers</h2>
-				<p class="leading-relaxed text-base  pl-5">Placing speaker blocks to have spatial in game audio</p>
+				<p class="leading-relaxed text-base pl-5">Placing speaker blocks to have spatial in game audio</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: spatial, speaker, speakers, music, media, region, audio, media</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="stop.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -350,7 +394,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Stop</h2>
-				<p class="leading-relaxed text-base  pl-5">Using command blocks to stop audio playback</p>
+				<p class="leading-relaxed text-base pl-5">Using command blocks to stop audio playback</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: stop, subcommand, command, stop, music, audio, media</p>
+
 			</div>
 		</div>
 	</div>
@@ -359,13 +406,12 @@
  </div>
     </div>
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Administration Accounts</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">How to setup, use, and link Craftmend accounts to get all the best that OpenAudioMc has to offer</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="account-links.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -376,14 +422,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Discord & Patreon</h2>
-				<p class="leading-relaxed text-base  pl-5">Linking your Craftmend Account with external services (like Patron and Discord)</p>
+				<p class="leading-relaxed text-base pl-5">Linking your Craftmend Account with external services (like Patron and Discord)</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: accounts, linking, craftmend, patreon, discord, links</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="account-setup.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -394,14 +443,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Linking your account</h2>
-				<p class="leading-relaxed text-base  pl-5">Link your Minecraft server to your Craftmend account</p>
+				<p class="leading-relaxed text-base pl-5">Link your Minecraft server to your Craftmend account</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: accounts, linking, craftmend, setup, minecraft, plugin, link</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="account.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -412,14 +464,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Craftmend Accounts</h2>
-				<p class="leading-relaxed text-base  pl-5">What are Craftmend Accounts</p>
+				<p class="leading-relaxed text-base pl-5">What are Craftmend Accounts</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: accounts, craftmend, email, addons, install</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="patreon.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -430,7 +485,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Patreon</h2>
-				<p class="leading-relaxed text-base  pl-5">Extra perks of becoming a sponsor</p>
+				<p class="leading-relaxed text-base pl-5">Extra perks of becoming a sponsor</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: regions, areas, worldguard, world, region, media, accounts</p>
+
 			</div>
 		</div>
 	</div>
@@ -439,13 +497,12 @@
  </div>
     </div>
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Utility Commands</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">How to use some of the coolest Utility commands to take full advantage of the plugin</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="alias.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -456,14 +513,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Alias Command</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the Alias command to make shortcuts for media</p>
+				<p class="leading-relaxed text-base pl-5">Using the Alias command to make shortcuts for media</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: commands, command, alias, aliases, aliasses, a</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="hue.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -474,14 +534,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Philips Hue</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the Philips Hue integration</p>
+				<p class="leading-relaxed text-base pl-5">Using the Philips Hue integration</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: hue, lights, iot, philips, lamps, commands</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="notifications.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -492,14 +555,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Notifications</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the notification sub command</p>
+				<p class="leading-relaxed text-base pl-5">Using the notification sub command</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: notifications, notification, commands</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="play.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -510,14 +576,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Play</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the play command to start media through command blocks</p>
+				<p class="leading-relaxed text-base pl-5">Using the play command to start media through command blocks</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: play, command, subcommand, sound, start, commands, media</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="selectors.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -528,14 +597,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Selectors</h2>
-				<p class="leading-relaxed text-base  pl-5">Using selectors to specify which player groups should be affected by a command</p>
+				<p class="leading-relaxed text-base pl-5">Using selectors to specify which player groups should be affected by a command</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: @a, @p, playername, selector, selectors, target, targets, commands</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="traincarts.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -546,7 +618,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Traincarts</h2>
-				<p class="leading-relaxed text-base  pl-5">Using traincarts signs to play music in rides</p>
+				<p class="leading-relaxed text-base pl-5">Using traincarts signs to play music in rides</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: traincarts, train, music, sign, signs, commands</p>
+
 			</div>
 		</div>
 	</div>
@@ -555,13 +630,12 @@
  </div>
     </div>
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Technical Notes</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">Technical notes and requirements for server owners</p>
         </div>
         <div class="flex flex-wrap -m-4">
-
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="browsers.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -572,14 +646,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Supported web browsers</h2>
-				<p class="leading-relaxed text-base  pl-5">Full browser support list for the web client</p>
+				<p class="leading-relaxed text-base pl-5">Full browser support list for the web client</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: client, safari, webclient, web, client, technical</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="client.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -590,14 +667,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Web Client Source</h2>
-				<p class="leading-relaxed text-base  pl-5">Customizing, hosting and compiling the web client</p>
+				<p class="leading-relaxed text-base pl-5">Customizing, hosting and compiling the web client</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: html, js, technical, webclient, client, hosting, host</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="java_api.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -608,14 +688,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Java API</h2>
-				<p class="leading-relaxed text-base  pl-5">Using the java API to build awesome shit</p>
+				<p class="leading-relaxed text-base pl-5">Using the java API to build awesome shit</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: java, api, technical, documentation, events, packets, maven, gradle, nerds</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="redis.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -626,14 +709,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Redis</h2>
-				<p class="leading-relaxed text-base  pl-5">Using a Redis server for shows and networking</p>
+				<p class="leading-relaxed text-base pl-5">Using a Redis server for shows and networking</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: redis, shows, technical</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="restdirect.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -644,14 +730,17 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Rest Direct</h2>
-				<p class="leading-relaxed text-base  pl-5">Rest Direct for CDN and external Api routing</p>
+				<p class="leading-relaxed text-base pl-5">Rest Direct for CDN and external Api routing</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: configuration, config, data, yml, technical</p>
+
 			</div>
 		</div>
 	</div>
 </a>
 </div>
 
-<div class="xl:w-1/3 md:w-1/2 p-4">
+<div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="technical_requirements.html">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
@@ -662,7 +751,10 @@
 			</div>
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">Network Requirements</h2>
-				<p class="leading-relaxed text-base  pl-5">DNS/Firewall requirements</p>
+				<p class="leading-relaxed text-base pl-5">DNS/Firewall requirements</p>
+				
+				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: technical</p>
+
 			</div>
 		</div>
 	</div>
@@ -670,8 +762,7 @@
 </div>
  </div>
     </div>
-
-</section>
+</section>
 
 <footer class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

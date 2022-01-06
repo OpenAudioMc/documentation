@@ -2,9 +2,9 @@
     <div class=" flex h-30 justify-center items-center">
         <div class="text-center h-20 w-80 logo rounded-full mb-3">
             <script src="../docs/assets/searchbar.js"></script>
-            <h2 class="text-center ">Search: </h2><input class="bg-gray-900 text-gray-400 w-70" id="searchbar" onkeyup="search_tags()" type="text" name="search" placeholder="Search..." size="30px">
+            <h2 class="text-center ">Search: </h2><input class="bg-gray-900 text-gray-400 w-70" id="searchbar" onkeyup="search_table()" type="text" name="search" placeholder="Search..." size="30px">
         </div>
     </div>
     <p class="text-center" id="search_result_count"></p>
-    {{ include(documentation_article_cards) }}
+    {{ include(documentation_command_list) }}
 </section>
