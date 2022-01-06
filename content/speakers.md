@@ -2,6 +2,11 @@
 [//]: # (ICON:fas fa-volume-up)
 [//]: # (DESCRIPTION:Placing speaker blocks to have spatial in game audio)
 [//]: # (TAGS:spatial,speaker,speakers,music,media,region,audio,media)
+[//]: # (COMMANDS:/oa speaker {source} [radius],gives you a speaker player head with your source, you can change the speaker settings by right-clicking )
+[//]: # (COMMANDS:/oa speaker gc,Activates the speakers garbage collector. Warning this will load all chunks with speakers in your world. You may experience some massive lagg on a big server. type /oa speaker gc confirm)
+[//]: # (COMMANDS:/oa speaker menu,Opens a GUI menu with all nearby speakers, you can destroy, modify and teleport to the speaker from this menu.)
+[//]: # (COMMANDS:/oa speaker remove {world} {x} {y} {z},Removes speaker on specified place on server.)
+[//]: # (COMMANDS:/oa speaker set {world} {x} {y} {z} {url},Sets a speaker in the server with the media you want. Speakers always face north, if you want to have speakers in other directions please use /oa speaker <source>(use world for overworld)
 
 # Speakers
 Speakers are little blocks you can place in your Minecraft world. Just like real speakers in a theme park, all of them play synchronized and can be hidden. The thing that makes them special is that they share some properties just like real audio sources, You can't hear them from too far away, and the volume depends on your location relative to a speaker.

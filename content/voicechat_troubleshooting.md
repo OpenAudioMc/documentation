@@ -1,3 +1,9 @@
+[//]: # (COMMANDS:/oa debug,returns current state of your OA plugin. State, Account Tags, Platform, TimeData, Throughput, Env, VoiceRTP, Build, RestDirect, Connected clients, loaded regions, loaded speakers, aliases, srvVersion)
+[//]: # (COMMANDS:/oa state,returns current state of your OA plugin. State, Account Tags, Platform, TimeData, Throughput, Env, VoiceRTP, Build, RestDirect, Connected clients, loaded regions, loaded speakers, aliases, srvVersion)
+[//]: # (COMMANDS:/oa restart,Restarts the OpenAudioMc plugin. Be warned, this will kick ALL connected web client users.)
+[//]: # (COMMANDS:/oa reload,Reloads the OpenAudioMc plugin. Be warned, this will kick ALL connected web client.)
+[//]: # (COMMANDS:/oa help,returns lis of all commands, clicktrough enabled for more specific info.)
+
 # Fixing Voicechat
 Not able to login to voicechat as expected? Are your friends unable to hear you even though you're shouting at the top of your lungs?? DID THE COMPUTER MACHINE GO BROKEN?
 If you answered "YES" to any of those questions above, or are having any other shenanigans, hopefully this guide will help you get things running again.

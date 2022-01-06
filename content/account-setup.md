@@ -2,6 +2,8 @@
 [//]: # (ICON:fas fa-link)
 [//]: # (DESCRIPTION:Link your Minecraft server to your Craftmend account)
 [//]: # (TAGS:accounts,linking,craftmend,setup,minecraft,plugin,link)
+[//]: # (COMMANDS:/oa link {fingerprint},Gives you the option of linking your account by using your fingerprint you created on the craftmend site)
+[//]: # (COMMANDS:/oa setup,Shows instructions how to link your fingerprint with your account. You don't need this command after setup. You can change the linked account by using this command.)
 
 # Account Setup Guide
 

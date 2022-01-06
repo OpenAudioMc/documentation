@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta property="og:title" content="OpenAudioMc">
+    <meta property="og:image"
+          content="assets/logo.png">
+    <meta property="og:url" content="https://openaudiomc.net/">
+    <meta property="og:site_name" content="OpenAudioMc">
+    <meta property="og:description" content="OpenAudioMc is the all in one minecraft audio and voicechat solution">
+    <meta name="twitter:title" content="OpenAudioMc - The most advanced Minecraft audio and voice system">
+    <meta name="twitter:image"
+          content="assets/logo.png">
+    <meta name="twitter:url" content="https://twitter.com/Mindgamesnl">
+    <meta name="twitter:card" content="summary">
+    <script src="https://kit.fontawesome.com/356f5e0146.js" crossorigin="anonymous"></script>
+    <meta name="description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts. - OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts.">
+    <link rel="fluid-icon" href="assets/logo.png" title="OpenAudioMc">
+    <meta name="twitter:image:src" content="assets/banner.png"/>
+    <meta name="twitter:site" content="@openaudiomc"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta name="twitter:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:image" content="assets/banner.png"/>
+    <meta property="og:image:alt"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:site_name" content="OpenAudioMc"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta property="og:url" content="https://openaudiomc.net/"/>
+    <meta property="og:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <title>OpenAudioMc - Audio for Minecraft</title>
+</head>
+<body class="bg-gray-900">
+
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a href="documentation.html" class="mr-5 hover:text-white">Documentation</a>
+            <a href="../docs/command-list.html" class="mr-5 hover:text-white">Commands</a>
+            <a href="https://discord.openaudiomc.net/" class="mr-5 hover:text-white">Join our Discord</a>
+            <a href="https://github.com/Mindgamesnl/OpenAudioMc" class="mr-5 hover:text-white">Github</a>
+            <a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-online-music-and-effects-bungeecord-velocity.30691"
+               class="hover:text-white">Spigot</a>
+        </nav>
+        <a href="index.html"
+           class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white rounded-full"/>
+            <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a href="https://twitter.com/Mindgamesnl"
+               class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Mindgamesnl
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="https://patreon.com/Mindgamesnl"
+               class="ml-2 inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                Patreon
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="text-gray-400 body-font bg-gray-900 pt-10">
+    <div class=" flex h-30 justify-center items-center">
+        <div class="text-center h-20 w-80 logo rounded-full mb-3">
+            <script src="../docs/assets/searchbar.js"></script>
+            <h2 class="text-center ">Search: </h2><input class="bg-gray-900 text-gray-400 w-70" id="searchbar" onkeyup="search_table()" type="text" name="search" placeholder="Search..." size="30px">
+        </div>
+    </div>
+    <p class="text-center" id="search_result_count"></p>
+    
+<div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search bg-gray-800">
+			<table class="border-collapse border border-gray-400">
+				<tr>
+					<th class="border border-gray-300 w-3/12">Command</th>
+					<th class="border border-gray-300">Description</th>
+					<th class="border border-gray-300 w-3/12">More info  </th>
+				</tr>
+
+<tr>
+<td class="border border-gray-300 search_column">/oa link {fingerprint}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you the option of linking your account by using your fingerprint you created on the craftmend site</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="account-setup.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa setup</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Shows instructions how to link your fingerprint with your account. You don't need this command after setup. You can change the linked account by using this command.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="account-setup.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa alias {alias name} {source}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you the option of entering aliases for media ex. /openaudio alias test https</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="alias.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa hue set {selector} {lights} {r} {g} {b} {brightness}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Set hue lights in wanted color</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="hue.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa p {selector} {source} {options}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Alias for /oa play</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="media.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa play {selector} {source} {options}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you the option for playing media</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="media.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa notification {selector} {message}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">sends a notification to the clients webpage. ex. /oa notification @a hello world</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="notifications.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa region create {WG-region} {source}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">In order to use this command you need to have installed the plugin WorldGuard. This will create a region for an undefined amount of time.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="regions.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa region delete {WG-region}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">In order to use this command you need to have installed the plugin WorldGuard. This will delete the selected region.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="regions.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa region edit</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">In order to use this command you need to have installed the plugin WorldGuard. This will edit the selected region.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="regions.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa region temp {WG-region} {source} {duration}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">In order to use this command you need to have installed the plugin WorldGuard. This will create a region for a defined amount of time.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="regions.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show add {show name} {time in MS} {type} {data}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">You can add a show with this command.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show cancel {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Cancel your specified show.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show create {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">You can create a show.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show gui {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Opens the GUI of the selected show.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show info {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">This command requires a running Redis server. Gives you more details over the selected show.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show list</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you a list of all configured shows</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show loop {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loops the show you selected for infinity.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa show start {show name}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Activates/starts the selected show.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="show.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa speaker {source} [radius]</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you a speaker player head with your source</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa speaker gc</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Activates the speakers garbage collector. Warning this will load all chunks with speakers in your world. You may experience some massive lagg on a big server. type /oa speaker gc confirm</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa speaker menu</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Opens a GUI menu with all nearby speakers</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa speaker remove {world} {x} {y} {z}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Removes speaker on specified place on server.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa speaker set {world} {x} {y} {z} {url}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Sets a speaker in the server with the media you want. Speakers always face north</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa stop {selector}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">stops the playing audio for the selected players</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="stop.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa stop {selector} {sound-ID}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">stops the specific selected playing audio for the selected players</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="stop.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/mutemic</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Quickly mutes your mic</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/micmute</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Quickly mutes your mic</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/mm</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Quickly mutes your mic</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/audio</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Generates a new link for your web client.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa voice claim</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Force a new license check</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa accept</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you the link of the audio client</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa pv mod {username}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa vc mod {username}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa voice mod {username}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa voicechat mod {username}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa proximity mod {username}</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa debug</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa state</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa restart</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Restarts the OpenAudioMc plugin. Be warned</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa reload</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Reloads the OpenAudioMc plugin. Be warned</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/oa help</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns lis of all commands</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/volume [0-100]</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Change the volume of the web client from chat.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="web-client.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/connect</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Generates a new link for your web client.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="web-client.html">Learn More...</a></td>
+</tr>
+<tr>
+<td class="border border-gray-300 search_column">/media</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Generates a new link for your web client.</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="web-client.html">Learn More...</a></td>
+</tr></table> </div>
+    </div>
+</section>
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="index.html"
+           class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
+            <span class="ml-3 text-xl">OpenAudioMc</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021
+            OpenAudioMc —
+            <a href="https://twitter.com/Mindgamesnl" class="text-gray-500 ml-1" target="_blank"
+               rel="noopener noreferrer">@Mindgamesnl</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,6 +1,14 @@
 [//]: # (TITLE:Shows)
 [//]: # (DESCRIPTION:Using show commands to schedule and make shows,commands)
 [//]: # (TAGS:shows,timers,timer,show)
+[//]: # (COMMANDS:/oa show add {show name} {time in MS} {type} {data},You can add a show with this command.)
+[//]: # (COMMANDS:/oa show cancel {show name},Cancel your specified show.)
+[//]: # (COMMANDS:/oa show create {show name},You can create a show.)
+[//]: # (COMMANDS:/oa show gui {show name},Opens the GUI of the selected show.)
+[//]: # (COMMANDS:/oa show info {show name},This command requires a running Redis server. Gives you more details over the selected show.)
+[//]: # (COMMANDS:/oa show list,Gives you a list of all configured shows)
+[//]: # (COMMANDS:/oa show loop {show name},Loops the show you selected for infinity.)
+[//]: # (COMMANDS:/oa show start {show name},Activates/starts the selected show.)
 
 # Shows
 With shows, you can make time coded shows. Our definition of a show is a list of cues, or scheduled events.

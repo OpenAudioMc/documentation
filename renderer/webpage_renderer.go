@@ -39,6 +39,7 @@ func RenderHtmlPages() {
 		// register global component in the renderer
 		renderer.RegisterComponent("page_content", readHtmlTest(file))
 		renderer.RegisterComponent("documentation_article_cards", getDocumentationArticles())
+		renderer.RegisterComponent("documentation_command_list", getCommandListArticles())
 		var output, _ = renderer.Render(context, readHtmlTest("html_templates/base.html"))
 		var fn = "docs/" + filename
 		os.Remove(fn)
@@ -58,7 +59,13 @@ func getDocumentationArticles() string {
 
 	return out
 }
+func getCommandListArticles() string {
+	var out = ""
 
+	out += getCommandList()
+
+	return out
+}
 func getDocCard(topic string, title string, about string) string {
 	var cards = `
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
@@ -66,8 +73,7 @@ func getDocCard(topic string, title string, about string) string {
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">` + title + `</h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">` + about + `</p>
         </div>
-        <div class="flex flex-wrap -m-4">
-`
+        <div class="flex flex-wrap -m-4">`
 	var pages = md_loader.LoadPages()
 
 	for i := range pages {
@@ -97,7 +103,9 @@ func getDocCard(topic string, title string, about string) string {
 			<div class="xl:w-2/3 md:w-3/5 p-4">
 				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">` + pages[i].Title + `</h2>
 				<p class="leading-relaxed text-base pl-5">` + pages[i].Description + `</p>
+				
 				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: ` + strings.Join(pages[i].Tags, ", ") + `</p>
+
 			</div>
 		</div>
 	</div>
@@ -107,6 +115,34 @@ func getDocCard(topic string, title string, about string) string {
 	}
 
 	cards += ` </div>
+    </div>`
+
+	return cards
+}
+
+func getCommandList() string {
+	var cards = `
+<div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search bg-gray-800">
+			<table class="border-collapse border border-gray-400">
+				<tr>
+					<th class="border border-gray-300 w-3/12">Command</th>
+					<th class="border border-gray-300">Description</th>
+					<th class="border border-gray-300 w-3/12">More info  </th>
+				</tr>`
+	var pages = md_loader.LoadPages()
+	for i := range pages {
+		for y := range pages[i].Commands {
+			cards += `
+<tr>
+<td class="border border-gray-300 search_column">` + pages[i].Commands[y][0] + `</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">` + pages[i].Commands[y][1] + `</td>
+<td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="` + strings.ReplaceAll(pages[i].Filename, ".md", ".html") + `">Learn More...</a></td>
+</tr>`
+			cards += ``
+		}
+	}
+	cards += `</table> </div>
     </div>`
 	return cards
 }

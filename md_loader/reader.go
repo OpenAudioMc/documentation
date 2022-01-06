@@ -52,6 +52,11 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 					break
 				case "TAGS":
 					page.Tags = strings.Split(value, ",")
+				case "COMMANDS":
+					var builder []string
+					builder = strings.Split(value, ",")
+					page.Commands = append(page.Commands, builder)
+
 				}
 			} else {
 				if strings.HasPrefix(line, "#") && !first {

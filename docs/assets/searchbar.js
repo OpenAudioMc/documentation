@@ -35,4 +35,32 @@
         }
     }
 }
+ function search_table() {
+     let input = document.getElementById('searchbar').value
+     input=input.toLowerCase();
+     let x = document.getElementsByClassName('search_column');
+     let count = 0;
+     for (i = 0; i < x.length; i++) {
+         if (!x[i].innerHTML.toLowerCase().includes(input)) {
+             x[i].parentElement.style.display="none";
+             console.log(x[i].parentElement)
+         }
+         else {
+             x[i].parentElement.style.display="";
+             console.log(x[i].parentElement)
+             count+=1;
+         }
+     }
+     if (input != ""){
+         if (count > 0){
+             document.getElementById("search_result_count").innerHTML = count + " results found."
+         }
+         else {
+             document.getElementById("search_result_count").innerHTML = "no tags found, try again using another keyword."
+         }
+     }
+     else {
+         document.getElementById("search_result_count").innerHTML = "";
+     }
+ }
 //coded by someone awesome lol
