@@ -91,14 +91,13 @@
     <p class="text-center" id="search_result_count"></p>
     
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search bg-gray-800">
-			<table class="border-collapse border border-gray-400">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search ">
+			<table class="border-collapse border border-gray-400 bg-gray-800">
 				<tr>
 					<th class="border border-gray-300 w-3/12">Command</th>
 					<th class="border border-gray-300">Description</th>
 					<th class="border border-gray-300 w-3/12">More info  </th>
 				</tr>
-
 <tr>
 <td class="border border-gray-300 search_column">/oa link {fingerprint}</td>
 <td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you the option of linking your account by using your fingerprint you created on the craftmend site</td>
@@ -110,23 +109,23 @@
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="account-setup.html">Learn More...</a></td>
 </tr>
 <tr>
-<td class="border border-gray-300 search_column">/oa alias {alias name} {source}</td>
+<td class="border border-gray-300 search_column">/oa Alias {alias name} {source}</td>
 <td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you the option of entering aliases for media ex. /openaudio alias test https</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="alias.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa hue set {selector} {lights} {r} {g} {b} {brightness}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Set hue lights in wanted color</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Set hue lights in wanted color, visit more info page</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="hue.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa p {selector} {source} {options}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Alias for /oa play</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Alias for /oa play, options can be left empty.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="media.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa play {selector} {source} {options}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you the option for playing media</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Gives you the option for playing media, please visit the media page for an overview of all possibility's, options can be left empty. </td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="media.html">Learn More...</a></td>
 </tr>
 <tr>
@@ -196,7 +195,7 @@
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa speaker {source} [radius]</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you a speaker player head with your source</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">gives you a speaker player head with your source, you can change the speaker settings by right-clicking </td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
 </tr>
 <tr>
@@ -206,7 +205,7 @@
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa speaker menu</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Opens a GUI menu with all nearby speakers</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Opens a GUI menu with all nearby speakers, you can destroy, modify and teleport to the speaker from this menu.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
 </tr>
 <tr>
@@ -216,7 +215,7 @@
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa speaker set {world} {x} {y} {z} {url}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Sets a speaker in the server with the media you want. Speakers always face north</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Sets a speaker in the server with the media you want. Speakers always face north, if you want to have speakers in other directions please use /oa speaker <source>(use world for overworld</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="speakers.html">Learn More...</a></td>
 </tr>
 <tr>
@@ -261,52 +260,52 @@
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa pv mod {username}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa vc mod {username}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa voice mod {username}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa voicechat mod {username}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa proximity mod {username}</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_moderation.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa debug</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State, Account Tags, Platform, TimeData, Throughput, Env, VoiceRTP, Build, RestDirect, Connected clients, loaded regions, loaded speakers, aliases, srvVersion</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa state</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns current state of your OA plugin. State, Account Tags, Platform, TimeData, Throughput, Env, VoiceRTP, Build, RestDirect, Connected clients, loaded regions, loaded speakers, aliases, srvVersion</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa restart</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Restarts the OpenAudioMc plugin. Be warned</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Restarts the OpenAudioMc plugin. Be warned, this will kick ALL connected web client users.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa reload</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Reloads the OpenAudioMc plugin. Be warned</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">Reloads the OpenAudioMc plugin. Be warned, this will kick ALL connected web client.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
 </tr>
 <tr>
 <td class="border border-gray-300 search_column">/oa help</td>
-<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns lis of all commands</td>
+<td class="border border-gray-300 text-left pl-3 pt-4 pb-4 search_column">returns lis of all commands, clicktrough enabled for more specific info.</td>
 <td class="border border-gray-300 text-left pl-3 ml-20 mr-20 text-blue-500"><a href="voicechat_troubleshooting.html">Learn More...</a></td>
 </tr>
 <tr>

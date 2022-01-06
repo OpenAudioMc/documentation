@@ -123,8 +123,8 @@ func getDocCard(topic string, title string, about string) string {
 func getCommandList() string {
 	var cards = `
 <div class="container px-5 py-10 mx-auto border-b-2 border-indigo-500">
-        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search bg-gray-800">
-			<table class="border-collapse border border-gray-400">
+        <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center hide_on_search ">
+			<table class="border-collapse border border-gray-400 bg-gray-800">
 				<tr>
 					<th class="border border-gray-300 w-3/12">Command</th>
 					<th class="border border-gray-300">Description</th>

@@ -54,7 +54,7 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 					page.Tags = strings.Split(value, ",")
 				case "COMMANDS":
 					var builder []string
-					builder = strings.Split(value, ",")
+					builder = strings.SplitN(value, ",", 2)
 					page.Commands = append(page.Commands, builder)
 
 				}
