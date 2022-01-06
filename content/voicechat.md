@@ -7,7 +7,7 @@
 [//]: # (COMMANDS:/mm,Quickly mutes your mic)
 [//]: # (COMMANDS:/audio,Generates a new link for your web client.)
 [//]: # (COMMANDS:/oa voice claim,Force a new license check)
-[//]: # (COMMANDS:/oa accept,gives you the link of the audio client)
+[//]: # (COMMANDS:/oa accept,Gives you the link of the audio client)
 # Voice Chat
 Proximity Voice Chat is one of the core OpenAudioMc features. It allows players to others within a configurable radius. They can hear the whereabouts of others through spatial audio, which is incredibly fun for SMP's, Minigames, Roleplay, and so much more.
 <br />

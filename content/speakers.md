@@ -2,7 +2,7 @@
 [//]: # (ICON:fas fa-volume-up)
 [//]: # (DESCRIPTION:Placing speaker blocks to have spatial in game audio)
 [//]: # (TAGS:spatial,speaker,speakers,music,media,region,audio,media)
-[//]: # (COMMANDS:/oa speaker {source} [radius],gives you a speaker player head with your source, you can change the speaker settings by right-clicking )
+[//]: # (COMMANDS:/oa speaker {source} [radius],Gives you a speaker player head with your source, you can change the speaker settings by right-clicking )
 [//]: # (COMMANDS:/oa speaker gc,Activates the speakers garbage collector. Warning this will load all chunks with speakers in your world. You may experience some massive lagg on a big server. type /oa speaker gc confirm)
 [//]: # (COMMANDS:/oa speaker menu,Opens a GUI menu with all nearby speakers, you can destroy, modify and teleport to the speaker from this menu.)
 [//]: # (COMMANDS:/oa speaker remove {world} {x} {y} {z},Removes speaker on specified place on server.)

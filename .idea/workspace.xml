@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/alias.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alias.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/notifications.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/notifications.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/speakers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/speakers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/stop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/stop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/voicechat.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/voicechat_troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat_troubleshooting.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/command-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/command-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md_loader/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/md_loader/reader.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/webpage_renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/webpage_renderer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
