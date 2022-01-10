@@ -102,7 +102,12 @@
                                             <label for="play-local-media">How can I play local files
                                             </label>
                                         </div>
-
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="play-invalid-source" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="play-invalid-source">My source wont work
+                                            </label>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -500,14 +505,14 @@
                         <div id="solutions" class="text-white">
 
                             <div id="problem-0-solve" class="problem-solve hidden problem-0-solve">
-                                <p> Please read our documentation. If you still can’t figure it out, feel free to pass by in our
+                                <p> Please read our documentation. Or watch this video of the installation. If you still can’t figure it out, feel free to pass by in our
                                     discord:
                                     <a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/ </a>
                                 </p>
                             </div>
                             <div id="problem-1-solve" class="problem-solve hidden problem-1-solve">
                                 <p>
-                                    Please read our documentation. <a href="https://help.openaudiomc.net/account-setup.html">https://help.openaudiomc.net/account-setup.html</a>
+                                    Watch this video or read our documentation.<a href="https://help.openaudiomc.net/account-setup.html">https://help.openaudiomc.net/account-setup.html</a>
                                 </p>
                             </div>
                             <div id="problem-2-solve" class="problem-solve hidden problem-2-solve">
@@ -603,7 +608,7 @@
                             </div>
                             <div id="problem-15-solve" class="problem-solve hidden problem-15-solve">
                                 <p>
-                                    We know your time is valuable, Please visit our discord server for further diagnosing your problem
+                                    We know your time is valuable, Please visit our discord server for further diagnosing your problem. Run the command: <p>/oa state </p>Attach this screenshot to your question.
                                     <a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/</a>
 
                                 </p>
@@ -624,7 +629,7 @@
                                     Please visit our discord
                                     server for further
                                     diagnosing your
-                                    problem
+                                    problem. Run the command: <p>/oa state </p>Attach this screenshot to your question.
                                     <a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a>
                                 </p>
                             </div>
@@ -687,6 +692,15 @@
 
 
                             </div>
+                            <div id="problem-28-solve" class="problem-solve hidden problem-28-solve">
+                                <p>
+                                    First try this command:
+                                    <p>/openaudio play @a https://soundcloud.com/mrfijiwiji/imalright</p><br>
+                                    If this is working your source is probably invalid. Try avoiding YouTube since this service does drop sometimes and some video’s won’t even work. For best experiences use soundcloud or use local files.
+                                </p>
+
+
+                            </div>
                         </div>
 
                     </div>
@@ -739,9 +753,18 @@
     <div class="hidden problem-22-solve side-picture">
         <div class="info-picture"><img src="assets/java-new-audio-link.png" alt="java new audio link screenshot"></div>
     </div>
+    <div class="hidden problem-0-solve  problem-1-solve problem-26-solve side-picture">
+    <iframe  height="315px" width="700px" src="https://www.youtube.com/embed/S29cQz094Bw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+
+
     <div class=" ">
         <div class="info-picture absolute"><img src="assets/troubleshooting.png" alt="troubleshooting"></div>
     </div>
+
 </div>
 
 
@@ -908,6 +931,10 @@
 
     });
 
+    $("#play-invalid-source").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-28-solve").slideDown();
+    });
     $("#other-audio").change(function () {
         $('.dev-help').hide();
         $(".dev-help-other-audio").slideDown();
