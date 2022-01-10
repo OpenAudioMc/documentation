@@ -57,5 +57,70 @@ h3{
     font-size: 115% !important;
     font-weight: bold;
 }
+.amr-option-group {
+    margin-top: 32px;
+    padding: 24px;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(107, 107, 107, 0.25), 0 10px 10px rgba(94, 94, 94, 0.22);
+    background-color: rgba(17, 24, 38, 0.75);
 
+}
+.radio-group{
+    width: 100%;
+
+}
+.form-control{
+    transition: all 1.9s;
+}
+.radio label {
+    margin-top: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    transition-timing-function: ease-out;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(145, 145, 145, 0.16), 0 3px 6px rgba(89, 89, 89, 0.23);
+}
+.bg-troubleshooter{
+    background-color: rgba(21, 28, 44, 0.69);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.radio input {
+    display: none;
+}
+
+.amr-checkmark {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #dedede;
+    color: #dedede;
+    margin-right: 12px;
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.form-group input:checked + .amr-label .amr-checkmark {
+    background: #006064;
+}
+
+.form-group input:checked + .amr-label {
+    background-color: #00838F;
+}
+
+.radio label:hover {
+    transition: 0.2s ease;
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 1px 3px rgba(213, 213, 213, 0.56), 0 1px 2px rgba(161, 161, 161, 0.65);
+}
+
+input:checked + .radio-group-label {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #fff;
+}
 

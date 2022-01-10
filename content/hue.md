@@ -11,7 +11,7 @@
 OpenAudioMc has a build in Philips-Hue integration, this can be used to add real time lighting effects to your Minecraft server
 The hue integration is designed to work with colors, but white lights are also supported (along with Led strips). When a hue bridge gets detected on the local network of a client, it will show a little bottom right corner.
 
-If the user clicks the button, it prompts them though the setup process where they need to select a room. The messages for this setup can be changed in the config. If the user already linked their lights before, OpenAudioMc will automatically when connected.
+If the user clicks the button, it prompts them though the setup process where they need to select a room. The messages for this setup can be changed in the config. If the user already linked their lights before, OpenAudioMc will connect automatically when connected.
 
 # Commands
 The OpenAudioMc command is used to change the colors and brightness of specific lights or groups.
