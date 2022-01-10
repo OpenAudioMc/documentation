@@ -396,6 +396,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="hidden client-mic-adjust" id="client-mic-adjust">
+                                <div class="radio-group form-group field-radio-group-1641571147151">
+                                    <label  class="radio-group-label font-extrabold">Play around with your input device or adjust your microphone threshold. You can toggle this menu with the button "Voice chat input settings toggle menu"
+                                        <span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571147151" access="false" id="client-mic-adjust-fail"
+                                                   required="required" aria-required="true" value="yes" type="radio">
+                                            <label for="client-mic-adjust-fail">It's still not working</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="hidden client-help-find-page" id="client-help-find-page">
 
                                 <div class="radio-group form-group field-radio-group-1641571236814">
@@ -595,7 +608,7 @@
                             </div>
                             <div id="problem-1-solve" class="problem-solve hidden problem-1-solve">
                                 <p>
-                                    Please read our documentation. <a href="https://help.openaudiomc.net/account-setup.html">https://help.openaudiomc.net/account-setup.html</a>
+                                    Watch this video or read our documentation.<a href="https://help.openaudiomc.net/account-setup.html">https://help.openaudiomc.net/account-setup.html</a>
                                 </p>
                             </div>
                             <div id="problem-2-solve" class="problem-solve hidden problem-2-solve">
@@ -836,6 +849,9 @@
     <div class="hidden problem-22-solve side-picture">
         <div class="info-picture"><img src="assets/java-new-audio-link.png" alt="java new audio link screenshot"></div>
     </div>
+    <div class="hidden client-mic-adjust side-picture">
+        <div class="info-picture"><img src="assets/mic-level.png" alt="java new audio link screenshot"></div>
+    </div>
     <div class="hidden problem-0-solve  problem-1-solve problem-26-solve side-picture">
     <iframe  height="315px" width="700px" src="https://www.youtube.com/embed/S29cQz094Bw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -922,7 +938,7 @@
         $('.client-help-background').hide();
     });
     $("#client-problem-avatar-yes").change(function () {
-        $(".problem-18-solve").slideDown();
+        $(".client-mic-adjust").slideDown();
         $('.client-help-background').hide();
     });
     $("#client-problem-avatar-no").change(function () {
@@ -930,9 +946,14 @@
         $('.client-help-background').hide();
     });
     $("#client-problem-pop-up-yes").change(function () {
-        $(".problem-18-solve").slideDown();
+        $(".client-mic-adjust").slideDown();
         $('.client-help-popup').hide();
     });
+    $("#client-mic-adjust-fail").change(function () {
+        $(".problem-18-solve").slideDown();
+        $('.client-mic-adjust').hide();
+    });
+
     $("#client-problem-pop-up-no").change(function () {
         $(".problem-24-solve").slideDown();
         $('.client-help-popup').hide();
@@ -988,8 +1009,6 @@
         $('.client-help').hide();
     });
     $(".back-main").click(function () {
-
-
         $('.dev-help').hide();
         $('.problem-solve').hide();
         $('.side-picture').hide();
@@ -1008,6 +1027,7 @@
         $('.dev-help-other-audio').hide();
         $('.dev-help-voice-chat').hide();
         $('.dev-help-setup').hide();
+        $('.client-mic-adjust').hide();
         $('.dev-help-install-perms-others').hide();
         $(".who-is-it").slideDown();
         $('#helper-form')[0].reset();
