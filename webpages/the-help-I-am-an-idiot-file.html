@@ -108,6 +108,12 @@
                                             <label for="play-invalid-source">My source wont work
                                             </label>
                                         </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="speaker-cleanup" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="speaker-cleanup">I get some errors about speakers in console
+                                            </label>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -714,6 +720,18 @@
 
 
                             </div>
+                            <div id="problem-29-solve" class="problem-solve hidden problem-29-solve">
+                                <p>
+                                    If the errors look similar as in the picture you can try fixing them by using:
+
+                                <p>/oa speaker gc</p><br>
+                                Be carefully, this command will load all chunks in your server. If you have a big server it may cause some serious lag.
+                                <p>If your problem isn't similar in any way please join our discord and we will further diagnose your problem. </p>
+                                <a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a>
+                               </p>
+
+
+                            </div>
                         </div>
 
                     </div>
@@ -765,6 +783,9 @@
     </div>
     <div class="hidden problem-22-solve side-picture">
         <div class="info-picture"><img src="assets/java-new-audio-link.png" alt="java new audio link screenshot"></div>
+    </div>
+    <div class="hidden problem-29-solve side-picture">
+        <div class="info-picture"><img src="assets/corrupted-speaker.png" alt="java new audio link screenshot"></div>
     </div>
     <div class="hidden client-mic-adjust side-picture">
         <div class="info-picture"><img src="assets/mic-level.png" alt="java new audio link screenshot"></div>
@@ -955,6 +976,11 @@
         $('.dev-help-other-audio').hide();
         $(".problem-28-solve").slideDown();
     });
+    $("#speaker-cleanup").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-29-solve").slideDown();
+    });
+
     $("#other-audio").change(function () {
         $('.dev-help').hide();
         $(".dev-help-other-audio").slideDown();
