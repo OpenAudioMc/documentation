@@ -15,4 +15,4 @@ These browsers are fully supported in the latest OpenAudioMc release.
 
 # Discontinued Browsers
 These browsers are not supported (anymore) by OpenAudioMc. If you got redirected to this page, then that probably means that you were using one of these. Please try to open your client with a different browser. (tip: you can click "Copy to clipboard" in game to manually open it in a supported browser)
- - Internet Explorer: *Got replaced by Edge*
+ - [Internet Explorer](https://www.microsoft.com/nl-be/download/internet-explorer.aspx): *Got replaced by Edge*

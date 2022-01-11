@@ -3,16 +3,16 @@
 
     <div class="absolute inset-0 w-full h-full bg-black bg-opacity-75 w-11/12 "></div>
 
-    <div class="md:container md:mx-auto relative flex flex-col  px-10 pb-1 pr-12 text-2xl font-hairline text-white  bg-troubleshooter ">
-        <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-white m-10">Troubleshoot your problems with some simple questions!
+    <div class="md:container md:mx-auto relative flex flex-col  px-10 pb-1 pr-12 text-2xl font-hairline   bg-troubleshooter ">
+        <h2 class="relative z-20 text-5xl font-extrabold text-gray-400 leading-tight m-10">Troubleshoot your problems with some simple questions!
         </h2>
 
-    <div class="flex mx-auto w-full flex flex-wrap w-11/12 ">
-        <div class="w-full md:w-1/2 lg:w-1/2 relative flex flex-col px-10 pb-1 pr-12 text-2xl font-hairline text-white">
+    <div class="flex mx-auto w-full flex flex-wrap w-11/12  ">
+        <div class=" w-full md:w-1/2 lg:w-1/2 md:block relative overflow-hidden rounded-lg shadow-2xl cursor-pointer  side-picture-background group text-2xl font-hairline text-gray-400">
 
-            <div class="relative z-20 block mt-4 text-xl amr-option-group">
+            <div class="relative z-20 block text-xl amr-option-group">
                 <form id="helper-form">
-                    <div class=" max-w-6xl mx-auto text-white">
+                    <div class=" max-w-6xl mx-auto ">
                         <div class="rendered-form flex-1">
                             <div id="who-is-it" class="who-is-it  ">
 
@@ -87,7 +87,7 @@
                                         <div class="radio">
                                             <input name="problem" access="false" id="problem-12" required="required"
                                                    aria-required="true" value="offline-mode" type="radio">
-                                            <label for="problem-12">When I do /oa speaker, just nothing happens, no errors,
+                                            <label for="problem-12">When I do <code>/oa speaker</code>, just nothing happens, no errors,
                                                 nothing</label>
                                         </div>
                                         <div class="radio">
@@ -264,7 +264,7 @@
                                             <div class="radio">
                                                 <input name="client-where-problems-form" access="false" id="client-problem-link"
                                                        required="required" aria-required="true" value="link" type="radio">
-                                                <label for="client-problem-link">I can’t find the link for the audio client</label>
+                                                <label for="client-problem-link">I can’t find or click the link for the audio client</label>
                                             </div>
                                             <div class="radio">
                                                 <input name="client-where-problems-form" access="false"
@@ -524,10 +524,19 @@
                         <div id="solutions" class="text-white">
 
                             <div id="problem-0-solve" class="problem-solve hidden problem-0-solve">
-                                <p> Please read our documentation. Or watch this video of the installation. If you still can’t figure it out, feel free to pass by in our
+                                <p> Please read our documentation, there is a dedicated page for installing the minecraft plugin.
+                                    You can also watch this video of the installation. If you still can’t figure it out, feel free to pass by in our
                                     discord:
-                                    <a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/ </a>
+
                                 </p>
+                                <p>
+                                    <code><a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/ </a></code>
+                                </p>
+                                <br>
+                                <p class="mb-12">
+                                    Good luck with installing our plugin. We hope our plugin can make your day.
+                                </p><br><br><br>
+
                             </div>
                             <div id="problem-1-solve" class="problem-solve hidden problem-1-solve">
                                 <p>
@@ -537,7 +546,7 @@
                             <div id="problem-2-solve" class="problem-solve hidden problem-2-solve">
                                 <p>
                                     No, at least not yet. If the demand is big enough, we will investigate it. Please use java api
-                                    instead: <a href="https://help.openaudiomc.net/java_api.html">https://help.openaudiomc.net/java_api.html</a>
+                                    instead: <code><a href="https://help.openaudiomc.net/java_api.html">https://help.openaudiomc.net/java_api.html</a></code>
                                 </p>
                             </div>
                             <div id="problem-3-solve" class="problem-solve hidden problem-3-solve">
@@ -551,7 +560,7 @@
                             <div id="problem-4-solve" class="problem-solve hidden problem-4-solve">
                                 <p>
                                     Short answer, no. And we are not planning to implement that. The tools you got inside the mod
-                                    GUI are the only available functions. You can access them using the command: <p>/oa voice mod {Playername}</p> This to prevent abuse.
+                                    GUI are the only available functions. You can access them using the command: <p><code>/oa voice mod {Playername}</code></p> This to prevent abuse.
                                 </p>
                             </div>
                             <div id="problem-5-solve" class="problem-solve hidden problem-5-solve">
@@ -564,21 +573,21 @@
                                 <p>
                                     You can use our github page. Please use the right format to make things easier.
 
-                                    <a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a>
+                                    <code><a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a></code>
                                 </p>
                             </div>
                             <div id="problem-7-solve" class="problem-solve hidden problem-7-solve">
                                 <p>
                                     You can use our github page. Please use the right format to make things easier.
 
-                                    <a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a>
+                                    <code><a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a></code>
                                 </p>
                             </div>
                             <div id="problem-8-solve" class="problem-solve hidden problem-8-solve">
                                 <p>
                                     Bedrock does not support this feature. You can change the message posted in the minecraft chat instead. It can display the code
                                     instead. Players have to manually type there code in their web client. Please refer to:
-                                    <a href="https://help.openaudiomc.net/geyser.html">https://help.openaudiomc.net/geyser.html</a>
+                                    <code><a href="https://help.openaudiomc.net/geyser.html">https://help.openaudiomc.net/geyser.html</a></code>
                                 </p>
                             </div>
                             <div id="problem-9-solve" class="problem-solve hidden  problem-9-solve">
@@ -588,7 +597,7 @@
                             </div>
                             <div id="problem-10-solve" class="problem-solve hidden  problem-10-solve">
                                 <p>
-                                    Please visit <a href="https://account.craftmend.com/">https://account.craftmend.com/</a>
+                                    Please visit <code><a href="https://account.craftmend.com/">https://account.craftmend.com/</a></code>
 
                                     You have to link your account by using your fingerprint. Afterwards you will be able to edit
                                     your servers settings
@@ -597,7 +606,7 @@
                             </div>
                             <div id="problem-11-solve" class="problem-solve hidden problem-11-solve">
                                 <p>
-                                    Pleas visit our site: <a href="https://account.craftmend.com">https://account.craftmend.com/account/openaudiomc/manage/</a> You can claim a voice license after you linked your server to the craftmend site by using your fingerprint. If you require more licenses you can become a patreon and get extra licenses with premium support. You can activate this on our patreon page: <a href="https://www.patreon.com/mindgamesnl">https://www.patreon.com/mindgamesnl</a>. If you want more info please visit our documentation page.
+                                    Pleas visit our site:  </p><p><code><a href="https://account.craftmend.com">https://account.craftmend.com/account/openaudiomc/manage/</a></code></p><p> You can claim a voice license after you linked your server to the craftmend site by using your fingerprint.</p><br><p> If you require more licenses you can become a patreon and get extra licenses with premium support.</p><p> You can activate this on our patreon page:</p><p> <a href="https://www.patreon.com/mindgamesnl">https://www.patreon.com/mindgamesnl</a>.</p><p> If you want more info please visit our documentation page.
 
                                 </p>
 
@@ -627,8 +636,8 @@
                             </div>
                             <div id="problem-15-solve" class="problem-solve hidden problem-15-solve">
                                 <p>
-                                    We know your time is valuable, Please visit our discord server for further diagnosing your problem. Run the command: <p>/oa state </p>Attach this screenshot to your question.
-                                    <a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/</a>
+                                    We know your time is valuable, Please visit our discord server for further diagnosing your problem. Run the command: <p><code>/oa state </code> </p>Attach this screenshot to your question.
+                                <code><a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/</a></code>
 
                                 </p>
                             </div>
@@ -640,7 +649,7 @@
                             <div id="problem-17-solve" class="problem-solve hidden problem-17-solve">
                                 <p>
                                     YEEEY, its working now, but its time to close some other programs or tabs to reduce ram usage. Or download more of it here
-                                    <a href="https://downloadmoreram.com/">https://downloadmoreram.com/</a>
+                                    <code><a href="https://downloadmoreram.com/">https://downloadmoreram.com/</a></code>
                                 </p>
                             </div>
                             <div id="problem-18-solve" class="problem-solve hidden problem-18-solve">
@@ -648,8 +657,8 @@
                                     Please visit our discord
                                     server for further
                                     diagnosing your
-                                    problem. Run the command: <p>/oa state </p>Attach this screenshot to your question.
-                                    <a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a>
+                                    problem. Run the command: <p><code>/oa state </code></p>Attach this screenshot to your question.
+                                <code><a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a></code>
                                 </p>
                             </div>
                             <div id="problem-19-solve" class="problem-solve hidden problem-19-solve">
@@ -658,22 +667,24 @@
                                 </p>
                             </div>
                             <div id="problem-20-solve" class="problem-solve hidden problem-20-solve">
+                                <p>You can do <code>/audio</code> to generate a new link. If you don't see a link your server owner didn't configure the server correctly.
+                                </p>
                                 <p>
                                     Copy this code, open a browser with url:
-                                    <a href="https://client.openaudio
+                                    <code><a href="https://client.openaudio
                         mc.net/">https://client.openaudio
-                                        mc.net/</a> and enter your code from your minecraft chat</p>
+                                        mc.net/</a></code> and enter your code from your minecraft chat</p>
                             </div>
                             <div id="problem-21-solve" class="problem-solve hidden problem-21-solve">
                                 <p>
-                                    Did you enter your code on the website? <a href="https://client.openaudio
+                                    Did you enter your code on the website? <code><a href="https://client.openaudio
                         mc.net/">https://client.openaudio
-                                    mc.net/</a> Afterwards you will be connected to the minecraft audio session of your server.
+                                    mc.net/</a></code> Afterwards you will be connected to the minecraft audio session of your server.
                                 </p>
                             </div>
                             <div id="problem-22-solve" class="problem-solve hidden problem-22-solve">
                                 <p>
-                                    Use the command /audio in the minecraft chat to generate a new link
+                                    Use the command <code>/audio</code> in the minecraft chat to generate a new link
                                 </p>
                             </div>
                             <div id="problem-23-solve" class="problem-solve hidden problem-23-solve">
@@ -691,22 +702,22 @@
                             </div>
                             <div id="problem-25-solve" class="problem-solve hidden problem-25-solve">
                                 <p>
-                                    Verify your setting “use-region-priority” in your config.yml. If its set ‘true’ all affected regions will be read. If its set ‘false’ only the highest priority zone will be read. You can use "use-max-priority-association“ (worldguard command)
+                                    Verify your setting “use-region-priority” in your <code>config.yml</code>. If its set <code>‘true’</code> all affected regions will be read. If its set <code>‘false’</code> only the highest priority zone will be read. You can use <code>"use-max-priority-association“</code> (worldguard command)
                                 </p>
 
 
                             </div>
                             <div id="problem-26-solve" class="problem-solve hidden problem-26-solve">
                                 <p>
-                                    Your connection may be throttled down if you have a free unlinked account. Pleas visit our site and link your server by using the fingerprint: <a href="https://account.craftmend.com">https://account.craftmend.com</a>
+                                    Your connection may be throttled down if you have a free unlinked account. Please visit our site and link your server by using the fingerprint: <code><a href="https://account.craftmend.com">https://account.craftmend.com</a></code>
                                 </p>
 
 
                             </div>
                             <div id="problem-27-solve" class="problem-solve hidden problem-27-solve">
                                 <p>
-                                    You have to be a patreon to play local files in your server. If you already are a patreon you can store those audio files inside the plugins folder. You CAN NOT USE SPACES inside your filenames. You can select the file with: <p>/oa @a local:yourfilename</p>
-                                    Supported audio files: mp3, Wav, Ogg, mp4. mp3 is recommended to use. You can make subdirectories if you want inside you plugins folder. (default map: plugins/OpenAudioMc/audio/)
+                                    You have to be a patreon to play local files in your server. If you already are a patreon you can store those audio files inside the plugins folder. You CAN NOT USE SPACES inside your filenames. You can select the file with: <p><code>/oa @a local:yourfilename</code></p>
+                                    Supported audio files:<code> mp3, Wav, Ogg, mp4</code>. mp3 is recommended to use. You can make subdirectories if you want inside you plugins folder. (default map: <code>plugins/OpenAudioMc/audio/</code>)
                                 </p>
 
 
@@ -714,7 +725,7 @@
                             <div id="problem-28-solve" class="problem-solve hidden problem-28-solve">
                                 <p>
                                     First try this command:
-                                    <p>/openaudio play @a https://soundcloud.com/mrfijiwiji/imalright</p><br>
+                                    <p><code>/openaudio play @a https://soundcloud.com/mrfijiwiji/imalright</code></p><br>
                                     If this is working your source is probably invalid. Try avoiding YouTube since this service does drop sometimes and some video’s won’t even work. For best experiences use soundcloud or use local files.
                                 </p>
 
@@ -727,7 +738,7 @@
                                 <p>/oa speaker gc</p><br>
                                 Be carefully, this command will load all chunks in your server. If you have a big server it may cause some serious lag.
                                 <p>If your problem isn't similar in any way please join our discord and we will further diagnose your problem. </p>
-                                <a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a>
+                                <code><a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a></code>
                                </p>
 
 
@@ -741,13 +752,11 @@
 
         </div>
 
-        <div class="w-full md:w-1/2 lg:w-1/2 md:block relative overflow-hidden rounded-lg shadow-2xl cursor-pointer group">
+        <div class="flex items-stretch container w-full md:w-1/2 lg:w-1/2 md:block relative overflow-hidden rounded-lg shadow-2xl cursor-pointer  side-picture-background group align-middle">
 
-<div class="mb-5 flex-1 mt-8 h-72 ">
+            <div class="ext-box absolute ">
+                <div class="int-box ">
 
-    <div class="hidden ">
-        <div class="info-picture"><img src="assets/proximity-button-web-client.png" alt="craftmend site screenshot"></div>
-    </div>
             <div class="hidden" class="client-help-find-page side-picture">
                 <div class="info-picture"><img src="assets/proximity-button-web-client.png" alt="craftmend site screenshot"></div>
             </div>
@@ -798,24 +807,25 @@
     </div>
 
 
-
-
-
-    <div class=" ">
-        <div class="info-picture absolute"><img src="assets/troubleshooting.png" alt="troubleshooting"></div>
+            </div>
     </div>
 
+            <div class="ext-box">
+            <div class="int-box">
+                <div class="side-image self-center "><img width="250px"  src="assets/logo.png" alt="troubleshooting"></div>
+            </div>
+            </div>
+
+
 </div>
-
-
-    </div>
-
-</div>
+        <div class="int-box ">
         <div class="flex mt-4 mb-5  flex-row-reverse">
             <button type="button" class="back-main flex items-center self-start justify-center px-5 py-3 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-8">Back to start</button>
-
+        </div>
         </div>
 </div>
+</div>
+
 </div>
 
 <script src="assets/jquery.js"></script>
