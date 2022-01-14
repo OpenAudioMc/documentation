@@ -7,8 +7,10 @@
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/browsers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/browsers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/java_api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/java_api.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java_api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/geyser.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/geyser.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/hue.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/hue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/troubleshooting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/the-help-I-am-an-idiot-file.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/the-help-I-am-an-idiot-file.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
