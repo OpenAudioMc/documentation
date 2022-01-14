@@ -46,16 +46,92 @@ p a {
     text-decoration: underline;
 }
 h1{
-    font-size: 140% !important;
+    font-size: 145% !important;
     font-weight: bold;
 }
 h2{
-    font-size: 130% !important;
+    font-size: 140% !important;
     font-weight: bold;
 }
 h3{
-    font-size: 115% !important;
+    font-size: 125% !important;
     font-weight: bold;
 }
+.amr-option-group {
+    padding: 24px;
+    width: 100%;
+    background-color: rgb(17, 24, 39);
 
+}
+.side-picture-background {
+    background-color: rgb(17, 24, 39);
+}
+
+.side-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+div.ext-box { display: table; height: 100%; width:100%;}
+div.int-box { display: table-cell; vertical-align: middle; }
+.radio-group{
+    width: 100%;
+}
+.form-control{
+    transition: all 1.9s;
+}
+.radio label {
+    margin-top: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    transition-timing-function: ease-out;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(145, 145, 145, 0.16), 0 3px 6px rgba(89, 89, 89, 0.23);
+}
+.bg-troubleshooter{
+    background-color: rgba(21, 28, 44, 0.69);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.radio input {
+    display: none;
+}
+
+.amr-checkmark {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #dedede;
+    color: #dedede;
+    margin-right: 12px;
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.form-group input:checked + .amr-label .amr-checkmark {
+    background: #006064;
+}
+
+.form-group input:checked + .amr-label {
+    background-color: #00838F;
+}
+
+.radio label:hover {
+    transition: 0.2s ease;
+    transform: scale(1.02, 1.02);
+    color: white;
+    box-shadow: 0 1px 3px rgba(213, 213, 213, 0.56), 0 1px 2px rgba(161, 161, 161, 0.65);
+}
+
+input:checked + .radio-group-label {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #fff;
+}
 

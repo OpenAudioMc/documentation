@@ -15,7 +15,7 @@ To get started, clone the GitHub repository and build the latest release locally
 <dependency>
     <groupId>com.craftmend.openaudiomc</groupId>
     <artifactId>OpenAudioMc</artifactId>
-    <version>{{ Release version }}</version>
+    <version>{Release version}</version>
     <scope>provided</scope>
 </dependency>
 ```

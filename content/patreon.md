@@ -3,7 +3,7 @@
 [//]: # (DESCRIPTION:Extra perks of becoming a sponsor)
 [//]: # (TAGS:regions,areas,worldguard,world,region,media,accounts)
 
-OpenAudioMc has always been a hobby project that I ran in my spare time ever since it launched <b>5 years</b> ago.
+OpenAudioMc has always been a hobby project that I ran in my spare time ever since it launched `5 years` ago.
 I love to spend time on the project, expanding it, improving it and growing it to be a mature application for everyone to use, and we've come a long day since our release in 2016.
 <br />
 The ugly truth is though, that hosting a project like this requires a lot of attention during times when I might not have all the spare time in the world (during exams, etc), and with the projects insane growth over the last two years, the hosting costs have skyrocketed.

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/browsers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/browsers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/geyser.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/geyser.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/hue.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/hue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/troubleshooting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/the-help-I-am-an-idiot-file.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/the-help-I-am-an-idiot-file.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -63,17 +68,19 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\znvrb\Documents\GitHub\documentation\webpages" />
       <recent name="$PROJECT_DIR$/webpages" />
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/out/assets" />
-      <recent name="$PROJECT_DIR$/html_templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\znvrb\Documents\GitHub\documentation\docs" />
       <recent name="$PROJECT_DIR$/content/documentation_content" />
       <recent name="$PROJECT_DIR$/html_templates/assets" />
       <recent name="$PROJECT_DIR$/out/assets" />
@@ -93,7 +100,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

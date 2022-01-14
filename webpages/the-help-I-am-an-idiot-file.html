@@ -1,0 +1,1089 @@
+<div class="relative flex flex-col-reverse items-center justify-center h-screen bg-cover min-w-screen "
+     style="background-image:url('assets/matterhorn_winter.png')">
+
+    <div class="absolute inset-0 w-full h-full bg-black bg-opacity-75 w-11/12 "></div>
+
+    <div class="md:container md:mx-auto relative flex flex-col  px-10 pb-1 pr-12 text-2xl font-hairline   bg-troubleshooter ">
+        <h2 class="relative z-20 text-5xl font-extrabold text-gray-400 leading-tight m-10">Troubleshoot your problems with some simple questions!
+        </h2>
+
+    <div class="flex mx-auto w-full flex flex-wrap w-11/12  ">
+        <div class=" w-full md:w-1/2 lg:w-1/2 md:block relative overflow-hidden rounded-lg shadow-2xl cursor-pointer  side-picture-background group text-2xl font-hairline text-gray-400">
+
+            <div class="relative z-20 block text-xl amr-option-group">
+                <form id="helper-form">
+                    <div class=" max-w-6xl mx-auto ">
+                        <div class="rendered-form flex-1">
+                            <div id="who-is-it" class="who-is-it  ">
+
+                                <div class="select form-group field-persontype grid">
+                                    <div class="radio-group form-group field-problem">
+                                        <label  class="radio-group-label font-extrabold">Please select your function<span
+                                                class="required">*</span></label>
+                                        <div class="radio-group m-3">
+                                            <div class="radio mt-10">
+                                                <input name="problem" access="false" id="user" required="required"
+                                                       aria-required="true" value="offline-mode" type="radio">
+                                                <label for="user">I am a web client user
+                                                </label>
+                                            </div>
+                                            <div class="radio  mt-7">
+                                                <input name="problem" access="false" id="owner" required="required"
+                                                       aria-required="true" value="offline-mode" type="radio">
+                                                <label for="owner">I am a server owner</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help" class="hidden dev-help">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label class="radio-group-label font-extrabold">Where are you experiencing problems with?<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="other-audio" required="required" aria-required="true"
+                                                   value="other audio" type="radio">
+                                            <label for="other-audio">Audio</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="voice-chat" required="required" aria-required="true"
+                                                   value="voice-chat" type="radio">
+                                            <label for="voice-chat">Voice chat</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="setup" required="required" aria-required="true"
+                                                   value="setup" type="radio">
+                                            <label for="setup">Audio link, permissions, installation, langauge</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-6" required="required" aria-required="true"
+                                                   value="bug" type="radio">
+                                            <label for="problem-6">I found a bug, where can I post it?</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-7" required="required" aria-required="true"
+                                                   value="feature-request" type="radio">
+                                            <label for="problem-7">I have a feature request</label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help-other-audio" class="hidden dev-help-other-audio">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label class="radio-group-label font-extrabold">What part of other audio is the subject about?<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-12" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="problem-12">When I do <code>/oa speaker</code>, just nothing happens, no errors,
+                                                nothing</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="worldguard-regions" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="worldguard-regions">I am experiencing difficulties with the worldguard regions
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="play-local-media" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="play-local-media">How can I play local files
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="play-invalid-source" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="play-invalid-source">My source wont work
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="speaker-cleanup" required="required"
+                                                   aria-required="true" value="offline-mode" type="radio">
+                                            <label for="speaker-cleanup">I get some errors about speakers in console
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help-voice-chat" class="hidden dev-help-voice-chat">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label  class="radio-group-label font-extrabold">What sort of issue do you have with voicechat<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-4" required="required" aria-required="true"
+                                                   value="userroles" type="radio">
+                                            <label for="problem-4">Is there an option for not showing staff members in voice
+                                                chat</label>
+                                        </div>
+
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-11" required="required"
+                                                   aria-required="true" value="proximity-chat" type="radio">
+                                            <label for="problem-11">Where do I enable proximity chat</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="dev-webpage-disconnect" required="required"
+                                                   aria-required="true" value="proximity-chat" type="radio">
+                                            <label for="dev-webpage-disconnect">The web clients of the joined people keeps disconnecting</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help-voice-chat-disconnect-craftmend" class="hidden dev-help-voice-chat-disconnect-craftmend">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label  class="radio-group-label font-extrabold">Did you link your Minecraft server to our craftmend platform?
+                                        <span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="dev-craftmend-unlinked" required="required" aria-required="true"
+                                                   value="userroles" type="radio">
+                                            <label for="dev-craftmend-unlinked">No</label>
+                                        </div>
+
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="dev-craftmend-linked" required="required"
+                                                   aria-required="true" value="proximity-chat" type="radio">
+                                            <label for="dev-craftmend-linked">Yes</label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help-setup" class="hidden dev-help-setup">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label  class="radio-group-label font-extrabold">Please select your problem:<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-1" required="required" aria-required="true"
+                                                   value="craftmend-link" type="radio">
+                                            <label for="problem-1">I don’t know how to link my craftmend account</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-3" required="required" aria-required="true"
+                                                   value="language" type="radio">
+                                            <label for="problem-3">Can I change the language of the plugin?</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-8" required="required" aria-required="true"
+                                                   value="bedrock" type="radio">
+                                            <label for="problem-8">I am on bedrock, and the clickable link isn’t working </label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="install-perms-others" required="required" aria-required="true"
+                                                   value="time-left-show" type="radio">
+                                            <label for="install-perms-others">Installation, Permissions, Other</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-10" required="required"
+                                                   aria-required="true" value="online-settings" type="radio">
+                                            <label for="problem-10">How do I get the online settings?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dev-help-install-perms-others" class="hidden dev-help-install-perms-others">
+
+                                <div class="radio-group form-group field-problem">
+                                    <label  class="radio-group-label font-extrabold">Please select your problem:<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-0" required="required" aria-required="true"
+                                                   value="install" type="radio">
+                                            <label for="problem-0">I am experiencing dificulties installing the plugin</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-2" required="required" aria-required="true"
+                                                   value="skript" type="radio">
+                                            <label for="problem-2">Can I let this work with skript?</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-5" required="required" aria-required="true"
+                                                   value="bungeecord" type="radio">
+                                            <label for="problem-5">I would like to use the plugin only in one mode of my server but it
+                                                asks me to install it in the bungecoord</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-9" required="required" aria-required="true"
+                                                   value="time-left-show" type="radio">
+                                            <label for="problem-9">Does OA have placeholders with the time left of a show?</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input name="problem" access="false" id="problem-13" required="required"
+                                                   aria-required="true" value="permissions" type="radio">
+                                            <label for="problem-13">It says I don’t have any permissions to do that?</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help" id="client-help">
+                                <div class="rendered-form client-where-problems" id="client-where-problems">
+                                    <div class="radio-group form-group client-where-problems-form">
+                                        <label  class="radio-group-label font-extrabold">Where are you experiencing
+                                            problems with?<span class="required">*</span></label>
+                                        <div class="radio-group m-3">
+                                            <div class="radio">
+                                                <input name="client-where-problems-form" access="false" id="client-problem-no-talk"
+                                                       required="required" aria-required="true" value="Ntalk" type="radio">
+                                                <label for="client-problem-no-talk">I can’t talk in voice chat, but I can hear
+                                                    others</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input name="client-where-problems-form" access="false" id="client-problem-no-hear"
+                                                       required="required" aria-required="true" value="hear" type="radio">
+                                                <label for="client-problem-no-hear">I can’t hear anything</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input name="client-where-problems-form" access="false" id="client-problem-link"
+                                                       required="required" aria-required="true" value="link" type="radio">
+                                                <label for="client-problem-link">I can’t find or click the link for the audio client</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input name="client-where-problems-form" access="false"
+                                                       id="client-problem-web-client-disconnect" required="required"
+                                                       aria-required="true" value="disconnect" type="radio">
+                                                <label for="client-problem-web-client-disconnect">My web page keeps
+                                                    disconnecting</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-background" id="client-help-background">
+                                <div class="radio-group form-group field-radio-group-1641570996027">
+                                    <label class="radio-group-label font-extrabold">Is the background of your
+                                        avatar colored when talking<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641570996027" access="false" id="client-problem-avatar-yes"
+                                                   required="required" aria-required="true" value="yes" type="radio">
+                                            <label for="client-problem-avatar-yes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641570996027" access="false" id="client-problem-avatar-no"
+                                                   required="required" aria-required="true" value="no" type="radio">
+                                            <label for="client-problem-avatar-no">No</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641570996027" access="false"
+                                                   id="client-problem-avatar-find-page" required="required" aria-required="true"
+                                                   value="find" type="radio">
+                                            <label for="client-problem-avatar-find-page">I can't find this page</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-popup" id="client-help-popup">
+                                <div class="radio-group form-group field-radio-group-1641571147151">
+                                    <label  class="radio-group-label font-extrabold">Did you accept the pop-up allow
+                                        to use microphone?<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio mt-20">
+                                            <input name="radio-group-1641571147151" access="false" id="client-problem-pop-up-yes"
+                                                   required="required" aria-required="true" value="yes" type="radio">
+                                            <label for="client-problem-pop-up-yes">Yes</label>
+                                        </div>
+                                        <div class="radio mb-20">
+                                            <input name="radio-group-1641571147151" access="false" id="client-problem-pop-up-no"
+                                                   required="required" aria-required="true" value="no" type="radio">
+                                            <label for="client-problem-pop-up-no">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-mic-adjust" id="client-mic-adjust">
+                                <div class="radio-group form-group field-radio-group-1641571147151">
+                                    <label  class="radio-group-label font-extrabold">Play around with your input device or adjust your microphone threshold. You can toggle this menu with the button "Voice chat input settings toggle menu"
+                                        <span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571147151" access="false" id="client-mic-adjust-fail"
+                                                   required="required" aria-required="true" value="yes" type="radio">
+                                            <label for="client-mic-adjust-fail">It's still not working</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-page" id="client-help-find-page">
+
+                                <div class="radio-group form-group field-radio-group-1641571236814">
+                                    <label class="radio-group-label font-extrabold">Did you find this page?</label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571236814" access="false" id="client-problem-page-yes"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-page-yes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571236814" access="false" id="client-problem-page-no"
+                                                   value="No" type="radio">
+                                            <label for="client-problem-page-no">No</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571236814" access="false"
+                                                   id="client-problem-page-no-button" value="no-button" type="radio">
+                                            <label for="client-problem-page-no-button">There is no button</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-page-activate" id="client-help-find-page-activate">
+                                <div class="radio-group form-group field-radio-group-1641571341057">
+                                    <label  class="radio-group-label font-extrabold">Did you find this page?<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571341057" access="false"
+                                                   id="client-problem-activate-page-yes" required="required" aria-required="true"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-activate-page-yes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571341057" access="false"
+                                                   id="client-problem-activate-page-no" required="required" aria-required="true"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-activate-page-no">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-page-edition" id="client-help-find-page-edition">
+                                <div class="radio-group form-group field-radio-group-1641571401609">
+                                    <label class="radio-group-label font-extrabold">I am on:<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571401609" access="false" id="client-problem-edition-java"
+                                                   required="required" aria-required="true" value="java" type="radio">
+                                            <label for="client-problem-edition-java">Minecraft Java edition</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571401609" access="false"
+                                                   id="client-problem-edition-bedrock" required="required" aria-required="true"
+                                                   value="bedrock" type="radio">
+                                            <label for="client-problem-edition-bedrock">Minecraft Bedrock edition</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-page-code" id="client-help-find-page-code">
+                                <div class="radio-group form-group field-radio-group-1641571489401">
+                                    <label  class="radio-group-label font-extrabold">Did you use your unique
+                                        code?<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571489401" access="false"
+                                                   id="client-problem-unique-code-no" required="required" aria-required="true"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-unique-code-no">No, what do I have to do with it?</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571489401" access="false"
+                                                   id="client-problem-unique-code-yes" required="required" aria-required="true"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-unique-code-yes">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-chat-message" id="client-help-find-chat-message">
+                                <div class="radio-group form-group field-radio-group-1641571554414">
+                                    <label class="radio-group-label font-extrabold">Did you see this message in
+                                        your chat? Did you click on it?<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571554414" access="false"
+                                                   id="client-problem-chat-message-no" required="required" aria-required="true"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-chat-message-no">No</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571554414" access="false"
+                                                   id="client-problem-chat-message-yes-but" required="required" aria-required="true"
+                                                   value="shortcut-wont-work" type="radio">
+                                            <label for="client-problem-chat-message-yes-but">Yes, but the shortcut won't
+                                                work</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571554414" access="false"
+                                                   id="client-problem-chat-message-yes" required="required" aria-required="true"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-chat-message-yes">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-speakers" id="client-help-find-speakers">
+                                <div class="radio-group form-group field-radio-group-1641571658471">
+                                    <label  class="radio-group-label font-extrabold">Are your speakers working? (Can
+                                        you hear minecraft game audio)<span class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571658471" access="false"
+                                                   id="client-problem-speaker-working-yes" required="required" aria-required="true"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-speaker-working-yes">Yes, I can hear the beautiful sound of
+                                                minecraft </label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571658471" access="false"
+                                                   id="client-problem-speaker-working-no" required="required" aria-required="true"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-speaker-working-no">I don't hear anything</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-ram" id="client-help-find-ram">
+                                <div class="radio-group form-group field-radio-group-1641571758053">
+                                    <label class="radio-group-label font-extrabold">If you have limited amount of
+                                        resources, keep web client open in front of minecraft, can you hear anything now?<span
+                                                class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571758053" access="false"
+                                                   id="client-problem-limited-resources-yes" required="required"
+                                                   aria-required="true" value="yes" type="radio">
+                                            <label for="client-problem-limited-resources-yes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571758053" access="false"
+                                                   id="client-problem-limited-resources-no" required="required" aria-required="true"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-limited-resources-no">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-internet" id="client-help-find-internet">
+                                <div class="radio-group form-group field-radio-group-1641571837793">
+                                    <label class="radio-group-label font-extrabold">Verify your internet connection<span
+                                            class="required">*</span></label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="radio-group-1641571837793" access="false" id="client-problem-internet-yes"
+                                                   required="required" aria-required="true" value="good" type="radio">
+                                            <label for="client-problem-internet-yes">My internet is fine</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="radio-group-1641571837793" access="false" id="client-problem-internet-no"
+                                                   required="required" aria-required="true" value="bad" type="radio">
+                                            <label for="client-problem-internet-no">It's bad I know</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden client-help-find-services" id="client-help-find-services">
+                                <div class="radio-group form-group client-help-find-services-form font-extrabold">
+                                    <label class="radio-group-label">Maybe we are improving our
+                                        services, try again later</label>
+                                    <div class="radio-group m-3">
+                                        <div class="radio">
+                                            <input name="client-help-find-services-form" access="false" id="client-problem-services-no"
+                                                   value="no" type="radio">
+                                            <label for="client-problem-services-no">I DON'T WANT TO WAIT</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="client-help-find-services-form" access="false" id="client-problem-services-yes"
+                                                   value="yes" type="radio">
+                                            <label for="client-problem-services-yes">OK, OK fine</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="solutions" class="text-white">
+
+                            <div id="problem-0-solve" class="problem-solve hidden problem-0-solve">
+                                <p> Please read our documentation, there is a dedicated page for installing the minecraft plugin.
+                                    You can also watch this video of the installation. If you still can’t figure it out, feel free to pass by in our
+                                    discord:
+
+                                </p>
+                                <p>
+                                    <code><a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/ </a></code>
+                                </p>
+                                <br>
+                                <p class="mb-12">
+                                    Good luck with installing our plugin. We hope our plugin can make your day.
+                                </p><br><br><br>
+
+                            </div>
+                            <div id="problem-1-solve" class="problem-solve hidden problem-1-solve">
+                                <p>
+                                    Watch this video or read our documentation.<a href="https://help.openaudiomc.net/account-setup.html">https://help.openaudiomc.net/account-setup.html</a>
+                                </p>
+                            </div>
+                            <div id="problem-2-solve" class="problem-solve hidden problem-2-solve">
+                                <p>
+                                    No, at least not yet. If the demand is big enough, we will investigate it. Please use java api
+                                    instead: <code><a href="https://help.openaudiomc.net/java_api.html">https://help.openaudiomc.net/java_api.html</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-3-solve" class="problem-solve hidden problem-3-solve">
+                                <p>
+                                    Yes, you can change the language. You can edit each message from Minecraft inside config.yml. This file can be found in your plugin folder.
+                                    The web client will automatically be translated in the language from your connected clients. Currently, we only support 6 languages. If your language isn't present feel free to contact us on our discord.
+                                    <a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/</a>
+
+                                </p>
+                            </div>
+                            <div id="problem-4-solve" class="problem-solve hidden problem-4-solve">
+                                <p>
+                                    Short answer, no. And we are not planning to implement that. The tools you got inside the mod
+                                    GUI are the only available functions. You can access them using the command: <p><code>/oa voice mod {Playername}</code></p> This to prevent abuse.
+                                </p>
+                            </div>
+                            <div id="problem-5-solve" class="problem-solve hidden problem-5-solve">
+                                <p>
+                                    If your server is in a bungeecord (besides minehut) you need to have it in the bungee too unless
+                                    it won’t work. For speakers/regions/voicechat you need to install it on the individual servers
+                                </p>
+                            </div>
+                            <div id="problem-6-solve" class="problem-solve hidden problem-6-solve">
+                                <p>
+                                    You can use our github page. Please use the right format to make things easier.
+
+                                    <code><a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-7-solve" class="problem-solve hidden problem-7-solve">
+                                <p>
+                                    You can use our github page. Please use the right format to make things easier.
+
+                                    <code><a href="https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose">https://github.com/Mindgamesnl/OpenAudioMc/issues/new/choose</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-8-solve" class="problem-solve hidden problem-8-solve">
+                                <p>
+                                    Bedrock does not support this feature. You can change the message posted in the minecraft chat instead. It can display the code
+                                    instead. Players have to manually type there code in their web client. Please refer to:
+                                    <code><a href="https://help.openaudiomc.net/geyser.html">https://help.openaudiomc.net/geyser.html</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-9-solve" class="problem-solve hidden  problem-9-solve">
+                                <p>
+                                    No, there are currently no placeholders for it.
+                                </p>
+                            </div>
+                            <div id="problem-10-solve" class="problem-solve hidden  problem-10-solve">
+                                <p>
+                                    Please visit <code><a href="https://account.craftmend.com/">https://account.craftmend.com/</a></code>
+
+                                    You have to link your account by using your fingerprint. Afterwards you will be able to edit
+                                    your servers settings
+
+                                </p>
+                            </div>
+                            <div id="problem-11-solve" class="problem-solve hidden problem-11-solve">
+                                <p>
+                                    Pleas visit our site:  </p><p><code><a href="https://account.craftmend.com">https://account.craftmend.com/account/openaudiomc/manage/</a></code></p><p> You can claim a voice license after you linked your server to the craftmend site by using your fingerprint.</p><br><p> If you require more licenses you can become a patreon and get extra licenses with premium support.</p><p> You can activate this on our patreon page:</p><p> <a href="https://www.patreon.com/mindgamesnl">https://www.patreon.com/mindgamesnl</a>.</p><p> If you want more info please visit our documentation page.
+
+                                </p>
+
+                            </div>
+                            <div id="problem-12-solve" class="problem-solve hidden problem-12-solve">
+                                <p>
+                                    Verify that your server is running in online mode. Currently, offline mode is not supported.
+
+                                </p>
+                            </div>
+                            <div id="problem-13-solve" class="problem-solve hidden problem-13-solve">
+                                <p>
+                                    Please verify that you are an OP on your Minecraft server. Otherwise, you can’t use the management
+                                    commands. You can also set specific user-levels for each command, please refer to our documentation page.
+
+                                </p>
+                            </div>
+                            <div id="problem-14-solve" class="problem-solve hidden problem-14-solve">
+                                <p>
+                                    Invest in a better connection.
+                                    Music may take a longer time
+                                    to load in, voices may be
+                                    disturbed everything will just
+                                    be shitty.
+
+                                </p>
+                            </div>
+                            <div id="problem-15-solve" class="problem-solve hidden problem-15-solve">
+                                <p>
+                                    We know your time is valuable, Please visit our discord server for further diagnosing your problem. Run the command: <p><code>/oa state </code> </p>Attach this screenshot to your question.
+                                <code><a href="https://discord.openaudiomc.net/">https://discord.openaudiomc.net/</a></code>
+
+                                </p>
+                            </div>
+                            <div id="problem-16-solve" class="problem-solve hidden problem-16-solve">
+                                <p>
+                                    It’s time to fix your boomboxes my friend. Be sure you selected the right audio output. Verify that your headset or speakers are plugged in correctly. If it still doesn't work try restarting your computer or try another output device.
+                                </p>
+                            </div>
+                            <div id="problem-17-solve" class="problem-solve hidden problem-17-solve">
+                                <p>
+                                    YEEEY, its working now, but its time to close some other programs or tabs to reduce ram usage. Or download more of it here
+                                    <code><a href="https://downloadmoreram.com/">https://downloadmoreram.com/</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-18-solve" class="problem-solve hidden problem-18-solve">
+                                <p>
+                                    Please visit our discord
+                                    server for further
+                                    diagnosing your
+                                    problem. Run the command: <p><code>/oa state </code></p>Attach this screenshot to your question.
+                                <code><a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a></code>
+                                </p>
+                            </div>
+                            <div id="problem-19-solve" class="problem-solve hidden problem-19-solve">
+                                <p>
+                                    Your server owner did not setup Voice chat correctly, let him contact us for more information
+                                </p>
+                            </div>
+                            <div id="problem-20-solve" class="problem-solve hidden problem-20-solve">
+                                <p>You can do <code>/audio</code> to generate a new link. If you don't see a link your server owner didn't configure the server correctly.
+                                </p>
+                                <p>
+                                    Copy this code, open a browser with url:
+                                    <code><a href="https://client.openaudio
+                        mc.net/">https://client.openaudio
+                                        mc.net/</a></code> and enter your code from your minecraft chat</p>
+                            </div>
+                            <div id="problem-21-solve" class="problem-solve hidden problem-21-solve">
+                                <p>
+                                    Did you enter your code on the website? <code><a href="https://client.openaudio
+                        mc.net/">https://client.openaudio
+                                    mc.net/</a></code> Afterwards you will be connected to the minecraft audio session of your server.
+                                </p>
+                            </div>
+                            <div id="problem-22-solve" class="problem-solve hidden problem-22-solve">
+                                <p>
+                                    Use the command <code>/audio</code> in the minecraft chat to generate a new link
+                                </p>
+                            </div>
+                            <div id="problem-23-solve" class="problem-solve hidden problem-23-solve">
+                                <p>
+                                    Click on the link in your minecraft chat, next click on the button copy to clip-board. Open a browser of choice (except internet explorer) and insert the link.
+                                </p>
+                            </div>
+
+                            <div id="problem-24-solve" class="problem-solve hidden problem-24-solve">
+                                <p>
+                                    This picture is taken inside a google chrome browser
+                                   </p>
+                                <button type="button" id="next-to-background">Next</button>
+
+                            </div>
+                            <div id="problem-25-solve" class="problem-solve hidden problem-25-solve">
+                                <p>
+                                    Verify your setting “use-region-priority” in your <code>config.yml</code>. If its set <code>‘true’</code> all affected regions will be read. If its set <code>‘false’</code> only the highest priority zone will be read. You can use <code>"use-max-priority-association“</code> (worldguard command)
+                                </p>
+
+
+                            </div>
+                            <div id="problem-26-solve" class="problem-solve hidden problem-26-solve">
+                                <p>
+                                    Your connection may be throttled down if you have a free unlinked account. Please visit our site and link your server by using the fingerprint: <code><a href="https://account.craftmend.com">https://account.craftmend.com</a></code>
+                                </p>
+
+
+                            </div>
+                            <div id="problem-27-solve" class="problem-solve hidden problem-27-solve">
+                                <p>
+                                    You have to be a patreon to play local files in your server. If you already are a patreon you can store those audio files inside the plugins folder. You CAN NOT USE SPACES inside your filenames. You can select the file with: <p><code>/oa @a local:yourfilename</code></p>
+                                    Supported audio files:<code> mp3, Wav, Ogg, mp4</code>. mp3 is recommended to use. You can make subdirectories if you want inside you plugins folder. (default map: <code>plugins/OpenAudioMc/audio/</code>)
+                                </p>
+
+
+                            </div>
+                            <div id="problem-28-solve" class="problem-solve hidden problem-28-solve">
+                                <p>
+                                    First try this command:
+                                    <p><code>/openaudio play @a https://soundcloud.com/mrfijiwiji/imalright</code></p><br>
+                                    If this is working your source is probably invalid. Try avoiding YouTube since this service does drop sometimes and some video’s won’t even work. For best experiences use soundcloud or use local files.
+                                </p>
+
+
+                            </div>
+                            <div id="problem-29-solve" class="problem-solve hidden problem-29-solve">
+                                <p>
+                                    If the errors look similar as in the picture you can try fixing them by using:
+
+                                <p>/oa speaker gc</p><br>
+                                Be carefully, this command will load all chunks in your server. If you have a big server it may cause some serious lag.
+                                <p>If your problem isn't similar in any way please join our discord and we will further diagnose your problem. </p>
+                                <code><a href="https://discord.openaudiomc.net">https://discord.openaudiomc.net/</a></code>
+                               </p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="flex items-stretch container w-full md:w-1/2 lg:w-1/2 md:block relative overflow-hidden rounded-lg shadow-2xl cursor-pointer  side-picture-background group align-middle">
+
+            <div class="ext-box absolute ">
+                <div class="int-box ">
+
+            <div class="hidden" class="client-help-find-page side-picture">
+                <div class="info-picture"><img src="assets/proximity-button-web-client.png" alt="craftmend site screenshot"></div>
+            </div>
+            <div class="hidden client-help-find-page side-picture" >
+                <img src="assets/proximity-button-web-client.png" alt="location of voice chat button"/>
+            </div>
+            <div class="problem-solve hidden problem-21-solve side-picture">
+                    <img src="assets/bedrock-code.png" alt="location of voice chat button" class="scale-150"/>
+            </div>
+
+            <div  class="problem-solve hidden problem-24-solve side-picture">
+                    <img src="assets/chrome-re-enable-mic.png" alt="location of enable mic in chrome">
+            </div>
+            <div class="hidden client-help-background side-picture" >
+                <div class="info-picture"><img src="assets/avatar-light-up.png" alt="craftmend site screenshot"></div>
+            </div>
+            <div  class="problem-solve hidden problem-11-solve side-picture">
+
+                <img src="assets/activate-vc-craftmend.png" alt="location of voice chat button"/>
+            </div>
+            <div class="hidden client-help-find-chat-message side-picture">
+                    <div class="info-picture"><img src="assets/java-edition-code.png" alt="craftmend site screenshot" class="scale-150"></div>
+            </div>
+            <div class="hidden client-help-popup side-picture" >
+                    <div class="info-picture"><img src="assets/pop-up.png" alt="craftmend site screenshot"></div>
+
+            </div>
+            <div class="hidden client-help-find-page-code side-picture">
+                    <div class="info-picture"><img src="assets/bedrock-code-long.png" alt="craftmend site screenshot"></div>
+            </div>
+    <div class="hidden problem-23-solve side-picture">
+        <div class="info-picture"><img src="assets/copy-to-clipboard.png" alt="copy to clipboard screenshot"></div>
+    </div>
+    <div class="hidden problem-22-solve side-picture">
+        <div class="info-picture"><img src="assets/java-new-audio-link.png" alt="java new audio link screenshot"></div>
+    </div>
+    <div class="hidden problem-29-solve side-picture">
+        <div class="info-picture"><img src="assets/corrupted-speaker.png" alt="corrupted speaker error"></div>
+    </div>
+    <div class="hidden problem-8-solve side-picture">
+        <div class="info-picture"><img src="assets/bedrock-setup-help.gif" alt="bedrock setup help"></div>
+    </div>
+    <div class="hidden client-mic-adjust side-picture">
+        <div class="info-picture"><img src="assets/mic-level.png" alt="java new audio link screenshot"></div>
+    </div>
+    <div class="hidden problem-0-solve  problem-1-solve problem-26-solve side-picture">
+    <iframe  height="315px" width="700px" src="https://www.youtube.com/embed/S29cQz094Bw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+            </div>
+    </div>
+
+            <div class="ext-box">
+            <div class="int-box">
+                <div class="side-image self-center "><img width="250px"  src="assets/logo.png" alt="troubleshooting"></div>
+            </div>
+            </div>
+
+
+</div>
+        <div class="int-box ">
+        <div class="flex mt-4 mb-5  flex-row-reverse">
+            <button type="button" class="back-main flex items-center self-start justify-center px-5 py-3 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-8">Back to start</button>
+        </div>
+        </div>
+</div>
+</div>
+
+</div>
+
+<script src="assets/jquery.js"></script>
+<script>
+    $("#owner").change(function () {
+        $('.dev-help').slideDown();
+        $('.who-is-it').hide();
+    });
+    $("#user").change(function () {
+        $('.client-help').show();
+        $('.client-where-problems').slideDown();
+        $('.who-is-it').hide();
+    });
+    $("#client-problem-web-client-disconnect").change(function () {
+        $('.client-help-find-internet').slideDown();
+        $('.client-where-problems').hide();
+    });
+    $("#client-problem-internet-yes").change(function () {
+        $('.client-help-find-services').slideDown();
+        $('.client-help-find-internet').hide();
+    });
+    $("#client-problem-internet-no").change(function () {
+        $(".problem-14-solve").slideDown();
+        $('.client-help-find-internet').hide();
+    });
+    $("#client-problem-services-no").change(function () {
+        $(".problem-15-solve").slideDown();
+        $('.client-help-find-services').hide();
+    });
+    $("#client-problem-services-yes").change(function () {
+        $(".problem-15-solve").slideDown();
+        $('.client-help-find-services').hide();
+    });
+    $("#client-problem-no-hear").change(function () {
+        $(".client-help-find-speakers").slideDown();
+        $('.client-where-problems').hide();
+    });
+    $("#client-problem-speaker-working-yes").change(function () {
+        $(".client-help-find-ram").slideDown();
+        $('.client-help-find-speakers').hide();
+    });
+    $("#client-problem-speaker-working-no").change(function () {
+        $(".problem-16-solve").slideDown();
+        $('.client-help-find-speakers').hide();
+    });
+    $("#client-problem-limited-resources-yes").change(function () {
+        $(".problem-17-solve").slideDown();
+        $('.client-help-find-ram').hide();
+    });
+    $("#client-problem-limited-resources-no").change(function () {
+        $(".problem-18-solve").slideDown();
+        $('.client-help-find-ram').hide();
+    });
+    $("#client-problem-no-talk").change(function () {
+        $(".client-help-background").slideDown();
+        $('.client-where-problems').hide();
+    });
+    $("#client-problem-avatar-find-page").change(function () {
+        $(".client-help-find-page").slideDown();
+        $('.client-help-background').hide();
+    });
+    $("#client-problem-avatar-yes").change(function () {
+        $(".client-mic-adjust").slideDown();
+        $('.client-help-background').hide();
+    });
+    $("#client-problem-avatar-no").change(function () {
+        $(".client-help-popup").slideDown();
+        $('.client-help-background').hide();
+    });
+    $("#client-problem-pop-up-yes").change(function () {
+        $(".client-mic-adjust").slideDown();
+        $('.client-help-popup').hide();
+    });
+    $("#client-mic-adjust-fail").change(function () {
+        $(".problem-18-solve").slideDown();
+        $('.client-mic-adjust').hide();
+    });
+
+    $("#client-problem-pop-up-no").change(function () {
+        $(".problem-24-solve").slideDown();
+        $('.client-help-popup').hide();
+    });
+    $("#next-to-background").click(function () {
+        $('.problem-24-solve').hide();
+        $('.client-help-background').slideDown();
+        $('.helper-form').trigger("reset");
+
+    });
+    $("#client-problem-page-yes").change(function () {
+        $(".client-help-background").slideDown();
+        $('.client-help-find-page').hide();
+    });
+    $("#client-problem-page-no-button").change(function () {
+        $(".problem-19-solve").slideDown();
+        $('.client-help-find-page').hide();
+    });
+    $("#client-problem-page-no").change(function () {
+        $(".client-help-find-page-edition").slideDown();
+        $('.client-help-find-page').hide();
+    });
+    $("#client-problem-edition-java").change(function () {
+        $(".client-help-find-chat-message").slideDown();
+        $('.client-help-find-page-edition').hide();
+    });
+    $("#client-problem-edition-bedrock").change(function () {
+        $(".client-help-find-page-code").slideDown();
+        $('.client-help-find-page-edition').hide();
+    });
+    $("#client-problem-unique-code-no").change(function () {
+        $(".problem-20-solve").slideDown();
+        $('.client-help-find-page-code').hide();
+    });
+    $("#client-problem-unique-code-yes").change(function () {
+        $(".problem-21-solve").slideDown();
+        $('.client-help-find-page-code').hide();
+    });
+    $("#client-problem-chat-message-no").change(function () {
+        $(".problem-22-solve").slideDown();
+        $('.client-help-find-chat-message').hide();
+    });
+    $("#client-problem-chat-message-yes").change(function () {
+        $(".problem-18-solve").slideDown();
+        $('.client-help-find-chat-message').hide();
+    });
+    $("#client-problem-chat-message-yes-but").change(function () {
+        $(".problem-23-solve").slideDown();
+        $('.client-help-find-chat-message').hide();
+    });
+    $("#client-problem-link").change(function () {
+        $(".client-help-find-page-edition").slideDown();
+        $('.client-help').hide();
+    });
+    $(".back-main").click(function () {
+        $('.dev-help').hide();
+        $('.problem-solve').hide();
+        $('.side-picture').hide();
+        $('.client-help').hide();
+        $('.client-help-find-chat-message').hide();
+        $('.client-help-find-page-code').hide();
+        $('.client-help-find-page-edition').hide();
+        $('.client-help-find-page').hide();
+        $('.client-help-popup').hide();
+        $('.client-help-find-ram').hide();
+        $('.client-help-background').hide();
+        $('.client-help-find-speakers').hide();
+        $('.client-help-find-services').hide();
+        $('.client-help-find-internet').hide();
+        $('.client-where-problems').hide();
+        $('.dev-help-other-audio').hide();
+        $('.dev-help-voice-chat').hide();
+        $('.dev-help-setup').hide();
+        $('.client-mic-adjust').hide();
+        $('.dev-help-install-perms-others').hide();
+        $(".who-is-it").slideDown();
+        $('#helper-form')[0].reset();
+
+    });
+
+    $("#play-invalid-source").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-28-solve").slideDown();
+    });
+    $("#speaker-cleanup").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-29-solve").slideDown();
+    });
+
+    $("#other-audio").change(function () {
+        $('.dev-help').hide();
+        $(".dev-help-other-audio").slideDown();
+    });
+    $("#voice-chat").change(function () {
+        $('.dev-help').hide();
+        $(".dev-help-voice-chat").slideDown();
+    });
+    $("#setup").change(function () {
+        $('.dev-help').hide();
+        $(".dev-help-setup").slideDown();
+    });
+    $("#install-perms-others").change(function () {
+        $('.dev-help-setup').hide();
+        $(".dev-help-install-perms-others").slideDown();
+    });
+    $("#dev-craftmend-linked").change(function () {
+        $('.dev-help-voice-chat-disconnect-craftmend').hide();
+        $(".problem-15-solve").slideDown();
+    });
+    $("#dev-craftmend-unlinked").change(function () {
+        $('.dev-help-voice-chat-disconnect-craftmend').hide();
+        $(".problem-26-solve").slideDown();
+    });
+    $("#dev-webpage-disconnect").change(function () {
+        $('.dev-help-voice-chat').hide();
+        $(".dev-help-voice-chat-disconnect-craftmend").slideDown();
+    });
+
+    $("#play-local-media").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-27-solve").slideDown();
+    });
+    $("#problem-0").change(function () {
+        $('.dev-help-install-perms-others').hide();
+        $(".problem-0-solve").slideDown();
+    });
+    $("#problem-1").change(function () {
+        $('.dev-help-setup').hide();
+        $(".problem-1-solve").slideDown();
+    });
+    $("#problem-2").change(function () {
+        $('.dev-help-install-perms-others').hide();
+        $(".problem-2-solve").slideDown();
+    });
+    $("#problem-3").change(function () {
+        $('.dev-help-setup').hide();
+        $(".problem-3-solve").slideDown();
+    });
+    $("#problem-4").change(function () {
+        $('.dev-help-voice-chat').hide();
+        $(".problem-4-solve").slideDown();
+    });
+    $("#problem-5").change(function () {
+        $('.dev-help-install-perms-others').hide();
+        $(".problem-5-solve").slideDown();
+    });
+    $("#problem-6").change(function () {
+        $('.dev-help').hide();
+        $(".problem-6-solve").slideDown();
+    });
+    $("#problem-7").change(function () {
+        $('.dev-help').hide();
+        $(".problem-7-solve").slideDown();
+    });
+    $("#problem-8").change(function () {
+        $('.dev-help-setup').hide();
+        $(".problem-8-solve").slideDown();
+    });
+    $("#problem-9").change(function () {
+        $('.dev-help-install-perms-others').hide();
+        $(".problem-9-solve").slideDown();
+    });
+    $("#problem-10").change(function () {
+        $('.dev-help-setup').hide();
+        $(".problem-10-solve").slideDown();
+    });
+    $("#problem-11").change(function () {
+        $('.dev-help-voice-chat').hide();
+        $(".problem-11-solve").slideDown();
+    });
+    $("#problem-12").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-12-solve").slideDown();
+    });
+    $("#problem-13").change(function () {
+        $('.dev-help-install-perms-others').hide();
+        $(".problem-13-solve").slideDown();
+    });
+    $("#worldguard-regions").change(function () {
+        $('.dev-help-other-audio').hide();
+        $(".problem-25-solve").slideDown();
+    });
+</script>

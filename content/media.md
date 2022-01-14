@@ -1,7 +1,7 @@
 [//]: # (TITLE:Media)
 [//]: # (ICON:fas fa-compact-disc)
 [//]: # (DESCRIPTION:Using and understanding media sources and playback options)
-[//]: # (TAGS:youtube,media,options,looping,ids,id's,soundcloud,mp3,mp4)
+[//]: # (TAGS:youtube,media,options,looping,ids,id's,soundcloud,mp3,mp4,localaudio)
 [//]: # (COMMANDS:/oa p {selector} {source} {options},Alias for /oa play, options can be left empty.)
 [//]: # (COMMANDS:/oa play {selector} {source} {options},Gives you the option for playing media, please visit the media page for an overview of all possibility's, options can be left empty. )
 
