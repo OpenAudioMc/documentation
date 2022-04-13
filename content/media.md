@@ -55,7 +55,7 @@ All the optional tags should be included in the Play command as a JSON object wi
 | Google Drive | - Easy to use<br>- Easy to share<br>- Free                  | - Not particularly fast<br>- Links can expire                             | For quick and easy file hosting.<br>(Event music, sound effects, etc etc)                   |
 | DropBox      | - Fast<br>- Easy to use<br>- Free                           | - Url may need manual edits<br>- Links may be blocked when used often     | For general purpose audio hosting.<br>(Same as Direct MP3 but on a smaller scale)           |
 | SoundCloud   | - Stupidly Simple                                           | - Not particularly fast<br>- Some artists prohibit the use of their songs | Easy music sharing and playback.<br>(Same as Direct MP3, but on a small scale)              |
-| YouTube      | - Stupidly Simple<br>- Reliable                             | - Playback isn't instant<br>- Delay may cause timing issues               | Simple area music, sound effects, dialogue, etc etc                                         |
+| YouTube      | - Stupidly Simple<br>                                       | - Playback isn't instant<br>- Delay may cause timing issues               | Simple area music, sound effects, dialogue, etc etc                                         |
 
 ***
 <br>
