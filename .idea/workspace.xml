@@ -5,8 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/assets/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/account-links.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/account-links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/account-setup.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/account-setup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/alias.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/alias.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/blocked_domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blocked_domain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/browsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/browsers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/command-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/command-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/configuration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/configuration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/geyser.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/geyser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/how-it-works.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/how-it-works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/hue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/hue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java_api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/media.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/network_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/network_error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/old_client.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/old_client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/partner_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partner_projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partners.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/patreon.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/patreon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/permissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/permissions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/redis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/regions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/regions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/restdirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/restdirect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/selectors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/speakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/speakers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/stop.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/stop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/technical_requirements.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/technical_requirements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/traincarts.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/traincarts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/voicechat.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/voicechat_licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat_licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/voicechat_moderation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat_moderation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/voicechat_troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat_troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/web-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/web-client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/webpage_renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/webpage_renderer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +90,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="TEXT" />
-    <property name="go.format.on.save.advertiser.fired" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mindgamesnl&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webpages" />
@@ -94,9 +131,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

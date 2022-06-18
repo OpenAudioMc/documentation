@@ -95,7 +95,7 @@ func getDocCard(topic string, title string, about string) string {
 <a href="` + strings.ReplaceAll(pages[i].Filename, ".md", ".html") + `">
 	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
 		<div class="flex flex-row items-stretch">
-			<div class="xl:w-1/3 md:w-2/5 p-1 flex h-40">
+			<div class="xl:w-1/3 md:w-1/5 p-1 flex h-40">
 				<div class=" mb-auto mt-auto  ">
 					<i class="` + pages[i].Icon + ` fa-7x"></i>
 				</div>

@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta property="og:title" content="OpenAudioMc">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta property="og:image"
           content="assets/logo.png">
     <meta property="og:url" content="https://openaudiomc.net/">
@@ -43,43 +45,27 @@
           content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
     <title>OpenAudioMc - Audio for Minecraft</title>
 </head>
-<body class="bg-gray-900">
+<body>
 
-<header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a href="documentation.html" class="mr-5 hover:text-white">Documentation</a>
-            <a href="command-list.html" class="mr-5 hover:text-white">Commands</a>
-            <a href="https://discord.openaudiomc.net/" class="mr-5 hover:text-white">Join our Discord</a>
-            <a href="https://github.com/Mindgamesnl/OpenAudioMc" class="mr-5 hover:text-white">Github</a>
-            <a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-online-music-and-effects-bungeecord-velocity.30691"
-               class="hover:text-white">Spigot</a>
-        </nav>
-        <a href="index.html"
-           class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0 logo rounded-full">
-            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white rounded-full"/>
-            <span class="ml-3 text-xl xl:block lg:hidden">OpenAudioMc</span>
+<div class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://discord.openaudiomc.net/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Discord</a></li>
+            <li><a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-music-no-mods.30691/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Spigot</a></li>
+            <li><a href="https://github.com/Mindgamesnl/OpenAudioMc" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Github</a></li>
+        </ul>
+        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+            <img src="assets/logo.png" style="height: 50px">
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">OpenAudioMc</span>
         </a>
-        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <a href="https://twitter.com/Mindgamesnl"
-               class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                Mindgamesnl
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </a>
-            <a href="https://patreon.com/Mindgamesnl"
-               class="ml-2 inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                Patreon
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://patreon.com/mindgamesnl" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Patreon</a></li>
+            <li><a href="documentation.html" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Documentation</a></li>
+            <li><a href="https://account.craftmend.com/register" aria-label="Sign up" title="Sign up" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">My Account</a></li>
+        </ul>
+        <!-- Mobile menu -->
     </div>
-</header>
+</div>
 
 <section class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 pt-24 mx-auto">
