@@ -8,6 +8,9 @@
 [//]: # (COMMANDS:/oa speaker remove {world} {x} {y} {z},Removes speaker on specified place on server.)
 [//]: # (COMMANDS:/oa speaker set {world} {x} {y} {z} {url},Sets a speaker in the server with the media you want. Speakers always face north, if you want to have speakers in other directions please use /oa speaker <source>(use world for overworld)
 
+::warningstart::<strong>WARNING!</strong> Speakers require your server to either be in ONLINE-MODE or run through a buneecord which is authenticated with Mojang. Offline mode will not work with this feature.::warningend::
+
+
 # Speakers
 Speakers are little blocks you can place in your Minecraft world. Just like real speakers in a theme park, all of them play synchronized and can be hidden. The thing that makes them special is that they share some properties just like real audio sources, You can't hear them from too far away, and the volume depends on your location relative to a speaker.
 

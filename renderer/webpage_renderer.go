@@ -93,18 +93,18 @@ func getDocCard(topic string, title string, about string) string {
 		cards += `
 <div class="search_cards xl:w-1/3 md:w-1/2 p-4 ">
 <a href="` + strings.ReplaceAll(pages[i].Filename, ".md", ".html") + `">
-	<div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+	<div class="border border-gray-700 border-opacity-75 p-2 rounded-lg">
 		<div class="flex flex-row items-stretch">
-			<div class="xl:w-1/3 md:w-1/5 p-1 flex h-40">
+			<div class="xl:w-1/4 md:w-1/5 p-1 flex pl-10">
 				<div class=" mb-auto mt-auto  ">
-					<i class="` + pages[i].Icon + ` fa-7x"></i>
+					<i class="` + pages[i].Icon + ` fa-2x"></i>
 				</div>
 			</div>
-			<div class="xl:w-2/3 md:w-3/5 p-4">
-				<h2 class="text-lg text-white font-medium title-font mb-2 pl-5">` + pages[i].Title + `</h2>
-				<p class="leading-relaxed text-base pl-5">` + pages[i].Description + `</p>
+			<div class="">
+				<h2 class="text-lg title-font mb-2">` + pages[i].Title + `</h2>
+				<p class="leading-relaxed text-base">` + pages[i].Description + `</p>
 				
-				<p class="search_tags leading-relaxed text-base pl-5 hidden">Tags: ` + strings.Join(pages[i].Tags, ", ") + `</p>
+				<p class="search_tags leading-relaxed text-base hidden">Tags: ` + strings.Join(pages[i].Tags, ", ") + `</p>
 
 			</div>
 		</div>

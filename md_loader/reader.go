@@ -72,11 +72,17 @@ func parseMarkdownComments(files []string) []DocumentationPage {
 			}
 		}
 
-		extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.OrderedListStart | parser.DefinitionLists | parser.Tables | parser.HardLineBreak
+		extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.OrderedListStart | parser.DefinitionLists | parser.Tables | parser.HardLineBreak | parser.LaxHTMLBlocks
 		parser := parser.NewWithExtensions(extensions)
 		maybeUnsafeHTML := markdown.ToHTML([]byte(contentFixed.String()), parser, nil)
 		html := bluemonday.UGCPolicy().SanitizeBytes(maybeUnsafeHTML)
 		page.Html = gohtml.Format(string(html))
+
+		page.Html = strings.ReplaceAll(page.Html, "::warningstart::", `<div style="padding: 20px;
+  background-color: #f44336;
+  color: white;">`)
+
+		page.Html = strings.ReplaceAll(page.Html, "::warningend::", `</div>`)
 
 		filename := filepath.Base(files[i])
 		page.Filename = filename

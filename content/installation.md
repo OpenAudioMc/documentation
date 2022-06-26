@@ -11,6 +11,8 @@ Installation couldn't be simpler:
 4. (optionally) [setup your account to access extra settings](account.md)
 5. Enjoy
 <br>
+
+
 Important notes:
  - Velocity is supported but currently in beta and not completely tested
  - [By installing, you agree to our privacy policy and rules](https://account.craftmend.com/terms)
@@ -18,3 +20,8 @@ Important notes:
  - Be sure to use Spigot or one of the many forks, we do not support craft bukkit.
  - Some (free) minecraft hosting providers block OpenAudioMc from functioning, despite offering a copy of the plugin (looking at you, MineHut)
  - If you install the plugin in all your Spigot servers, and your BungeeCord server, it will automatically enter BungeeCord mode and link the servers together in a proxy. Players will then be able to use one OpenAudioMc web client instance across your whole network, without needing to re-open it. Due to the magical inner workings of OpenAudioMc, you can still use Command Blocks, Regions, and Speakers in all of your servers. There's no manual config, everything will just work! Please remember to keep your OpenAudioMc the same across your entire network for everything to stay supported. For changing messages, URL's and more you should use the config.yml in your bungeecord OpenAudioMc plugin folder.
+
+<br />
+
+ ::warningstart::<strong>WARNING!</strong> Old servers running <strong>1.8</strong> need to manually intall the <a href="1.8_patch.html">1.8 patch</a> ::warningend::
+

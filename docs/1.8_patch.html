@@ -74,8 +74,8 @@
                 <div class="w-24 h-full bg-purple-400"></div>
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                <h1 class="sm:w-2/5 title-font text-2xl mb-2 sm:mb-0">Rest Direct</h1>
-                <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0">Rest Direct for CDN and external Api routing</p>
+                <h1 class="sm:w-2/5 title-font text-2xl mb-2 sm:mb-0">1.8 Support</h1>
+                <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0">Patching OpenAudioMc for Spigot 1.8</p>
             </div>
         </div>
     </div>
@@ -84,47 +84,47 @@
     <div class="container px-5 mx-auto flex flex-col">
         <div class="lg:w-4/6 mx-auto">
             <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
-                <h1 id="rest-direct">
-  Rest Direct
-</h1>
-<p>
-  Rest Direct is an internal system used to transfer large blobs of data from your server to the OpenAudioMc network. It’s used by features like Local File Playback to upload files to our cdn and for our system to trigger events in your server without requiring an active session.
-  <br>
-  <br/>
+                <p>
+  OpenAudioMc doesn’t support 1.8 out of the box, but can be patched using the module without any technical knowlege.
 </p>
-<h2 id="technical-requirements">
-  Technical Requirements
-</h2>
 <p>
-  RestDirect requires an additional port allocation, which does mean that some hosting providers (primarily cheaper ones) aren’t compatible with this feature, and locking you out of some really cool features. Please contact a system administrator or admin of your server to ask for an extra allocation.
+  Follow these steps closely, and you’ll get it running in no time:
   <br>
-  <br>
-  <br>
-  Some good things to keep in mind;
-  <br>
-  - OpenAudioMc tests a few ports after start up, the first port is
-  <code>
-    8050
-  </code>
-  and can be configured in the config file. If that port fails, it’ll try
-  <code>
-    80
-  </code>
-  ,
-  <code>
-    8080
-  </code>
-  , and three random ports. It’ll do a signature check to make sure that the port is attached properly and isn’t interfering with another application.
-  <br>
-  - Content requests have automatic authentication, based on a token that regenerates when your server restarts.
-  <br>
-  - Your public server IP or RestDirect port will
+  - Download
   <strong>
-    NEVER
+    the latest
   </strong>
-  be exposed to any end user by OpenAudioMc, our CDN will always deliver and cache the files.
+  OpenAudioMc version from spigot
   <br>
-  - Pterodactyl users: make sure that your port forwarding and allocation is configured
+  - Install the plugin (drop it in your plugins folder, and start your server)
+  <br>
+  - Turn your server
+  <strong>
+    OFF
+  </strong>
+  again
+  <br>
+  - Download the legacy module from here;
+  <a href="https://github.com/Mindgamesnl/OpenAudioMc/blob/master/modules/rinaorc-legacy-users.jar" rel="nofollow">
+    https://github.com/Mindgamesnl/OpenAudioMc/blob/master/modules/rinaorc-legacy-users.jar
+  </a>
+  <br>
+  - Drop the
+  <code>
+    rinaorc-legacy-users.jar
+  </code>
+  file in the
+  <code>
+    plugins/OpenAudioMc/modules/
+  </code>
+  directory
+  <br>
+  - Start your server
+  <br>
+  - That’s it!
+</p>
+<p>
+  This manual setup is required as we build against newer minecraft versions to natively support newer versions, but still offer the legacy module to re-enable old reflection based utilities.
 </p>
             </div>
         </div>

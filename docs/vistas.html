@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta property="og:title" content="OpenAudioMc">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image"
+          content="assets/logo.png">
+    <meta property="og:url" content="https://openaudiomc.net/">
+    <meta property="og:site_name" content="OpenAudioMc">
+    <meta property="og:description" content="OpenAudioMc is the all in one minecraft audio and voicechat solution">
+    <meta name="twitter:title" content="OpenAudioMc - The most advanced Minecraft audio and voice system">
+    <meta name="twitter:image"
+          content="assets/logo.png">
+    <meta name="twitter:url" content="https://twitter.com/Mindgamesnl">
+    <meta name="twitter:card" content="summary">
+    <script src="https://kit.fontawesome.com/356f5e0146.js" crossorigin="anonymous"></script>
+    <meta name="description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts. - OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts.">
+    <link rel="fluid-icon" href="assets/logo.png" title="OpenAudioMc">
+    <meta name="twitter:image:src" content="assets/banner.png"/>
+    <meta name="twitter:site" content="@openaudiomc"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta name="twitter:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:image" content="assets/banner.png"/>
+    <meta property="og:image:alt"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:site_name" content="OpenAudioMc"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta property="og:url" content="https://openaudiomc.net/"/>
+    <meta property="og:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <title>OpenAudioMc - Audio for Minecraft</title>
+</head>
+<body class="bg-white">
+
+<div class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://discord.openaudiomc.net/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Discord</a></li>
+            <li><a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-music-no-mods.30691/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Spigot</a></li>
+            <li><a href="https://github.com/Mindgamesnl/OpenAudioMc" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Github</a></li>
+        </ul>
+        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+            <img src="assets/logo.png" style="height: 50px">
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">OpenAudioMc</span>
+        </a>
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://patreon.com/mindgamesnl" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Patreon</a></li>
+            <li><a href="documentation.html" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Documentation</a></li>
+            <li><a href="https://account.craftmend.com/register" aria-label="Sign up" title="Sign up" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">My Account</a></li>
+        </ul>
+        <!-- Mobile menu -->
+    </div>
+</div>
+
+<section class="text-gray-700 bg-gray-200 body-font">
+    <div class="container mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-purple-400"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 title-font text-2xl mb-2 sm:mb-0">Vistas API</h1>
+                <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0">Using vistas to scale OpenAudioMc in extremely large deployments</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-700 bg-gray-200 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="1-introduction-the-problem-with-state-management">
+  1. Introduction - The problem with state management
+</h1>
+<p>
+  Vistas is OpenAudioMc’s official and production ready deployment setup for larger networks relying on an unknown amount of bungee cord proxies. Normal OpenAudioMc bungee cord installations use the proxy plugin instance (as wrapped in
+  <code>
+    OpenAudioMcBungee.java
+  </code>
+  ) to track player sessions, states between servers and to wrap outgoing communication towards the OpenAudioMc backend infrastructure through one single Craftmend account. This is a perfect solution for smaller network, but causes some serious problems on large scale deployments, like (but not limited to);
+  <br>
+  1. Every proxy instance is seen as their own OpenAudioMc account, meaning that players from server A aren’t able to join voice chat sessions with players on server B
+  <br>
+  2. It requires manual setup for every proxy instance, making automatic scaling/templating impossible
+  <br>
+  3. Poses a compatibility issue for non-bungeecord servers, notable example is Imaginefun, which uses Lilipad
+</p>
+<p>
+  Vistas is a system that works around this problem, by completely skipping the proxy all together. Instead, it uses one single stand alone OpenAudioMc instance (as its own java process) which acts as the main relay node for the server, all Minecraft servers will directly communicate with your instance over Redis, completely mitigating the problems with the original project setup.
+  <br>
+  <br/>
+</p>
+<h1 id="2-important-notes-about-this-system">
+  2. Important notes about this system
+</h1>
+<p>
+  This new system does have a few major tradeoffs in its current form
+  <br>
+  - The used OpenAudioMc instance (
+  <code>
+    vistas-server
+  </code>
+  ) is a single point of failure. The process
+  <strong>
+    is
+  </strong>
+  hot-swappable, meaning that a reboot of the service
+  <strong>
+    does not
+  </strong>
+  require any interactions in the Minecraft sub servers to recover player sessions. A scalable redundant system is planned for late 2022
+  <br>
+  - Some commands are now redundant or more confusing.
+  <code>
+    /oa *
+  </code>
+  commands will only affect your current Minecraft server (example,
+  <code>
+    /oa state
+  </code>
+  will only show the statistics of players in your current lobby), but admins can evaluate commands on the standalone instance by prefixing it with
+  <code>
+    vistas-eval
+  </code>
+  (like
+  <code>
+    /oa vistas-eval state
+  </code>
+  , which will show the state of the shared stand alone instance that all servers are using)
+  <br>
+  - A reliable Redis instance with decent Pub/Sub performance is a must.
+  <strong>
+    Redis storage can be ignored as its currently not used
+  </strong>
+  <br>
+  - Only the stand alone OpenAudioMc instance (
+  <code>
+    vistas-server
+  </code>
+  ) needs a voice chat license and to be linked to a craftmend account.
+  <br>
+  - Ratelimiting is still applicable to all sub servers, which can be a problem when sub servers are scaling on one physical host. Please contact Mats with a list of your IP Addresses to discuss a possible whitelist or excemption to the default rate limit configuration.
+  <br>
+  <br/>
+</p>
+<h1 id="3-setup-requirements">
+  3. Setup requirements
+</h1>
+<blockquote>
+  <p>
+    Prerequisites
+    <br>
+    1. A Redis instance with decent performance, preferably within a private network
+    <br>
+    2. A container or runtime configuration with java 9 or higher, capable of running standalone Jar files (with at least 2Gb of memory, and max 6). Make sure that only one of these services can be running at once!
+    <br>
+    3. A persistent Craftmend fingerprint (Contact Mats to request one)
+    <br>
+    4. OpenAudioMc 6.7 or higher
+    <br>
+    5. All servers must be running the same OpenAudioMc version, and use a compatible vistas-server and vistas-client module
+  </p>
+</blockquote>
+<p>
+  <br/>
+</p>
+<h1 id="4-setting-up-the-vistas-server">
+  4. Setting up the Vistas-Server
+</h1>
+<p>
+  First, prepare your runtime environment following the requirements of chapter 3.
+  <br>
+  1. Download the latest
+  <code>
+    vistas-server.jar
+  </code>
+  from
+  <a href="https://github.com/Mindgamesnl/OpenAudioMc/tree/master/modules" rel="nofollow">
+    OpenAudioMc/modules at master · Mindgamesnl/OpenAudioMc · GitHub
+  </a>
+  , or build one yourself using the provided maven modules.
+  <br>
+  2. Download the default config file from
+  <a href="https://github.com/Mindgamesnl/OpenAudioMc/blob/master/plugin/src/main/resources/config.yml" rel="nofollow">
+    OpenAudioMc/config.yml at master · Mindgamesnl/OpenAudioMc · GitHub
+  </a>
+  and paste it in the same folder as the
+  <code>
+    vistas-server.jar
+  </code>
+  <br>
+  3. Configure Redis
+  <br>
+  1.
+  <strong>
+    Keep redis.enabled set to false to prevent default show behaviour
+  </strong>
+  <br>
+  2. Set
+  <code>
+    redis.host
+  </code>
+  to the host address of your Redis server
+  <br>
+  3. Set
+  <code>
+    redis.port
+  </code>
+  if your Redis server uses anything but the default port
+  <br>
+  4. Set
+  <code>
+    redis.password
+  </code>
+  to the password of your Redis server. You
+  <strong>
+    MUST
+  </strong>
+  have authentication enabled as its enforced for security reasons
+  <br>
+  4. Configure startup arguments
+  <br>
+  1. Go to the fingerprints page in your Craftmend account
+  <a href="https://account.craftmend.com/account/fingerprint" rel="nofollow">
+    Log in!
+  </a>
+  <br>
+  2. Copy your
+  <strong>
+    PERSISTENT FINGERPRINT
+  </strong>
+  that you activated from the add-on you requested in chapter 3
+  <br>
+  3. Run the vistas server using
+  <code>
+    java -Dfingerprint=aESA1Pzk6DchDuQLYPPMx92pXyiOfhw630arvmwA -jar vistas-server.jar
+  </code>
+  , where the fingerprint is obviously your own
+  <br>
+  5. Run the vistas server
+  <br>
+  <br/>
+</p>
+<h1 id="5-setting-up-the-vistas-client">
+  5. Setting up the Vistas-Client
+</h1>
+<ol>
+  <li>
+    <p>
+      Install the OpenAudioMc plugin in the
+      <code>
+        plugins/
+      </code>
+      folder of your server
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Create a sub directory within your plugins folder, called
+      <code>
+        OpenAudioMc/modules/
+      </code>
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Download the
+      <code>
+        vistas-client.jar
+      </code>
+      from
+      <a href="https://github.com/Mindgamesnl/OpenAudioMc/tree/master/modules" rel="nofollow">
+        OpenAudioMc/modules at master · Mindgamesnl/OpenAudioMc · GitHub
+      </a>
+      , and place it in the
+      <code>
+        plugins/OpenAudioMc/modules/
+      </code>
+      directory
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Copy the
+      <code>
+        config.yml
+      </code>
+      file from your vistas-server, and place it in the
+      <code>
+        plugins/OpenAudioMc/
+      </code>
+      folder.
+      <strong>
+        MAKE SURE THAT YOUR REDIS AND MESSAGES ARE VALID!
+      </strong>
+      <br>
+    </p>
+  </li>
+  <li>
+    <p>
+      Create a file called
+      <code>
+        data.yml
+      </code>
+      in the
+      <code>
+        plugins/OpenAudioMc/
+      </code>
+      folder and set its contents to
+      <br>
+      ”`yaml
+      <br/>
+    </p>
+    <h1 id="if-the-user-agreed-to-the-tos-and-privacy-statement-br">
+      If the user agreed to the TOS and Privacy statement.
+      <br/>
+    </h1>
+    <h1 id="having-any-value-representing-true-filled-either-manually-changed-or-through-software-after-manual-trigger-or-third-party-input-means-br">
+      Having any value representing “true” filled (either manually changed or through software after manual trigger or third party input) means
+      <br/>
+    </h1>
+    <h1 id="that-you-read-understood-and-agree-to-everything-mentioned-in-br">
+      That you read, understood and agree to everything mentioned in
+      <br/>
+    </h1>
+    <h1 id="https-github-com-mindgamesnl-openaudiomc-blob-master-licence-and-privacy-html">
+      <a href="https://github.com/Mindgamesnl/OpenAudioMc/blob/master/LICENCE_and_PRIVACY.html" rel="nofollow">
+        https://github.com/Mindgamesnl/OpenAudioMc/blob/master/LICENCE_and_PRIVACY.html
+      </a>
+    </h1>
+    <p>
+      legal:
+      <br>
+      accepted: true
+    </p>
+  </li>
+</ol>
+<p>
+  regions:
+  <br>
+  aliases:
+  <br>
+  speakers:
+  <br>
+  keyset:
+  <br>
+  key-version: -1
+  <br>
+  private: not-set
+  <br>
+  link-mode: true
+  <br>
+  server-ip: not-set
+  <br>
+  server-cc: not-set
+  <br>
+  debug:
+  <br>
+  log-state-changes: false
+  <br>
+  “
+  <code>
+    6. Deploy the server as a template. All files that you have configured so far (the
+  </code>
+  config.yml
+  <code>
+    and
+  </code>
+  data.yml` are safe to be used as templates for scaleable sub servers)
+  <br>
+  7. Start the sub server (at least one)
+  <br>
+  8. Make sure that the vistas-server process is running for the initial test
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="index.html"
+           class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
+            <span class="ml-3 text-xl">OpenAudioMc</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021
+            OpenAudioMc —
+            <a href="https://twitter.com/Mindgamesnl" class="text-gray-500 ml-1" target="_blank"
+               rel="noopener noreferrer">@Mindgamesnl</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
