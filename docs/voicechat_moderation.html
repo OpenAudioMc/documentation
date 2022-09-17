@@ -84,26 +84,64 @@
     <div class="container px-5 mx-auto flex flex-col">
         <div class="lg:w-4/6 mx-auto">
             <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
-                <h1 id="moderation">
-  Moderation
+                <h1 id="voicechat-moderation">
+  VoiceChat Moderation
 </h1>
 <p>
-  OpenAudioMc has native support for:
-  <br>
-  - Essentials player mutes
-  <br>
-  - Litebans player mutes
+  Playing with your friends is fun, but some players can really sour an entire community.
 </p>
 <p>
-  and comes with built-in moderation utilities. Moderators can inspect a player by running
+  We provide a handful of utilities to server moderators, allowing them to check in with players, validate reports and completely ban players from voice chat.
+  <br>
+  <br/>
+</p>
+<h2 id="inspect">
+  Inspect
+</h2>
+<p>
+  The inspect command (
   <code>
-    /oa voice mod &lt;name&gt;
+    /oa voide inspect {username}
   </code>
-  ,(like
+  ) is used to manage players (online and offline). It shows a list of recent peers (other players they talked to), their current status (if they’re connected) and provides a ban option (where you can kick them from their current call, and prohibit them from using voice-chat again)
+</p>
+<p>
+  <img src="assets/Screen_Recording_2022-09-17_at_13.50.44.gif" alt="example gif"/>
+  <br>
+  <br/>
+</p>
+<h2 id="moderation-mode">
+  Moderation Mode
+</h2>
+<p>
+  <div style="padding: 20px;
+  background-color: #f44336;
+  color: white;">
+  <strong>
+    WARNING!
+  </strong>
+  This feature needs to be enabled in the config, as it’s disabled by default to prevent abuse.</div>
+  <br>
+  In some cases, moderators may need to listen in on a conversation to validate a report, as bad actors usually stop as soon as they see any form of enforcement. To aid moderators, we’ve added a moderation mode that allows them to do just that.
+  <br>
+  It can be toggled on/off with the command
   <code>
-    /oa voice mod Mindgamesnl
+    /oa voice mod
   </code>
-  ) and the plugin will load a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.
+  (requires the permissions
+  <code>
+    openaudiomc.commands.voice
+  </code>
+  ). When enabled, all other moderators will receive an in-game notification (
+  <code>
+    ToetMats started moderating
+  </code>
+  ) and the player won’t be visible or audible in voicechat, but can still walk up to and hear other players.
+</p>
+<p>
+  Since it has no visual artifacts or limitations, moderators may forget to disable it after a while or use it for other purposes; therefore, it’ll automatically disable itself after a configured amount of time (2 minutes by default). Moderators will receive an in-game countdown during the last 15 seconds, reminding them to extend it if they’re still using it.
+  <br>
+  <img src="assets/modrenew.png" alt="mod renew screenshot"/>
 </p>
             </div>
         </div>
