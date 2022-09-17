@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/content/assets/Screen Recording 2022-06-18 at 17.41.31.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/Screen_Recording_2022-09-17_at_13.50.44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/addon-activated.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/addon-home-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/addon-installer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/fingerprint-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/fingerprint-in-minecraft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/getting-started.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/imaginefun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/macbook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/matt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/matterhorn_winter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/modrenew.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/searchbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/assets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/voicechat_moderation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat_moderation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/command-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/command-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/voicechat_moderation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat_moderation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/voicechat.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/voicechat.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,16 +56,16 @@
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/mnt/ssd-projects/github/documentation/content",
+    "last_opened_file_path": "/mnt/ssd-projects/github/documentation/docs",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/docs/assets" />
       <recent name="$PROJECT_DIR$/webpages" />
-      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/out/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
