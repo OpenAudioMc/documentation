@@ -7,6 +7,7 @@
 [//]: # (COMMANDS:/oa voice inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
 [//]: # (COMMANDS:/oa voicechat inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
 [//]: # (COMMANDS:/oa proximity inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
+[//]: # (COMMANDS:/oa voice mod,Toggles moderation mode)
 
 # VoiceChat Moderation
 Playing with your friends is fun, but some players can really sour an entire community.
