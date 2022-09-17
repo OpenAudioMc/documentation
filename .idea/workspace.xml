@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd4b6ae-17e4-4a82-8b6a-348a47d4ee93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/voicechat.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/voicechat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/voicechat.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/voicechat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -12,7 +12,7 @@
 # VoiceChat Moderation
 Playing with your friends is fun, but some players can really sour an entire community.
 
-We provide a handful of utilities to server moderators, allowing them to check in with players, validate reports and completely ban players from voice chat.
+We provide a handful of utilities for server moderators, allowing them to check in with players, validate reports and completely ban players from voice chat.
 
 ## Inspect
 The inspect command (`/oa voide inspect {username}`) is used to manage players (online and offline). It shows a list of recent peers (other players they talked to), their current status (if they're connected) and provides a ban option (where you can kick them from their current call, and prohibit them from using voice-chat again)
