@@ -1,7 +1,7 @@
 [//]: # (TITLE:Proximity Voice Chat Moderation)
 [//]: # (ICON:fas fa-user-shield)
 [//]: # (DESCRIPTION:How to moderate your player experience with Mutes and bans)
-[//]: # (TAGS:voice,voicechat,proximity,talking,calling,calls)
+[//]: # (TAGS:voice,voicechat,proximity,talking,calling,calls,bans,moderation)
 [//]: # (COMMANDS:/oa pv inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
 [//]: # (COMMANDS:/oa vc inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
 [//]: # (COMMANDS:/oa voice inspect {username},Loads a GUI showing names of the 15 most recent players that they talked to, when they were last seen, as well as allowing you to ban them from using Proximity Voice Chat at all.)
@@ -15,7 +15,7 @@ Playing with your friends is fun, but some players can really sour an entire com
 We provide a handful of utilities for server moderators, allowing them to check in with players, validate reports and completely ban players from voice chat.
 
 ## Inspect
-The inspect command (`/oa voide inspect {username}`) is used to manage players (online and offline). It shows a list of recent peers (other players they talked to), their current status (if they're connected) and provides a ban option (where you can kick them from their current call, and prohibit them from using voice-chat again)
+The inspect command (`/oa voice inspect {username}`) is used to manage players (online and offline). It shows a list of recent peers (other players they talked to), their current status (if they're connected) and provides a ban option (where you can kick them from their current call, and prohibit them from using voice-chat again)
 
 ![example gif](assets/Screen_Recording_2022-09-17_at_13.50.44.gif)
 
