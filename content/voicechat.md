@@ -9,6 +9,9 @@
 [//]: # (COMMANDS:/oa voice claim,Force a new license check)
 [//]: # (COMMANDS:/oa accept,Gives you the link of the audio client)
 # Voice Chat
+
+::warningstart::<strong>Notice:</strong> Interested in moderation? see <a href="https://help.openaudiomc.net/voicechat_moderation">click here</a>::warningend::<br />
+
 Proximity Voice Chat is one of the core OpenAudioMc features. It allows players to others within a configurable radius. They can hear the whereabouts of others through spatial audio, which is incredibly fun for SMP's, Minigames, Roleplay, and so much more.
 <br />
 There might be cases where VoiceChat can't finish the automated setup due to [license](voicechat_licenses.md) issues. You can force a new license check using `/oa voice claim`, by claiming a license through your [account](account.md) or by keeping an eye out for news in our Discord
