@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+          integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta property="og:title" content="OpenAudioMc">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image"
+          content="assets/logo.png">
+    <meta property="og:url" content="https://openaudiomc.net/">
+    <meta property="og:site_name" content="OpenAudioMc">
+    <meta property="og:description" content="OpenAudioMc is the all in one minecraft audio and voicechat solution">
+    <meta name="twitter:title" content="OpenAudioMc - The most advanced Minecraft audio and voice system">
+    <meta name="twitter:image"
+          content="assets/logo.png">
+    <meta name="twitter:url" content="https://twitter.com/Mindgamesnl">
+    <meta name="twitter:card" content="summary">
+    <script src="https://kit.fontawesome.com/356f5e0146.js" crossorigin="anonymous"></script>
+    <meta name="description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts. - OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts.">
+    <link rel="fluid-icon" href="assets/logo.png" title="OpenAudioMc">
+    <meta name="twitter:image:src" content="assets/banner.png"/>
+    <meta name="twitter:site" content="@openaudiomc"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta name="twitter:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:image" content="assets/banner.png"/>
+    <meta property="og:image:alt"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <meta property="og:site_name" content="OpenAudioMc"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title"
+          content="OpenAudioMc: A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and build scripts."/>
+    <meta property="og:url" content="https://openaudiomc.net/"/>
+    <meta property="og:description"
+          content="A real time web client for minecraft to play and manage sounds, game notifications and much more. This project includes the plugin (bungee + spigot + velocity), common java library, web client and ..."/>
+    <title>OpenAudioMc - Audio for Minecraft</title>
+</head>
+<body class="bg-white">
+
+<div class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://discord.openaudiomc.net/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Discord</a></li>
+            <li><a href="https://www.spigotmc.org/resources/openaudiomc-proximity-voice-chat-realtime-music-no-mods.30691/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Spigot</a></li>
+            <li><a href="https://github.com/Mindgamesnl/OpenAudioMc" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Github</a></li>
+        </ul>
+        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+            <img src="assets/logo.png" style="height: 50px">
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">OpenAudioMc</span>
+        </a>
+        <ul class="flex items-center flex space-x-8 lg:flex">
+            <li><a href="https://patreon.com/mindgamesnl" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Patreon</a></li>
+            <li><a href="documentation.html" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Documentation</a></li>
+            <li><a href="https://account.craftmend.com/register" aria-label="Sign up" title="Sign up" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">My Account</a></li>
+        </ul>
+        <!-- Mobile menu -->
+    </div>
+</div>
+
+<section class="text-gray-700 bg-gray-200 body-font">
+    <div class="container mx-auto">
+        <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+                <div class="w-24 h-full bg-purple-400"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 title-font text-2xl mb-2 sm:mb-0">PlaceholderAPI Integration</h1>
+                <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0">Hooking into PAPI with OpenAudioMc</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-gray-700 bg-gray-200 body-font">
+    <div class="container px-5 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="sm:py-8 mt-4 pt-4 sm:mt-0">
+                <h1 id="pai-integration">
+  PAI Integration
+</h1>
+<p>
+  <div style="padding: 20px;
+  background-color: #f44336;
+  color: white;">
+  <strong>
+    WARNING!
+  </strong>
+  Our PlaceholderAPI provider is only registered for the spigot instance </div>
+  <br>
+  OpenAudioMc supports the
+  <a href="https://www.spigotmc.org/resources/placeholderapi.6245/" rel="nofollow">
+    PlaceholderAPI
+  </a>
+  plugin. This means that you can display data from OpenAudioMc in your chat, scoreboard, tablist and more.
+</p>
+<p>
+  Be careful not to expose your token to the public, as it can be used to impersonate you.
+  <br>
+  <br/>
+</p>
+<h2 id="placeholders">
+  Placeholders
+</h2>
+<p>
+  All our placeholders use the
+  <code>
+    oa_
+  </code>
+  prefix, and return values can be configured in our
+  <code>
+    config.yml
+  </code>
+  file.
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Placeholder
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Example
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>
+          oa_connect_client
+        </code>
+      </td>
+      <td>
+        Connection state of the client in context
+      </td>
+      <td>
+        <code>
+          Connected!
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>
+          oa_connect_vc
+        </code>
+      </td>
+      <td>
+        Connection state to voicechat in context
+      </td>
+      <td>
+        <code>
+          Not conneced to voice chat!
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>
+          oa_count_client
+        </code>
+      </td>
+      <td>
+        The amount of players with the client open
+      </td>
+      <td>
+        <code>
+          5
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>
+          oa_count_vc
+        </code>
+      </td>
+      <td>
+        The amount of players in voice chat
+      </td>
+      <td>
+        <code>
+          3
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>
+          oa_count_vc_max
+        </code>
+      </td>
+      <td>
+        The maximum amount of voicechat slots. Useful to displays like
+        <sup>
+          5
+        </sup>
+        ⁄
+        <sub>
+          10
+        </sub>
+      </td>
+      <td>
+        <code>
+          8
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>
+          oa_token
+        </code>
+      </td>
+      <td>
+        Shows the personal token of a player, should never be public in tab.
+      </td>
+      <td>
+        <code>
+          38dDy
+        </code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <br/>
+</p>
+<h2 id="testing">
+  Testing
+</h2>
+<p>
+  You can easily validate if your placeholders are working by using the
+  <code>
+    /papi parse
+  </code>
+  command. For example, to test the
+  <code>
+    oa_token
+  </code>
+  placeholder, you would run
+  <code>
+    /papi parse &lt;player&gt; %oa_token%
+  </code>
+  .
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="index.html"
+           class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="assets/logo.png" alt="logo openaudiomc" class="w-10 h-10 text-white bg-indigo-500 rounded-full logo"/>
+            <span class="ml-3 text-xl">OpenAudioMc</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022
+            OpenAudioMc —
+            <a href="https://twitter.com/Mindgamesnl" class="text-gray-500 ml-1" target="_blank"
+               rel="noopener noreferrer">@Mindgamesnl</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
