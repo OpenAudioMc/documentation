@@ -3,7 +3,7 @@
 [//]: # (DESCRIPTION:Hooking into PAPI with OpenAudioMc)
 [//]: # (TAGS:papi,placeholders,configs,technical)
 
-# PAI Integration
+# PAPI Integration
 ::warningstart::<strong>WARNING!</strong> Our PlaceholderAPI provider is only registered for the spigot instance ::warningend::
 OpenAudioMc supports the [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) plugin. This means that you can display data from OpenAudioMc in your chat, scoreboard, tablist and more.
 
