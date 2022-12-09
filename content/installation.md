@@ -14,7 +14,6 @@ Installation couldn't be simpler:
 
 
 Important notes:
- - Velocity is supported but currently in beta and not completely tested
  - [By installing, you agree to our privacy policy and rules](https://account.craftmend.com/terms)
  - Be sure to also install the plugin in your bungeecord (if you have one). You might need to give yourself the 'openaudiomc.*' permission in your bungeecord.
  - Be sure to use Spigot or one of the many forks, we do not support craft bukkit.
